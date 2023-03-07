@@ -6,4 +6,4 @@ description: Main landing page
 
 {% embed url="https://docs.werwolv.net/imhex/" %}
 
-{% embed url="https://docs.werwolv.net/pattern-language/" %}
+{% embed url="https://docs.werwolv.net/pattern-language" %}
