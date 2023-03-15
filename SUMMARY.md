@@ -1,3 +1,7 @@
 # Table of contents
 
-* [Main](README.md)
+* [ImHex](README.md)
+
+## Views
+
+* [Hex Editor](views/hex-editor.md)

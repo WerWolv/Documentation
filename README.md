@@ -1,9 +1,2 @@
----
-description: Main landing page
----
+# ImHex
 
-# Main
-
-{% embed url="https://docs.werwolv.net/imhex/" %}
-
-{% embed url="https://docs.werwolv.net/pattern-language" %}
