@@ -1,7 +1,7 @@
 ---
 description: >-
   A Hex Editor for Reverse Engineers, Programmers and people who value their
-  retinas when working at 3 AM.
+  retinas when working at 3 AM
 ---
 
 # ImHex
