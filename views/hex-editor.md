@@ -1,3 +1,7 @@
+---
+description: Viewing, editing and analysing binary data
+---
+
 # Hex Editor
 
 The Hex Editor View is the most important View in ImHex. It displays the currently loaded data as a range of hexadecimal values and ASCII and lets you modify it.
@@ -8,7 +12,7 @@ The Hex Editor View is the most important View in ImHex. It displays the current
 
 To interact with the bytes in any way, they first need to be selected. To do that, click on one and optionally drag your mouse cursor to select bigger ranges of bytes. This can be done either on the main hexadecimal column or on the ASCII column.
 
-&#x20;Once a selection has been made, the current cursor can also be moved around using the arrow keys. Holding down SHIFT lets you select a range of bytes.
+Once a selection has been made, the current cursor can also be moved around using the arrow keys. Holding down SHIFT lets you select a range of bytes.
 
 ### Base Address
 
