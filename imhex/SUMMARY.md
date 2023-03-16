@@ -18,3 +18,4 @@
 * [Patches](views/patches.md)
 * [Find](views/find.md)
 * [Pattern Editor](views/pattern-editor.md)
+* [Pattern Data](views/pattern-data.md)
