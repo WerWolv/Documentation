@@ -134,7 +134,7 @@ The language that's being used can be changed in the settings.
 
 <figure><img src="../.gitbook/assets/imhex_18MTLOWTwK.png" alt=""><figcaption><p>File shredder sub-tool</p></figcaption></figure>
 
-The file shredder tool securely destroy a selected file and erases it from the hard drive. It does this by overwriting the data with various different byte patterns so no information of the data should be recoverable anymore, even when directly analysing the disk's hardware.
+The file shredder tool securely destroys a selected file and erases it from the hard drive. It does this by overwriting the data with various different byte patterns so no information of the data should be recoverable anymore, even when directly analysing the disk's hardware.
 
 
 
