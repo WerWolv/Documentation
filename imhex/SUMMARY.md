@@ -17,3 +17,4 @@
 * [Hashes](views/hashes.md)
 * [Patches](views/patches.md)
 * [Find](views/find.md)
+* [Pattern Editor](views/pattern-editor.md)
