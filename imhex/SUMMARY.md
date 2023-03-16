@@ -16,3 +16,5 @@
 * [Bookmarks](views/bookmarks.md)
 * [Hashes](views/hashes.md)
 * [Patches](views/patches.md)
+* [Pattern Data](views/pattern-data.md)
+* [Pattern Editor](views/pattern-editor.md)
