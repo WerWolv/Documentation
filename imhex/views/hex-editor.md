@@ -6,7 +6,7 @@ description: Viewing, editing and analysing binary data
 
 The Hex Editor View is the most important View in ImHex. It displays the currently loaded data as a range of hexadecimal values and ASCII and lets you modify it.
 
-<figure><img src="../.gitbook/assets/imhex_ioIIFHyxqs.png" alt=""><figcaption><p>The Hex Editor View</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/imhex_ioIIFHyxqs (1).png" alt=""><figcaption><p>The Hex Editor View</p></figcaption></figure>
 
 ### Selections
 
@@ -35,10 +35,10 @@ To edit the value of a byte, simply double click it to enter editing mode. The v
 Size changing operations include byte insertions, byte removal and resizing.
 
 {% hint style="warning" %}
-These operations are rarely needed when analysing or patching data since they can change the layout of the data and will most likely make it unreadable by other programs.&#x20;
+These operations are rarely needed when analysing or patching data since they can change the layout of the data and will most likely make it unreadable by other programs.
 {% endhint %}
 
-All of these operations can be found in the `Edit` main menu or in the Hex Editor's right-click menu.&#x20;
+All of these operations can be found in the `Edit` main menu or in the Hex Editor's right-click menu.
 
 <figure><img src="../.gitbook/assets/imhex_RMaPswTBzf.png" alt=""><figcaption><p>Operations in the edit menu</p></figcaption></figure>
 
@@ -47,7 +47,7 @@ A popup window will open asking for the start address of the operation and the n
 <figure><img src="../.gitbook/assets/imhex_4ONHkkK3j7.png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="danger" %}
-Since ImHex cannot store the entire content of files in memory due to their size, all size changing operations directly modify the underlying data and cannot be undone.&#x20;
+Since ImHex cannot store the entire content of files in memory due to their size, all size changing operations directly modify the underlying data and cannot be undone.
 {% endhint %}
 
 ### Copy / Paste
@@ -58,7 +58,7 @@ These operations let you copy bytes in various ways and paste them back into the
 
 #### Copy as...
 
-The Copy as operation copies a formatted representation of the selected bytes into the clipboard. Possible representations are arrays in the syntax of various programming languages, as well as ASCII art, HTML and more.&#x20;
+The Copy as operation copies a formatted representation of the selected bytes into the clipboard. Possible representations are arrays in the syntax of various programming languages, as well as ASCII art, HTML and more.
 
 Some Examples:
 

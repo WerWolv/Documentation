@@ -16,3 +16,4 @@
 * [Bookmarks](views/bookmarks.md)
 * [Hashes](views/hashes.md)
 * [Patches](views/patches.md)
+* [Find](views/find.md)
