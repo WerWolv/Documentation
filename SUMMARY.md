@@ -4,8 +4,8 @@
 
 ## Common
 
-* [Binary Pattern](common/binary-pattern.md)
 * [Input Text Boxes](common/input-text-boxes.md)
+* [Binary Pattern](common/binary-pattern.md)
 
 ## Views
 
