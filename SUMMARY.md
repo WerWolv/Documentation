@@ -1,18 +1,5 @@
 # Table of contents
 
-* [ImHex](README.md)
-
-## Common
-
-* [Input Text Boxes](common/input-text-boxes.md)
-* [Binary Pattern](common/binary-pattern.md)
-* [Providers](common/providers.md)
-
-## Views
-
-* [Hex Editor](views/hex-editor.md)
-* [Data Inspector](views/data-inspector.md)
-* [Tools](views/tools.md)
-* [Bookmarks](views/bookmarks.md)
-* [Hashes](views/hashes.md)
-* [Patches](views/patches.md)
+* [WerWolv's Project Documentations](README.md)
+  * [ImHex](https://app.gitbook.com/o/xfl3734L2rDBS2sD53Zi/s/xj7sbzGbHH260vbpZOu1/)
+  * [Pattern Language](https://app.gitbook.com/o/xfl3734L2rDBS2sD53Zi/s/WZzDdGjxmgMSIE3xly6o/)
