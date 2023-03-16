@@ -15,6 +15,7 @@
 * [Tools](views/tools.md)
 * [Bookmarks](views/bookmarks.md)
 * [Hashes](views/hashes.md)
+* [Find](views/find.md)
 * [Patches](views/patches.md)
 * [Pattern Editor](views/pattern-editor.md)
 * [Pattern Data](views/pattern-data.md)
