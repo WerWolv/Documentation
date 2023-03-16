@@ -11,3 +11,4 @@
 
 * [Hex Editor](views/hex-editor.md)
 * [Data Inspector](views/data-inspector.md)
+* [Tools](views/tools.md)
