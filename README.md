@@ -8,9 +8,9 @@ description: >-
 
 ### Links
 
-**Main Repo:** https://github.com/WerWolv/ImHex
+**Main Repo:** [https://github.com/WerWolv/ImHex](https://github.com/WerWolv/ImHex)
 
-**Database Repo**: https://github.com/WerWolv/ImHex-Patterns
+**Database Repo**: [https://github.com/WerWolv/ImHex-Patterns](https://github.com/WerWolv/ImHex-Patterns)
 
 ### Screenshots
 
