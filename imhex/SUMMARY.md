@@ -1,6 +1,6 @@
 # Table of contents
 
-* [ImHex](README.md)
+* [ImHex](../)
 
 ## Common
 

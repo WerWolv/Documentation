@@ -6,15 +6,13 @@ description: >-
 
 # ImHex
 
-## ImHex
-
-#### Links
+### Links
 
 **Main Repo:** [https://github.com/WerWolv/ImHex](https://github.com/WerWolv/ImHex)
 
 **Database Repo**: [https://github.com/WerWolv/ImHex-Patterns](https://github.com/WerWolv/ImHex-Patterns)
 
-#### Screenshots
+### Screenshots
 
 <figure><img src="https://user-images.githubusercontent.com/10835354/139717326-8044769d-527b-4d88-8adf-2d4ecafdca1f.png" alt=""><figcaption></figcaption></figure>
 
