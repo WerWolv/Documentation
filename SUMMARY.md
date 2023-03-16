@@ -15,3 +15,4 @@
 * [Tools](views/tools.md)
 * [Bookmarks](views/bookmarks.md)
 * [Hashes](views/hashes.md)
+* [Patches](views/patches.md)
