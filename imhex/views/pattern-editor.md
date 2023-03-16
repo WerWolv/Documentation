@@ -1,5 +1,5 @@
 ---
-description: The Pattern Language source code editor
+description: Write Pattern Language source code and execute it
 ---
 
 # Pattern Editor
