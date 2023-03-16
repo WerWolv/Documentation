@@ -120,3 +120,71 @@ All uploaded files are publicly accessible using this link and will only stay on
 {% endtab %}
 {% endtabs %}
 
+{% tabs %}
+{% tab title="Wikipedia definitions" %}
+<figure><img src="../.gitbook/assets/imhex_DtScs6DByi.png" alt=""><figcaption><p>Term "WAV" being searched on Wikipedia</p></figcaption></figure>
+
+The Wikipedia term definitions tool simply asks Wikipedia for a short summary of the provided term.&#x20;
+
+The language that's being used can be changed in the settings.
+{% endtab %}
+
+{% tab title="File Tools" %}
+#### Shredder
+
+<figure><img src="../.gitbook/assets/imhex_18MTLOWTwK.png" alt=""><figcaption><p>File shredder sub-tool</p></figcaption></figure>
+
+The file shredder tool securely destroy a selected file and erases it from the hard drive. It does this by overwriting the data with various different byte patterns so no information of the data should be recoverable anymore, even when directly analysing the disk's hardware.
+
+
+
+For use on modern hardware such as SSDs or other NAND storage, enabling `Fast Mode` is usually enough. This will only overwrite the file with a single byte pattern before deleting it. For other storage medias such as HDDs, CDs or Floppies, `Fast Mode` is **NOT** enough to erase the data completely.
+
+{% hint style="danger" %}
+This will irrecoverably destroy a file. Make sure you're absolutely certain that that's what you want to do!
+{% endhint %}
+
+#### Splitter
+
+<figure><img src="../.gitbook/assets/imhex_RgiGcfo9YV.png" alt=""><figcaption><p>File splitter sub-tool</p></figcaption></figure>
+
+The file splitter can split a input file into multiple output files of a given size. This is useful when trying to transport a big file using multiple smaller storage medias such as CDs, when copying files bigger than 4GB onto a FAT32 drive or when uploading them to an online service that only supports a certain maximum file size.
+
+Select a file in the `File to split` input field and a destination folder for the output files in the `Output path` field. Then select the size the files should be split into using the combo box below. Selecting `Custom` will allow you to specify a custom number of bytes in the input box below.
+
+#### Combiner
+
+<figure><img src="../.gitbook/assets/imhex_CoxqMjvjzj.png" alt=""><figcaption><p>File combiner sub-tool</p></figcaption></figure>
+
+The file combiner tool is the inverse operation of the file splitter. It Can take a list of multiple smaller files and concatinate them into one bigger file. The order they show up in the list above is the order they are concatinated in. Add new files using the `Add...` button, remove a single file again using the `Delete` button or clear the entire list using the `Clear` button. Files in the list can also be moved around by first selecting them and then pressing on the arrow buttons on the right hand side to move them up or down in the list.
+
+To create the file, select a new path for it in the `Output file` field and press `Combine`. This operation might take a long time depending on how big the files are and how many of them there are.
+{% endtab %}
+
+{% tab title="IEEE 754 Decoder" %}
+<figure><img src="../.gitbook/assets/imhex_MaPlaZ78mo.png" alt=""><figcaption><p>IEEE754 floating point decoder tool</p></figcaption></figure>
+
+The IEEE754 floating point decoder tool allows decoding of custom IEEE754 floating point numbers and visualizes their internal representation as well as the calculation that are being done.
+
+Clicking on the individual bits of the floating point number will toggle them. This can be used to enter the floating point number.
+
+Using the sliders, a custom exponent and mantissa size can be specified. This does not need to be any standard size but can be any up to a total maximum of 128 bits.
+
+The buttons `Half Precision`, `Single Precision` and `Double Precision` are shortcuts to set the sliders above to the values of these standard representations.&#x20;
+
+The table below visualizes the formulas and calculations that are being used to calculate the different parts of the floating point number and how they will be combined to the final result at the end. `Floating Point Result` contains the actual numerical value of this calculation, `Hexadecimal Result` contains the Hexadecimal representation of it in memory.
+{% endtab %}
+
+{% tab title="Division Tool" %}
+<figure><img src="../.gitbook/assets/imhex_m506pixgMg.png" alt=""><figcaption><p>Division of a value by the constant 1234 being turned into a more efficient multiplication followed by a shift operation</p></figcaption></figure>
+
+Division by invariant Multiplication is a optimization technique used by compilers to turn divisions by a constant number into a much more efficient multiplication followed by a shift.
+
+This tool can turn these divisions into the multiplication constant or vice versa based on the number of bits in the output. Modifying one value will automatically update the other one so the calculation is possible to do in both directions.
+{% endtab %}
+{% endtabs %}
+
+
+
+
+
