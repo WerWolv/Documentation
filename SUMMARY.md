@@ -1,3 +1,15 @@
 # Table of contents
 
-* [Main](README.md)
+* [ImHex](README.md)
+
+## Common
+
+* [Input Text Boxes](common/input-text-boxes.md)
+* [Binary Pattern](common/binary-pattern.md)
+
+## Views
+
+* [Hex Editor](views/hex-editor.md)
+* [Data Inspector](views/data-inspector.md)
+* [Tools](views/tools.md)
+* [Bookmarks](views/bookmarks.md)
