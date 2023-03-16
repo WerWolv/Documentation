@@ -1,6 +1,6 @@
 # Table of contents
 
-* [ImHex](README.md)
+* [ImHex](../)
 
 ## Common
 
@@ -16,6 +16,3 @@
 * [Bookmarks](views/bookmarks.md)
 * [Hashes](views/hashes.md)
 * [Patches](views/patches.md)
-* [Find](views/find.md)
-* [Pattern Editor](views/pattern-editor.md)
-* [Pattern Data](views/pattern-data.md)
