@@ -106,5 +106,17 @@ The base converter simply takes a number in one base and converts it into all ot
 
 This tool generates the absolute octal notation for UNIX permissions based on what permissions bits have been set in the table above. The absolute notation is value used in commands such as `chmod`.
 {% endtab %}
+
+{% tab title="File Uploader" %}
+<figure><img src="../.gitbook/assets/imhex_h38IEUeOyE.png" alt=""><figcaption><p>File uploader with a link to single file</p></figcaption></figure>
+
+The file uploader simply lets you choose any file on your system by clicking on the `Upload` button and uploads it to [https://anonfiles.com](https://anonfiles.com) so it can be shared with other people.
+
+Clicking on the link will copy it to the clipboard, CTRL + Click will open it in your browser.
+
+{% hint style="warning" %}
+All uploaded files are publicly accessible using this link and will only stay on the site for a few days. The service is meant for quickly sharing files with others, not for long term storage.
+{% endhint %}
+{% endtab %}
 {% endtabs %}
 
