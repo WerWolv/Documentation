@@ -19,3 +19,4 @@
 * [Patches](views/patches.md)
 * [Pattern Editor](views/pattern-editor.md)
 * [Pattern Data](views/pattern-data.md)
+* [Diffing](views/diffing.md)
