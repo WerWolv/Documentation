@@ -57,7 +57,7 @@ Individual lines can also be copied by clicking on them.
 
 The Environment Variables tab allows you to specify environment variables that can be read by Pattern Language source code through the use of the `std::env(str name)` function.
 
-Each line represents a single environment variable. Clicking on the `+` button inserts a new variable, clicking on the `-` button remove it.
+Each line represents a single environment variable. Clicking on the `+` button inserts a new variable, clicking on the `-` button removes it.
 
 The Combo box on the left side specifies the type of variable.
 
