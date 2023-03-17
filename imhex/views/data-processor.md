@@ -30,7 +30,7 @@ There are different types of Attributes, denoted using different symbols.&#x20;
 * ![](../.gitbook/assets/imhex\_oi7H5zLaT6.png) Triangular Attributes are Float Attributes
 * ![](../.gitbook/assets/imhex\_Z7rc3HH3yV.png) Rectangular Attributes are Buffer Attributes
 
-If a Attribute is on the left side of a Node and not filled, it's a Input. If it's on the right side of a Node and filled out, it's a Output.
+If an Attribute is on the left side of a Node and not filled, it's an Input. If it's on the right side of a Node and filled out, it's a Output.
 
 <figure><img src="../.gitbook/assets/imhex_njbmKbvNin.gif" alt=""><figcaption><p>Connecting two Nodes to each other</p></figcaption></figure>
 
@@ -42,9 +42,9 @@ Integer and Float input Attributes can also be initialized directly by writing t
 
 Links are the connection that is made between two Attributes. It represents the flow of information from one Ouput Attribute to another Input Attribute.&#x20;
 
-Links can only ever be made between two Attributes of the same type. So it's not possible to connect a Buffer Attribute to a Integer Attribute or an Integer Attribute to a Float Attribute.
+Links can only ever be made between two Attributes of the same type. So it's not possible to connect a Buffer Attribute to an Integer Attribute or an Integer Attribute to a Float Attribute.
 
-To form a new Link between two Attributes, click on the Attribute of one Node and drag the created Link over to the Attribute of a different node. This is only possible if one of the Attributes is a Output and the other one is a Input.
+To form a new Link between two Attributes, click on the Attribute of one Node and drag the created Link over to the Attribute of a different node. This is only possible if one of the Attributes is an Output and the other one is an Input.
 
 To delete a Link again, simply click on it or use `Right click -> Remove Link`.
 
@@ -66,7 +66,7 @@ Enabling the `Continuous evaluation` checkbox will cause the script to be execut
 
 <figure><img src="../.gitbook/assets/imhex_f2E3mrsjrm.png" alt=""><figcaption><p>Constant Nodes list</p></figcaption></figure>
 
-Constant Nodes are the simplest kinds of Start Nodes. They all have a input text box to specify their value and output that value directly on their output Attribute. These Nodes can be treated as Variables that can be set once before the program starts and then be reused again later on.&#x20;
+Constant Nodes are the simplest kinds of Start Nodes. They all have an input text box to specify their value and output that value directly on their output Attribute. These Nodes can be treated as Variables that can be set once before the program starts and then be reused again later on.&#x20;
 
 #### Data Access
 
