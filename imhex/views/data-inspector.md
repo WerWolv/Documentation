@@ -12,13 +12,13 @@ The Data Inspector aids identifying of encoded values in binary data without nee
 Not all rows necessarily display a useful value. The Inspector tries to identify invalid decodings and display `Invalid` in that row but that's not always possible. Just because the data inspector says these bytes mean a specific thing, doesn't mean that that's the actual meaning of those bytes.
 {% endhint %}
 
-&#x20;To copy the decoded value of a row, simply click on it once.
+To copy the decoded value of a row, simply click on it once.
 
 ### Editing
 
 Some rows can also be modified for the data inspector to write the encoded byte value of your input back to where it read the previous value. This is not possible for all rows.
 
-Do do this, simply double click the row you want to edit and a input text field will appear where the new value can be entered.
+To do this, simply double click the row you want to edit and a input text field will appear where the new value can be entered.
 
 ### Settings
 
@@ -30,7 +30,7 @@ At the bottom of the Inspector there are multiple sliders to customize how value
 
 ### Adding new Rows
 
-Adding new rows to the inspector can either be done through a custom Plugin, when needing custom display widgets or extra speed, or it can be done through the Pattern Language by adding a new `.hexpat` file to the `%IMHEX_PATH%/scripts/inspectors` folder.&#x20;
+Adding new rows to the inspector can either be done through a custom Plugin, when needing custom display widgets or extra speed, or it can be done through the Pattern Language by adding a new `.hexpat` file to the `%IMHEX_PATH%/scripts/inspectors` folder.
 
 {% code title="Simple custom inspector" lineNumbers="true" %}
 ```rust
@@ -55,6 +55,6 @@ MyCustomInspector customInspector @ $ [[name("Custom Inspector Name")]];
 ```
 {% endcode %}
 
-The next time the cursor position is changed now, the new row will show up and decode the selected bytes.&#x20;
+The next time the cursor position is changed now, the new row will show up and decode the selected bytes.
 
 <figure><img src="../.gitbook/assets/imhex_7WgNns20ZE.png" alt=""><figcaption><p>Custom Data Inspector Row</p></figcaption></figure>
