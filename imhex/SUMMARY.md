@@ -20,3 +20,4 @@
 * [Pattern Editor](views/pattern-editor.md)
 * [Pattern Data](views/pattern-data.md)
 * [Diffing](views/diffing.md)
+* [Data Information](views/data-information.md)
