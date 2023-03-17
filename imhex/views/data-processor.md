@@ -14,7 +14,7 @@ The Data Processor is a node-based visual scripting engine that has the ability 
 
 <figure><img src="../.gitbook/assets/imhex_LRIlWVyI8w.png" alt=""><figcaption><p>A Node</p></figcaption></figure>
 
-Nodes are the rectangular boxes that are placed through the context menu. Each node has a certain number of Inputs on the left side and Output on the right side. When the program is executed, each node will read in data from the left, processes it in some way and then outputs it again on the right. Nodes that have no inputs are called "Start Nodes", Nodes that have no outputs are called "End Nodes".
+Nodes are the rectangular boxes that are placed through the context menu. Each node has a certain number of Inputs on the left side and Output on the right side. When the program is executed, each node reads in data from the left, processes it in some way and then outputs it again on the right. Nodes that have no inputs are called "Start Nodes", Nodes that have no outputs are called "End Nodes".
 
 Each Node has a name which is being displayed at the top in the header.
 
