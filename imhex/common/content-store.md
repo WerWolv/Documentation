@@ -12,6 +12,10 @@ The Content Store is a simple store front that can be used to download extra fea
 If you'd like to add your own items to the store, please submit a PR to the [https://github.com/WerWolv/ImHex-Patterns](https://github.com/WerWolv/ImHex-Patterns) GitHub repository. Once your PR has been merged, the new files will automatically show up for everbody.
 {% endhint %}
 
+To access the Content Store, simply click on `Help` in the Menu Bar and select `Content Store`.
+
+<figure><img src="../.gitbook/assets/imhex_YuX7VUor06.png" alt=""><figcaption><p>Help Menu</p></figcaption></figure>
+
 ### Content
 
 The tabs at the top of the Store represent all the different available categories.
