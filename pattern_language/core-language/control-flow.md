@@ -45,7 +45,11 @@ This code looks at the first byte of each `Packet` to determine its type so it c
 
 Conditionals like this can be used in Structs, Unions and Bitfields
 
-![Conditional Highlighing](https://imhex.werwolv.net/docs/\_images/hex.png) ![Conditional Decoding](https://imhex.werwolv.net/docs/\_images/data.png)
+&#x20;
+
+<figure><img src="https://imhex.werwolv.net/docs/_images/data.png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="https://imhex.werwolv.net/docs/_images/hex.png" alt=""><figcaption></figcaption></figure>
 
 ### Match statements
 

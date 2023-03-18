@@ -19,4 +19,4 @@ fn main() {
 };
 ```
 
-![In/Out Variable Settings](https://imhex.werwolv.net/docs/\_images/settings.png)
+<figure><img src="https://imhex.werwolv.net/docs/_images/settings.png" alt=""><figcaption></figcaption></figure>

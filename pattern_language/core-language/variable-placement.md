@@ -16,7 +16,11 @@ This creates a new unsigned 32 bit variable named `myPlacedVariable` and place i
 
 The runtime will now treat the 4 bytes starting at offset `0x100` as a u32 and decodes the bytes at this address accordingly.
 
-![Placement Highlighing](https://imhex.werwolv.net/docs/\_images/hex4.png) ![Placement Decoding](https://imhex.werwolv.net/docs/\_images/data6.png)
+&#x20;
+
+<figure><img src="https://imhex.werwolv.net/docs/_images/data6.png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="https://imhex.werwolv.net/docs/_images/hex4.png" alt=""><figcaption></figcaption></figure>
 
 Placing variables isn’t limited to just built-in types. All types, even custom ones like structs, enums, unions, etc, can be placed.
 

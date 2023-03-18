@@ -106,7 +106,7 @@ enum StorageType : u16 {
 
 The type following the colon after the enum name declares the enum’s underlying type and can be any built-in datatype. This type only affects the enum’s size.
 
-![Enums Decoding](https://imhex.werwolv.net/docs/\_images/data1.png)
+<figure><img src="https://imhex.werwolv.net/docs/_images/data1.png" alt=""><figcaption></figcaption></figure>
 
 #### Enum Range
 
@@ -181,7 +181,11 @@ This code declares a pointer to an array of 10 `u32``s and the pointer has a siz
 
 The address will always be treated as absolute. Make sure to set the base address of your data correctly in order for pointers to work as intended.
 
-![Pointer Highlighing](https://imhex.werwolv.net/docs/\_images/hex1.png) ![Pointer Decoding](https://imhex.werwolv.net/docs/\_images/data2.png)
+&#x20;
+
+<figure><img src="https://imhex.werwolv.net/docs/_images/data2.png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="https://imhex.werwolv.net/docs/_images/hex1.png" alt=""><figcaption></figcaption></figure>
 
 ### Bitfields
 
@@ -197,7 +201,7 @@ bitfield Permission {
 
 Each entry inside of a bitfield consists of a field name followed by a colon and the size of the field in bits. A single field cannot occupy more than 64 bits.
 
-![Bitfields Decoding](https://imhex.werwolv.net/docs/\_images/data3.png)
+<figure><img src="https://imhex.werwolv.net/docs/_images/data3.png" alt=""><figcaption></figcaption></figure>
 
 #### Padding
 
@@ -228,7 +232,11 @@ struct Vector3f {
 
 Placing it into memory using the placement syntax will place all members of the struct directly adjacent to each other starting at the specified address.
 
-![Struct Highlighing](https://imhex.werwolv.net/docs/\_images/hex2.png) ![Struct Decoding](https://imhex.werwolv.net/docs/\_images/data4.png)
+&#x20;
+
+<figure><img src="https://imhex.werwolv.net/docs/_images/data4.png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="https://imhex.werwolv.net/docs/_images/hex2.png" alt=""><figcaption></figcaption></figure>
 
 #### Padding
 
@@ -246,7 +254,7 @@ struct Vector3f {
 
 This code will insert a 4 byte padding between the members `x` and `y` as well as a 8 byte padding between `y` and `z`.
 
-![Decoding](https://imhex.werwolv.net/docs/\_images/padding.png)
+<figure><img src="https://imhex.werwolv.net/docs/_images/padding.png" alt=""><figcaption></figcaption></figure>
 
 #### Inheritance
 
@@ -294,7 +302,11 @@ union Converter {
 };
 ```
 
-![Unions Highlighing](https://imhex.werwolv.net/docs/\_images/hex3.png) ![Unions Decoding](https://imhex.werwolv.net/docs/\_images/data5.png)
+&#x20;
+
+<figure><img src="https://imhex.werwolv.net/docs/_images/data5.png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="https://imhex.werwolv.net/docs/_images/hex3.png" alt=""><figcaption></figcaption></figure>
 
 ### Using declarations
 
