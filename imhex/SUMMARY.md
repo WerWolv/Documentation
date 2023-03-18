@@ -8,21 +8,24 @@
 * [Binary Pattern](common/binary-pattern.md)
 * [Providers](common/providers.md)
 
+## Features
+
+* [Welcome Screen](features/welcome-screen.md)
+* [Content Store](features/content-store.md)
+* [Settings](features/settings.md)
+
 ## Views
 
 * [Hex Editor](views/hex-editor.md)
 * [Data Inspector](views/data-inspector.md)
-* [Tools](views/tools.md)
 * [Bookmarks](views/bookmarks.md)
-* [Hashes](views/hashes.md)
-* [Find](views/find.md)
-* [Patches](views/patches.md)
 * [Pattern Editor](views/pattern-editor.md)
 * [Pattern Data](views/pattern-data.md)
-* [Diffing](views/diffing.md)
 * [Data Information](views/data-information.md)
 * [Data Processor](views/data-processor.md)
-
-## Features
-
-* [Content Store](features/content-store.md)
+* [Find](views/find.md)
+* [Diffing](views/diffing.md)
+* [Hashes](views/hashes.md)
+* [Tools](views/tools.md)
+* [Patches](views/patches.md)
+* [Yara](views/yara.md)
