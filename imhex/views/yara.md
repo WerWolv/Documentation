@@ -4,7 +4,7 @@ description: Identifying malware through the use of Yara Rule files.
 
 # Yara
 
-<figure><img src="../.gitbook/assets/imhex_fl4C6WN4zI.png" alt=""><figcaption><p>The Yara View</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/imhex_hM3v2omMdv.png" alt=""><figcaption><p>The Yara View</p></figcaption></figure>
 
 The Yara View provides access to the Yara Rule support that's built into ImHex. It lets you choose one or more rule files and matches the entire data against them.&#x20;
 
