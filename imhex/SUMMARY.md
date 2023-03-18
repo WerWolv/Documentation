@@ -7,7 +7,6 @@
 * [Input Text Boxes](common/input-text-boxes.md)
 * [Binary Pattern](common/binary-pattern.md)
 * [Providers](common/providers.md)
-* [Content Store](common/content-store.md)
 
 ## Views
 
@@ -23,3 +22,7 @@
 * [Diffing](views/diffing.md)
 * [Data Information](views/data-information.md)
 * [Data Processor](views/data-processor.md)
+
+## Features
+
+* [Content Store](features/content-store.md)
