@@ -74,7 +74,7 @@ Can be applied to arrays and works the same as the `[[transform]]` attribute but
 
 Specifies a function that will be executed to preprocess the address of the pointer this attribute was applied to points to. The function requires a single argument representing the original pointer address that was read (e.g `u32` if this attribute was applied to a pointer with size type `u32`) and return the offset the pointer should point to instead.
 
-There’s a number of [predefined pointer helper functions](https://imhex.werwolv.net/docs/libraries/std/std\_ptr.html#pointer-helpers) available in the standard library to rebase pointers off of different places.
+There’s a number of predefined pointer helper functions available in the standard library (`std::ptr`) to rebase pointers off of different places.
 
 #### `[[no_unique_address]]`
 
@@ -88,7 +88,7 @@ Forces all members of the struct, union or array to be highlighted using the sam
 
 #### `[[static]]`
 
-The Pattern Language by default optimizes arrays of built-in types so they don’t use up as much memory and are evaluated quicker.This same optimization can be applied to custom data types when they are marked with this attribute to tell the runtime the size and layout of this type will always be the same.**However** if the layout of the type this is applied to is not static, highlighing and decoding of the data will be wrong and only use the layout of the first array entry.
+The Pattern Language by default optimizes arrays of built-in types so they don’t use up as much memory and are evaluated quicker.This same optimization can be applied to custom data types when they are marked with this attribute to tell the runtime the size and layout of this type will always be the same. **However** if the layout of the type this is applied to is not static, highlighing and decoding of the data will be wrong and only use the layout of the first array entry.
 
 #### `[[left_to_right]]` / `[[right_to_left]]`
 

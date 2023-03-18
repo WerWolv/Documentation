@@ -279,7 +279,7 @@ struct MyStruct {
 
 #### Conditional parsing
 
-The pattern language provides advanced features that allow for much more complex struct definitions, these features are detailed on the [Control flow](https://imhex.werwolv.net/docs/core\_language/control\_flow.html) page.
+The pattern language provides advanced features that allow for much more complex struct definitions, these features are detailed on the [Control Flow](control-flow.md) page.
 
 ### Unions
 

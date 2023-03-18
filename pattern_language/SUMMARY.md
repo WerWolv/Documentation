@@ -12,6 +12,9 @@
 * [Control flow](core-language/control-flow.md)
 * [In / Out Variables](core-language/in-out-variables.md)
 * [Attributes](core-language/attributes.md)
+* [Preprocessor](core-language/preprocessor.md)
+* [Comments](core-language/comments.md)
+* [Sections](core-language/sections.md)
 
 ## Libraries
 

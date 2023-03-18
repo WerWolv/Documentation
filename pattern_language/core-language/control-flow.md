@@ -146,7 +146,7 @@ Test tests[1000] @ 0x00;
 
 When a continue is reached, the currently evaluated array entry gets evaluated to find next array entry offset but then gets discarded. This can be used to conditionally exclude certain array entries from the list that are either invalid or shouldn’t be displayed in the pattern data list while still scanning the entire range the array would span.
 
-This can for instance be used in combination with [in/out variables](https://imhex.werwolv.net/docs/core\_language/in\_out.html) to easily filter array items.
+This can for instance be used in combination with [In/Out Variables](in-out-variables.md) to easily filter array items.
 
 ```rust
 struct Test {
