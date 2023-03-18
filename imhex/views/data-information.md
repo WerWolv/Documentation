@@ -91,6 +91,6 @@ The Digram visualizer takes random pairs of two bytes from the data and calculat
 
 <figure><img src="../.gitbook/assets/imhex_mI86MX1SFm.png" alt=""><figcaption><p>Layered Distribution</p></figcaption></figure>
 
-The Layered Distribution or Layered Digram plot works the same way as the regular Digram visualizer but takes the position in the file into account as well. To do this, the file is split into a number of equally sized chunks and a digram is generated for each of these chunks. The chunks are then stacked on top of each other to generate a 3D-Cube. When looking onto the cube from the top, you see the same image as in the regular Digram. When looking on it from the side, you see the Layered Distribution.&#x20;
+The Layered Distribution or Layered Digram plot works the same way as the regular Digram visualizer but takes the position in the file into account as well. To do this, the file is split into a number of equally sized chunks and a byte value density map is generated for each of them. Each chunk then represents a single horizontal line in the diagram. The value 0x00 is all the way at the left, 0xFF all the way at the right of each row. The lighter the color, the more abundant that value is. The first row represents the byte density at the very start of the data, the last row represents the one at the very end.
 
-The X Axis shows the byte value and the Y Axis the position in the file. Brigther values are more abundant in the the data.&#x20;
+For more information about both the Digram and Layered Distribution plots, check out this [Blog Post by Codisec](https://codisec.com/binary-visualization-explained/).
