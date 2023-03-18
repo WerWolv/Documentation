@@ -18,9 +18,9 @@ The runtime will now treat the 4 bytes starting at offset `0x100` as a u32 and d
 
 &#x20;
 
-<figure><img src="https://imhex.werwolv.net/docs/_images/data6.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/placement/data.png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="https://imhex.werwolv.net/docs/_images/hex4.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/placement/hex.png" alt=""><figcaption></figcaption></figure>
 
 Placing variables isn’t limited to just built-in types. All types, even custom ones like structs, enums, unions, etc, can be placed.
 

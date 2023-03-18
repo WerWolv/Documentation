@@ -47,9 +47,9 @@ Conditionals like this can be used in Structs, Unions and Bitfields
 
 &#x20;
 
-<figure><img src="https://imhex.werwolv.net/docs/_images/data.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/conditionals/data.png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="https://imhex.werwolv.net/docs/_images/hex.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/conditionals/hex.png" alt=""><figcaption></figcaption></figure>
 
 ### Match statements
 

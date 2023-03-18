@@ -106,7 +106,7 @@ enum StorageType : u16 {
 
 The type following the colon after the enum name declares the enum’s underlying type and can be any built-in datatype. This type only affects the enum’s size.
 
-<figure><img src="https://imhex.werwolv.net/docs/_images/data1.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/enums/data.png" alt=""><figcaption></figcaption></figure>
 
 #### Enum Range
 
@@ -183,9 +183,9 @@ The address will always be treated as absolute. Make sure to set the base addres
 
 &#x20;
 
-<figure><img src="https://imhex.werwolv.net/docs/_images/data2.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/pointers/data.png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="https://imhex.werwolv.net/docs/_images/hex1.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/pointers/hex.png" alt=""><figcaption></figcaption></figure>
 
 ### Bitfields
 
@@ -201,7 +201,7 @@ bitfield Permission {
 
 Each entry inside of a bitfield consists of a field name followed by a colon and the size of the field in bits. A single field cannot occupy more than 64 bits.
 
-<figure><img src="https://imhex.werwolv.net/docs/_images/data3.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/bitfields/data.png" alt=""><figcaption></figcaption></figure>
 
 #### Padding
 
@@ -234,9 +234,9 @@ Placing it into memory using the placement syntax will place all members of the 
 
 &#x20;
 
-<figure><img src="https://imhex.werwolv.net/docs/_images/data4.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/structs/data.png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="https://imhex.werwolv.net/docs/_images/hex2.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/structs/hex.png" alt=""><figcaption></figcaption></figure>
 
 #### Padding
 
@@ -254,7 +254,7 @@ struct Vector3f {
 
 This code will insert a 4 byte padding between the members `x` and `y` as well as a 8 byte padding between `y` and `z`.
 
-<figure><img src="https://imhex.werwolv.net/docs/_images/padding.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/structs/padding.png" alt=""><figcaption></figcaption></figure>
 
 #### Inheritance
 
@@ -304,9 +304,9 @@ union Converter {
 
 &#x20;
 
-<figure><img src="https://imhex.werwolv.net/docs/_images/data5.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/unions/data.png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="https://imhex.werwolv.net/docs/_images/hex3.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/unions/hex.png" alt=""><figcaption></figcaption></figure>
 
 ### Using declarations
 

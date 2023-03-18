@@ -19,4 +19,4 @@ fn main() {
 };
 ```
 
-<figure><img src="https://imhex.werwolv.net/docs/_images/settings.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/in_out/settings.png" alt=""><figcaption></figcaption></figure>
