@@ -3,7 +3,7 @@
 
 ## Types
 
-### type::MACAddress
+### `type::MACAddress`
 
 ```rust
 struct MACAddress { ... } [[sealed, format]];

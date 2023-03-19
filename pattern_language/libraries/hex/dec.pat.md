@@ -3,7 +3,7 @@
 
 ## Functions
 
-### hex::dec::demangle
+### `hex::dec::demangle`
 
 
 ```rust

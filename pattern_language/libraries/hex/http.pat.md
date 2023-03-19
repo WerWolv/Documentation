@@ -3,7 +3,7 @@
 
 ## Functions
 
-### hex::http::get
+### `hex::http::get`
 
 
 ```rust

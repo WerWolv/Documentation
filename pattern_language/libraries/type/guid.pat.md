@@ -3,7 +3,7 @@
 
 ## Types
 
-### type::GUID
+### `type::GUID`
 
 ```rust
 struct GUID { ... } [[sealed, format]];

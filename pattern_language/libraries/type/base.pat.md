@@ -3,22 +3,22 @@
 
 ## Types
 
-### type::Bin
+### `type::Bin`
 
 ```rust
 using Bin<T> = T [[format]];
 ```
-### type::Dec
+### `type::Dec`
 
 ```rust
 using Dec<T> = T [[format]];
 ```
-### type::Hex
+### `type::Hex`
 
 ```rust
 using Hex<T> = T [[format]];
 ```
-### type::Oct
+### `type::Oct`
 
 ```rust
 using Oct<T> = T [[format]];

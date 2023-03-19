@@ -3,7 +3,7 @@
 
 ## Types
 
-### hex::core::Selection
+### `hex::core::Selection`
 
 ```rust
 struct Selection { ... };
@@ -12,7 +12,7 @@ struct Selection { ... };
 
 ## Functions
 
-### hex::core::get_selection
+### `hex::core::get_selection`
 
 
 ```rust

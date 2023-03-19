@@ -3,12 +3,12 @@
 
 ## Types
 
-### type::UnixPath
+### `type::UnixPath`
 
 ```rust
 struct UnixPath { ... } [[format]];
 ```
-### type::UnixPathSegment
+### `type::UnixPathSegment`
 
 ```rust
 struct UnixPathSegment { ... } [[sealed, format]];

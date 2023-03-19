@@ -1,13 +1,13 @@
 # ctype
-**The ctype library has functions to check if a character is part of a specific category
-    of ASCII characters.**
+The ctype library has functions to check if a character is part of a specific category
+of ASCII characters.
 
 
 ## Functions
 
-### std::ctype::isdigit
+### `std::ctype::isdigit`
 
-Checks if the given character `c` is a hexadecimal digit between '0' and '9', `A` and `F` or `a` and `f`
+Checks if the given character `c` is a digit between '0' and '9'
 - `c`: The character to check
 - `return`: True if `c` is part of this range, false otherwise
 
@@ -15,9 +15,9 @@ Checks if the given character `c` is a hexadecimal digit between '0' and '9', `A
 ```rust
 fn isdigit(char c);
 ```
-### std::ctype::isxdigit
+### `std::ctype::isxdigit`
 
-Checks if the given character `c` is a upper case letter between 'A' and 'Z'
+Checks if the given character `c` is a hexadecimal digit between '0' and '9', `A` and `F` or `a` and `f`
 - `c`: The character to check
 - `return`: True if `c` is part of this range, false otherwise
 
@@ -25,9 +25,9 @@ Checks if the given character `c` is a upper case letter between 'A' and 'Z'
 ```rust
 fn isxdigit(char c);
 ```
-### std::ctype::isupper
+### `std::ctype::isupper`
 
-Checks if the given character `c` is a lower case letter between 'a' and 'z'
+Checks if the given character `c` is a upper case letter between 'A' and 'Z'
 - `c`: The character to check
 - `return`: True if `c` is part of this range, false otherwise
 
@@ -35,9 +35,9 @@ Checks if the given character `c` is a lower case letter between 'a' and 'z'
 ```rust
 fn isupper(char c);
 ```
-### std::ctype::islower
+### `std::ctype::islower`
 
-Checks if the given character `c` is either a upper or lower case letter between 'A' and 'Z' or 'a' and 'z'
+Checks if the given character `c` is a lower case letter between 'a' and 'z'
 - `c`: The character to check
 - `return`: True if `c` is part of this range, false otherwise
 
@@ -45,9 +45,9 @@ Checks if the given character `c` is either a upper or lower case letter between
 ```rust
 fn islower(char c);
 ```
-### std::ctype::isalpha
+### `std::ctype::isalpha`
 
-Checks if the given character `c` is a upper or lower case letter or a number
+Checks if the given character `c` is either a upper or lower case letter between 'A' and 'Z' or 'a' and 'z'
 - `c`: The character to check
 - `return`: True if `c` is part of this range, false otherwise
 
@@ -55,9 +55,9 @@ Checks if the given character `c` is a upper or lower case letter or a number
 ```rust
 fn isalpha(char c);
 ```
-### std::ctype::isalnum
+### `std::ctype::isalnum`
 
-Checks if the given character `c` is a space character
+Checks if the given character `c` is a upper or lower case letter or a number
 - `c`: The character to check
 - `return`: True if `c` is part of this range, false otherwise
 
@@ -65,9 +65,9 @@ Checks if the given character `c` is a space character
 ```rust
 fn isalnum(char c);
 ```
-### std::ctype::isspace
+### `std::ctype::isspace`
 
-Checks if the given character `c` is a invisible character
+Checks if the given character `c` is a space character
 - `c`: The character to check
 - `return`: True if `c` is part of this range, false otherwise
 
@@ -75,9 +75,9 @@ Checks if the given character `c` is a invisible character
 ```rust
 fn isspace(char c);
 ```
-### std::ctype::isblank
+### `std::ctype::isblank`
 
-Checks if the given character `c` has a printable glyph
+Checks if the given character `c` is a invisible character
 - `c`: The character to check
 - `return`: True if `c` is part of this range, false otherwise
 
@@ -85,9 +85,9 @@ Checks if the given character `c` has a printable glyph
 ```rust
 fn isblank(char c);
 ```
-### std::ctype::isprint
+### `std::ctype::isprint`
 
-Checks if the given character `c` is a control code
+Checks if the given character `c` has a printable glyph
 - `c`: The character to check
 - `return`: True if `c` is part of this range, false otherwise
 
@@ -95,9 +95,9 @@ Checks if the given character `c` is a control code
 ```rust
 fn isprint(char c);
 ```
-### std::ctype::iscntrl
+### `std::ctype::iscntrl`
 
-Checks if the given character `c` has a visible glyph
+Checks if the given character `c` is a control code
 - `c`: The character to check
 - `return`: True if `c` is part of this range, false otherwise
 
@@ -105,9 +105,9 @@ Checks if the given character `c` has a visible glyph
 ```rust
 fn iscntrl(char c);
 ```
-### std::ctype::isgraph
+### `std::ctype::isgraph`
 
-Checks if the given character `c` is a punctuation character
+Checks if the given character `c` has a visible glyph
 - `c`: The character to check
 - `return`: True if `c` is part of this range, false otherwise
 
@@ -115,7 +115,11 @@ Checks if the given character `c` is a punctuation character
 ```rust
 fn isgraph(char c);
 ```
-### std::ctype::ispunct
+### `std::ctype::ispunct`
+
+Checks if the given character `c` is a punctuation character
+- `c`: The character to check
+- `return`: True if `c` is part of this range, false otherwise
 
 
 ```rust
