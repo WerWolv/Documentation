@@ -9,17 +9,10 @@ a C-like File IO API.
 
 ### `std::file::Handle`
 
-A handle representing a file that has been opened
-
 ```rust
 using Handle = s32;
 ```
 ### `std::file::Mode`
-
-The mode to open a file in.
-Read opens the file in read-only mode
-Write opens the file in read and write mode
-Create creates a new file if it doesn't exist and overwrites an existing file
 
 ```rust
 enum Mode : u8 {
@@ -34,19 +27,11 @@ enum Mode : u8 {
 
 ### `std::file::open`
 
-Opens a file
-- `path`: The path to the file to open
-- `mode`: File open mode
-- `return`: Handle to the newly opened file
-
 
 ```rust
 fn open(str path, std::file::Mode mode);
 ```
 ### `std::file::close`
-
-Closes a file handle that has been opened previously
-- `handle`: The handle to close
 
 
 ```rust
@@ -54,20 +39,11 @@ fn close(std::file::Handle handle);
 ```
 ### `std::file::read`
 
-Reads the content of a file into a string
-- `handle`: The file handle to read from
-- `size`: Number of bytes to read
-- `return`: String containing the read data
-
 
 ```rust
 fn read(std::file::Handle handle, u64 size);
 ```
 ### `std::file::write`
-
-Writes the content of a string into a file
-- `handle`: The file handle to write to
-- `data`: String to write to the file
 
 
 ```rust
@@ -75,19 +51,11 @@ fn write(std::file::Handle handle, str data);
 ```
 ### `std::file::seek`
 
-Sets the current cursor position in the given file handle
-- `handle`: The file handle to set the cursor position in
-- `offset`: The offset to move the cursor to
-
 
 ```rust
 fn seek(std::file::Handle handle, u64 offset);
 ```
 ### `std::file::size`
-
-Queries the size of a file
-- `handle`: The handle of the file to get the size of
-- `return`: The file's size
 
 
 ```rust
@@ -95,17 +63,11 @@ fn size(std::file::Handle handle);
 ```
 ### `std::file::resize`
 
-Resizes a file
-- `handle`: The handle of the file to resize
-
 
 ```rust
 fn resize(std::file::Handle handle, u64 size);
 ```
 ### `std::file::flush`
-
-Flushes changes made to a file to disk
-- `handle`: The handle of the file to flush
 
 
 ```rust

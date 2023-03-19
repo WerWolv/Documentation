@@ -7,19 +7,11 @@ The `relative_to` functions are meant to be used with the `[[pointer_base]]` att
 
 ### `std::ptr::relative_to_pointer`
 
-Use the offset of the current pointer as start address
-- `offset`: The pointer's value
-- `return`: The new pointer base
-
 
 ```rust
 fn relative_to_pointer(u128 offset);
 ```
 ### `std::ptr::relative_to_parent`
-
-Use the offset of the pointer's parent as start address
-- `offset`: The pointer's value
-- `return`: The new pointer base
 
 
 ```rust
