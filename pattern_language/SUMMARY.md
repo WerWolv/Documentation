@@ -18,5 +18,4 @@
 
 ## Libraries
 
-* [Standard Library](libraries/standard-library/README.md)
-  * [Test](libraries/standard-library/test.md)
+* [Libraries](libraries/libraries.md)
