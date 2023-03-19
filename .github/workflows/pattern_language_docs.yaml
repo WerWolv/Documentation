@@ -51,14 +51,16 @@ jobs:
 
         # Generate Table of Content
         toc=""
-        for d in ./pattern_language/libraries/*/ ; do
+        pushd pattern_language
+        for d in libraries/*/ ; do
                 echo $d
                 toc="${toc}* [$(basename $d)](${d}README.md)\n"
                 for f in $(find ${d} ! -name "README.md"); do
                         toc="${toc}    * [$(basename $f .pat.md)](${f})\n"
                 done
         done
-
+        popd
+        
         toc="<!-- LIBRARIES START -->\n\n${toc}"
 
         perl -i -0777 -pe "s|<!-- LIBRARIES START -->.*?(?=<!-- LIBRARIES END -->)|${toc}|s" ./pattern_language/SUMMARY.md
