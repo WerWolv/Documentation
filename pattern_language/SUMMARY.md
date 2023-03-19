@@ -18,4 +18,6 @@
 
 ## Libraries
 
-* [Libraries](libraries/libraries.md)
+<!-- LIBRARIES START -->
+
+<!-- LIBRARIES END -->
