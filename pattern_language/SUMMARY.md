@@ -68,4 +68,5 @@
     * [rust](./pattern_language/libraries/type/types/rust.pat.md)
     * [win32](./pattern_language/libraries/type/types/win32.pat.md)
     * [linux](./pattern_language/libraries/type/types/linux.pat.md)
-<!-- LIBRARIES END --><!-- LIBRARIES END -->
+
+<!-- LIBRARIES END -->
