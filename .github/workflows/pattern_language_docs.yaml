@@ -25,14 +25,27 @@ jobs:
       with:
         submodules: recursive
 
+    - name: ⬇️ Download plcli
+      id: download-artifact
+      uses: dawidd6/action-download-artifact@v2
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        workflow: build.yml
+        workflow_conclusion: success
+        branch: master
+        event: push
+        name: plcli Linux
+        repo: WerWolv/PatternLanguage
+        check_artifacts:  false
+        search_artifacts: false
+        if_no_artifact_found: fail
+
     - name: 🖋️ Regenerate Documentation
       run: |
         # Clone ImHex-Patterns repo
         git clone https://github.com/WerWolv/ImHex-Patterns
 
-        # Download latest plcli
-        wget https://nightly.link/WerWolv/PatternLanguage/workflows/build/master/plcli%20Linux.zip
-        unzip "plcli Linux.zip"
+        # Make plcli executable
         chmod +x ./usr/bin/plcli
 
         # Generate new documentation
