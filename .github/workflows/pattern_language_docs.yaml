@@ -31,6 +31,9 @@ jobs:
 
     - name: 🖋️ Regenerate Documentation
       run: |
+        # Clone ImHex-Patterns repo
+        git clone https://github.com/WerWolv/ImHex-Patterns
+
         # Download latest plcli
         wget https://nightly.link/WerWolv/PatternLanguage/workflows/build/master/plcli%20Linux.zip
         unzip "plcli Linux.zip"
