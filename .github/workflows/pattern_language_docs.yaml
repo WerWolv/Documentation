@@ -41,9 +41,9 @@ jobs:
             ./usr/bin/plcli docs --includes ./ImHex-Patterns/includes --define __IMHEX__ --noimpls $f out/$f.md
         done
 
-        # Delete all existing library docs files except the README.md file
-        for f in $(find ./pattern_language/libraries -name '*.md' ! -name 'README.md'); do
-            rm $f
+        # Delete all existing library docs
+        for d in ./pattern_language/libraries/*/ ; do
+            rm -rf $d
         done
 
         # Copy over generated folders to output
