@@ -59,9 +59,9 @@ jobs:
                 done
         done
 
-        toc="<!-- LIBRARIES START -->\n\n${toc}\n<!-- LIBRARIES END -->"
+        toc="<!-- LIBRARIES START -->\n\n${toc}"
 
-        perl -i~ -0777 -pe "s|<!-- LIBRARIES START -->.*?(?=<!-- LIBRARIES END -->)|${toc}|s" ./pattern_language/SUMMARY.md
+        perl -i -0777 -pe "s|<!-- LIBRARIES START -->.*?(?=<!-- LIBRARIES END -->)|${toc}|s" ./pattern_language/SUMMARY.md
 
         # Cleanup
         rm -rf ImHex-Patterns
