@@ -47,7 +47,7 @@ jobs:
         done
 
         # Copy over generated folders to output
-        rsync -a ./out/ImHex-Patterns/includes/*/ ./pattern_language/libraries
+        rsync -a ./out/ImHex-Patterns/includes/ ./pattern_language/libraries
 
         # Generate Table of Content
         toc=""
