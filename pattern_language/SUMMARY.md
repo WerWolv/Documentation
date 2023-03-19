@@ -18,5 +18,6 @@
 
 ## Libraries
 
-* [Libraries](libraries/libraries/README.md)
-  * [Test](libraries/libraries/test.md)
+<!-- LIBRARIES START -->
+
+<!-- LIBRARIES END -->

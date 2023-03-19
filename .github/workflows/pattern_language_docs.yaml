@@ -42,14 +42,28 @@ jobs:
         done
 
         # Delete all existing library docs
-        for d in ./pattern_language/libraries/*/ ; do
-            rm -rf $d
+        for f in $(find ./ImHex-Patterns/includes -name '*.pat.md' -or -name '*.hexpat.md'); do
+            rm $f
         done
 
         # Copy over generated folders to output
         for d in ./out/ImHex-Patterns/includes/*/ ; do
-            mv $d ./pattern_language/libraries
+            rsync -a $d ./pattern_language/libraries
         done
+
+        # Generate Table of Content
+        toc=""
+        for d in ./pattern_language/libraries/*/ ; do
+                echo $d
+                toc="${toc}* [$(basename $d)](${d}README.md)\n"
+                for f in $(find ${d} ! -name "README.md"); do
+                        toc="${toc}    * [$(basename $f .pat.md)](${f})\n"
+                done
+        done
+
+        toc="<!-- LIBRARIES START -->\n\n${toc}"
+
+        sed -i "s|<!-- LIBRARIES START -->.*|${toc}|" ./pattern_language/SUMMARY.md
 
         # Cleanup
         rm -rf ImHex-Patterns
