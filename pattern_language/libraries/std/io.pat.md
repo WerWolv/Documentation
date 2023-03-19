@@ -1,29 +1,29 @@
-# `io`
+# io
 
 
 ## Functions
 
-### **std::print**
+### std::print
 
 
-```pat
+```rust
 fn print(str fmt, auto ... args);
 ```
-### **std::format**
+### std::format
 
 
-```pat
+```rust
 fn format(str fmt, auto ... args);
 ```
-### **std::error**
+### std::error
 
 
-```pat
+```rust
 fn error(str message);
 ```
-### **std::warning**
+### std::warning
 
 
-```pat
+```rust
 fn warning(str message);
 ```

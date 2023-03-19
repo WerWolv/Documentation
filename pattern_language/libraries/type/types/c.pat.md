@@ -1,135 +1,135 @@
-# `c`
+# c
 
 
 ## Types
 
-### **__int128_t**
+### __int128_t
 
-```pat
+```rust
 using __int128_t = s128;
 ```
-### **__int64_t**
+### __int64_t
 
-```pat
+```rust
 using __int64_t = s64;
 ```
-### **__uint128_t**
+### __uint128_t
 
-```pat
+```rust
 using __uint128_t = u128;
 ```
-### **__uint64_t**
+### __uint64_t
 
-```pat
+```rust
 using __uint64_t = u64;
 ```
-### **char16_t**
+### char16_t
 
-```pat
+```rust
 using char16_t = char16;
 ```
-### **char32_t**
+### char32_t
 
-```pat
+```rust
 using char32_t = u32;
 ```
-### **char8_t**
+### char8_t
 
-```pat
+```rust
 using char8_t = char;
 ```
-### **int**
+### int
 
-```pat
+```rust
 using int = s32;
 ```
-### **int128_t**
+### int128_t
 
-```pat
+```rust
 using int128_t = s128;
 ```
-### **int16_t**
+### int16_t
 
-```pat
+```rust
 using int16_t = s16;
 ```
-### **int32_t**
+### int32_t
 
-```pat
+```rust
 using int32_t = s32;
 ```
-### **int64_t**
+### int64_t
 
-```pat
+```rust
 using int64_t = s64;
 ```
-### **int8_t**
+### int8_t
 
-```pat
+```rust
 using int8_t = s8;
 ```
-### **intptr_t**
+### intptr_t
 
-```pat
+```rust
 using intptr_t = s64;
 ```
-### **long**
+### long
 
-```pat
+```rust
 using long = s32;
 ```
-### **ptrdiff_t**
+### ptrdiff_t
 
-```pat
+```rust
 using ptrdiff_t = s64;
 ```
-### **short**
+### short
 
-```pat
+```rust
 using short = s16;
 ```
-### **size_t**
+### size_t
 
-```pat
+```rust
 using size_t = u64;
 ```
-### **ssize_t**
+### ssize_t
 
-```pat
+```rust
 using ssize_t = s64;
 ```
-### **uint128_t**
+### uint128_t
 
-```pat
+```rust
 using uint128_t = u128;
 ```
-### **uint16_t**
+### uint16_t
 
-```pat
+```rust
 using uint16_t = u16;
 ```
-### **uint32_t**
+### uint32_t
 
-```pat
+```rust
 using uint32_t = u32;
 ```
-### **uint64_t**
+### uint64_t
 
-```pat
+```rust
 using uint64_t = u64;
 ```
-### **uint8_t**
+### uint8_t
 
-```pat
+```rust
 using uint8_t = u8;
 ```
-### **uintptr_t**
+### uintptr_t
 
-```pat
+```rust
 using uintptr_t = u64;
 ```
-### **wchar_t**
+### wchar_t
 
-```pat
+```rust
 using wchar_t = char16;
 ```

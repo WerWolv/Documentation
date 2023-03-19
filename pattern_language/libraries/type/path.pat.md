@@ -1,15 +1,15 @@
-# `path`
+# path
 
 
 ## Types
 
-### **type::UnixPath**
+### type::UnixPath
 
-```pat
+```rust
 struct UnixPath { ... } [[format]];
 ```
-### **type::UnixPathSegment**
+### type::UnixPathSegment
 
-```pat
+```rust
 struct UnixPathSegment { ... } [[sealed, format]];
 ```

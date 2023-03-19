@@ -1,35 +1,35 @@
-# `size`
+# size
 
 
 ## Types
 
-### **type::Size**
+### type::Size
 
-```pat
+```rust
 using Size<> = u128 [[format]];
 ```
-### **type::Size128**
+### type::Size128
 
-```pat
+```rust
 using Size128 = type::Size;
 ```
-### **type::Size16**
+### type::Size16
 
-```pat
+```rust
 using Size16 = type::Size;
 ```
-### **type::Size32**
+### type::Size32
 
-```pat
+```rust
 using Size32 = type::Size;
 ```
-### **type::Size64**
+### type::Size64
 
-```pat
+```rust
 using Size64 = type::Size;
 ```
-### **type::Size8**
+### type::Size8
 
-```pat
+```rust
 using Size8 = type::Size;
 ```

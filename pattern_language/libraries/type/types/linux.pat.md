@@ -1,35 +1,35 @@
-# `linux`
+# linux
 
 
 ## Types
 
-### **be16**
+### be16
 
-```pat
+```rust
 using be16 = u16;
 ```
-### **be32**
+### be32
 
-```pat
+```rust
 using be32 = u32;
 ```
-### **be64**
+### be64
 
-```pat
+```rust
 using be64 = u64;
 ```
-### **le16**
+### le16
 
-```pat
+```rust
 using le16 = u16;
 ```
-### **le32**
+### le32
 
-```pat
+```rust
 using le32 = u32;
 ```
-### **le64**
+### le64
 
-```pat
+```rust
 using le64 = u64;
 ```

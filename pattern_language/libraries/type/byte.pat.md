@@ -1,20 +1,20 @@
-# `byte`
+# byte
 
 
 ## Types
 
-### **type::Bits**
+### type::Bits
 
-```pat
+```rust
 bitfield Bits { ... } [[format, right_to_left]];
 ```
-### **type::Byte**
+### type::Byte
 
-```pat
+```rust
 union Byte { ... } [[format, single_color]];
 ```
-### **type::Nibbles**
+### type::Nibbles
 
-```pat
+```rust
 bitfield Nibbles { ... } [[format]];
 ```

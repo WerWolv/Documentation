@@ -1,11 +1,11 @@
-# `math`
+# math
 
 
 ## Types
 
-### **std::math::AccumulateOperation**
+### std::math::AccumulateOperation
 
-```pat
+```rust
 enum AccumulateOperation : u8 {
     Add,
     Max,
@@ -18,207 +18,207 @@ enum AccumulateOperation : u8 {
 
 ## Functions
 
-### **std::math::min**
+### std::math::min
 
 
-```pat
+```rust
 fn min(auto a, auto b);
 ```
-### **std::math::max**
+### std::math::max
 
 
-```pat
+```rust
 fn max(auto a, auto b);
 ```
-### **std::math::clamp**
+### std::math::clamp
 
 
-```pat
+```rust
 fn clamp(auto x, auto min, auto max);
 ```
-### **std::math::abs**
+### std::math::abs
 
 
-```pat
+```rust
 fn abs(auto x);
 ```
-### **std::math::sign**
+### std::math::sign
 
 
-```pat
+```rust
 fn sign(auto x);
 ```
-### **std::math::copy_sign**
+### std::math::copy_sign
 
 
-```pat
+```rust
 fn copy_sign(auto x, auto y);
 ```
-### **std::math::factorial**
+### std::math::factorial
 
 
-```pat
+```rust
 fn factorial(u128 x);
 ```
-### **std::math::comb**
+### std::math::comb
 
 
-```pat
+```rust
 fn comb(u128 n, u128 k);
 ```
-### **std::math::perm**
+### std::math::perm
 
 
-```pat
+```rust
 fn perm(u128 n, u128 k);
 ```
-### **std::math::floor**
+### std::math::floor
 
 
-```pat
+```rust
 fn floor(auto value);
 ```
-### **std::math::ceil**
+### std::math::ceil
 
 
-```pat
+```rust
 fn ceil(auto value);
 ```
-### **std::math::round**
+### std::math::round
 
 
-```pat
+```rust
 fn round(auto value);
 ```
-### **std::math::trunc**
+### std::math::trunc
 
 
-```pat
+```rust
 fn trunc(auto value);
 ```
-### **std::math::log10**
+### std::math::log10
 
 
-```pat
+```rust
 fn log10(auto value);
 ```
-### **std::math::log2**
+### std::math::log2
 
 
-```pat
+```rust
 fn log2(auto value);
 ```
-### **std::math::ln**
+### std::math::ln
 
 
-```pat
+```rust
 fn ln(auto value);
 ```
-### **std::math::fmod**
+### std::math::fmod
 
 
-```pat
+```rust
 fn fmod(auto value);
 ```
-### **std::math::pow**
+### std::math::pow
 
 
-```pat
+```rust
 fn pow(auto base, auto exp);
 ```
-### **std::math::sqrt**
+### std::math::sqrt
 
 
-```pat
+```rust
 fn sqrt(auto value);
 ```
-### **std::math::cbrt**
+### std::math::cbrt
 
 
-```pat
+```rust
 fn cbrt(auto value);
 ```
-### **std::math::sin**
+### std::math::sin
 
 
-```pat
+```rust
 fn sin(auto value);
 ```
-### **std::math::cos**
+### std::math::cos
 
 
-```pat
+```rust
 fn cos(auto value);
 ```
-### **std::math::tan**
+### std::math::tan
 
 
-```pat
+```rust
 fn tan(auto value);
 ```
-### **std::math::asin**
+### std::math::asin
 
 
-```pat
+```rust
 fn asin(auto value);
 ```
-### **std::math::acos**
+### std::math::acos
 
 
-```pat
+```rust
 fn acos(auto value);
 ```
-### **std::math::atan**
+### std::math::atan
 
 
-```pat
+```rust
 fn atan(auto value);
 ```
-### **std::math::atan2**
+### std::math::atan2
 
 
-```pat
+```rust
 fn atan2(auto value);
 ```
-### **std::math::sinh**
+### std::math::sinh
 
 
-```pat
+```rust
 fn sinh(auto value);
 ```
-### **std::math::cosh**
+### std::math::cosh
 
 
-```pat
+```rust
 fn cosh(auto value);
 ```
-### **std::math::tanh**
+### std::math::tanh
 
 
-```pat
+```rust
 fn tanh(auto value);
 ```
-### **std::math::asinh**
+### std::math::asinh
 
 
-```pat
+```rust
 fn asinh(auto value);
 ```
-### **std::math::acosh**
+### std::math::acosh
 
 
-```pat
+```rust
 fn acosh(auto value);
 ```
-### **std::math::atanh**
+### std::math::atanh
 
 
-```pat
+```rust
 fn atanh(auto value);
 ```
-### **std::math::accumulate**
+### std::math::accumulate
 
 
-```pat
+```rust
 fn accumulate(u128 start, u128 end, u128 valueSize, std::mem::Section section, std::math::AccumulateOperation operation, std::mem::Endian endian);
 ```

@@ -1,36 +1,36 @@
-# `time`
+# time
 
 
 ## Types
 
-### **std::time::DOSDate**
+### std::time::DOSDate
 
-```pat
+```rust
 bitfield DOSDate { ... } [[sealed]];
 ```
-### **std::time::DOSTime**
+### std::time::DOSTime
 
-```pat
+```rust
 bitfield DOSTime { ... } [[sealed]];
 ```
-### **std::time::EpochTime**
+### std::time::EpochTime
 
-```pat
+```rust
 using EpochTime = u128;
 ```
-### **std::time::Time**
+### std::time::Time
 
-```pat
+```rust
 struct Time { ... } [[sealed]];
 ```
-### **std::time::TimeConverter**
+### std::time::TimeConverter
 
-```pat
+```rust
 union TimeConverter { ... };
 ```
-### **std::time::TimeZone**
+### std::time::TimeZone
 
-```pat
+```rust
 enum TimeZone : u8 {
     Local,
     UTC
@@ -40,57 +40,57 @@ enum TimeZone : u8 {
 
 ## Functions
 
-### **std::time::epoch**
+### std::time::epoch
 
 
-```pat
+```rust
 fn epoch();
 ```
-### **std::time::to_local**
+### std::time::to_local
 
 
-```pat
+```rust
 fn to_local(std::time::EpochTime epoch_time);
 ```
-### **std::time::to_utc**
+### std::time::to_utc
 
 
-```pat
+```rust
 fn to_utc(std::time::EpochTime epoch_time);
 ```
-### **std::time::now**
+### std::time::now
 
 
-```pat
+```rust
 fn now(std::time::TimeZone time_zone);
 ```
-### **std::time::to_dos_date**
+### std::time::to_dos_date
 
 
-```pat
+```rust
 fn to_dos_date(u16 value);
 ```
-### **std::time::to_dos_time**
+### std::time::to_dos_time
 
 
-```pat
+```rust
 fn to_dos_time(u16 value);
 ```
-### **std::time::format**
+### std::time::format
 
 
-```pat
+```rust
 fn format(std::time::Time time, str format_string);
 ```
-### **std::time::format_dos_date**
+### std::time::format_dos_date
 
 
-```pat
+```rust
 fn format_dos_date(std::time::DOSDate date, str format_string);
 ```
-### **std::time::format_dos_time**
+### std::time::format_dos_time
 
 
-```pat
+```rust
 fn format_dos_time(std::time::DOSTime time, str format_string);
 ```

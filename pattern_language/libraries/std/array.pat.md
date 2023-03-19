@@ -1,10 +1,10 @@
-# `array`
+# array
 
 
 ## Types
 
-### **std::Array**
+### std::Array
 
-```pat
+```rust
 struct Array<T, auto Size> { ... };
 ```

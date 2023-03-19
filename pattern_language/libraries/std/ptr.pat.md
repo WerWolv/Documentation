@@ -1,23 +1,23 @@
-# `ptr`
+# ptr
 
 
 ## Functions
 
-### **std::ptr::relative_to_pointer**
+### std::ptr::relative_to_pointer
 
 
-```pat
+```rust
 fn relative_to_pointer(u128 offset);
 ```
-### **std::ptr::relative_to_parent**
+### std::ptr::relative_to_parent
 
 
-```pat
+```rust
 fn relative_to_parent(u128 offset);
 ```
-### **std::ptr::relative_to_end**
+### std::ptr::relative_to_end
 
 
-```pat
+```rust
 fn relative_to_end(u128 offset);
 ```

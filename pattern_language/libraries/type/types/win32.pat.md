@@ -1,205 +1,205 @@
-# `win32`
+# win32
 
 
 ## Types
 
-### **ATOM**
+### ATOM
 
-```pat
+```rust
 using ATOM = WORD;
 ```
-### **BOOL**
+### BOOL
 
-```pat
+```rust
 using BOOL = bool;
 ```
-### **BOOLEAN**
+### BOOLEAN
 
-```pat
+```rust
 using BOOLEAN = bool;
 ```
-### **BYTE**
+### BYTE
 
-```pat
+```rust
 using BYTE = u8;
 ```
-### **CCHAR**
+### CCHAR
 
-```pat
+```rust
 using CCHAR = char;
 ```
-### **CHAR**
+### CHAR
 
-```pat
+```rust
 using CHAR = char;
 ```
-### **DWORD**
+### DWORD
 
-```pat
+```rust
 using DWORD = u32;
 ```
-### **DWORD32**
+### DWORD32
 
-```pat
+```rust
 using DWORD32 = u32;
 ```
-### **DWORD64**
+### DWORD64
 
-```pat
+```rust
 using DWORD64 = u64;
 ```
-### **DWORDLONG**
+### DWORDLONG
 
-```pat
+```rust
 using DWORDLONG = u64;
 ```
-### **FLOAT**
+### FLOAT
 
-```pat
+```rust
 using FLOAT = float;
 ```
-### **HANDLE**
+### HANDLE
 
-```pat
+```rust
 using HANDLE = PVOID;
 ```
-### **HINSTANCE**
+### HINSTANCE
 
-```pat
+```rust
 using HINSTANCE = HANDLE;
 ```
-### **HRESULT**
+### HRESULT
 
-```pat
+```rust
 using HRESULT = LONG;
 ```
-### **INT**
+### INT
 
-```pat
+```rust
 using INT = s32;
 ```
-### **INT16**
+### INT16
 
-```pat
+```rust
 using INT16 = s16;
 ```
-### **INT32**
+### INT32
 
-```pat
+```rust
 using INT32 = s32;
 ```
-### **INT64**
+### INT64
 
-```pat
+```rust
 using INT64 = s64;
 ```
-### **INT8**
+### INT8
 
-```pat
+```rust
 using INT8 = s8;
 ```
-### **LONG**
+### LONG
 
-```pat
+```rust
 using LONG = s32;
 ```
-### **LONG32**
+### LONG32
 
-```pat
+```rust
 using LONG32 = s32;
 ```
-### **LONG64**
+### LONG64
 
-```pat
+```rust
 using LONG64 = s64;
 ```
-### **LONGLONG**
+### LONGLONG
 
-```pat
+```rust
 using LONGLONG = s64;
 ```
-### **PVOID**
+### PVOID
 
-```pat
+```rust
 using PVOID = SIZE_T;
 ```
-### **QWORD**
+### QWORD
 
-```pat
+```rust
 using QWORD = u64;
 ```
-### **SHORT**
+### SHORT
 
-```pat
+```rust
 using SHORT = s16;
 ```
-### **SIZE_T**
+### SIZE_T
 
-```pat
+```rust
 using SIZE_T = u64;
 ```
-### **SSIZE_T**
+### SSIZE_T
 
-```pat
+```rust
 using SSIZE_T = s64;
 ```
-### **UCHAR**
+### UCHAR
 
-```pat
+```rust
 using UCHAR = u8;
 ```
-### **UINT**
+### UINT
 
-```pat
+```rust
 using UINT = u32;
 ```
-### **UINT16**
+### UINT16
 
-```pat
+```rust
 using UINT16 = u16;
 ```
-### **UINT32**
+### UINT32
 
-```pat
+```rust
 using UINT32 = u32;
 ```
-### **UINT64**
+### UINT64
 
-```pat
+```rust
 using UINT64 = u64;
 ```
-### **UINT8**
+### UINT8
 
-```pat
+```rust
 using UINT8 = u8;
 ```
-### **ULONG**
+### ULONG
 
-```pat
+```rust
 using ULONG = u32;
 ```
-### **ULONG32**
+### ULONG32
 
-```pat
+```rust
 using ULONG32 = u32;
 ```
-### **ULONG64**
+### ULONG64
 
-```pat
+```rust
 using ULONG64 = u64;
 ```
-### **ULONGLONG**
+### ULONGLONG
 
-```pat
+```rust
 using ULONGLONG = u64;
 ```
-### **USHORT**
+### USHORT
 
-```pat
+```rust
 using USHORT = u16;
 ```
-### **WORD**
+### WORD
 
-```pat
+```rust
 using WORD = u16;
 ```

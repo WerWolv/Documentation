@@ -1,29 +1,29 @@
-# `bit`
+# bit
 
 
 ## Functions
 
-### **std::bit::popcount**
+### std::bit::popcount
 
 
-```pat
+```rust
 fn popcount(u128 x);
 ```
-### **std::bit::has_single_bit**
+### std::bit::has_single_bit
 
 
-```pat
+```rust
 fn has_single_bit(u128 x);
 ```
-### **std::bit::bit_ceil**
+### std::bit::bit_ceil
 
 
-```pat
+```rust
 fn bit_ceil(u128 x);
 ```
-### **std::bit::bit_floor**
+### std::bit::bit_floor
 
 
-```pat
+```rust
 fn bit_floor(u128 x);
 ```

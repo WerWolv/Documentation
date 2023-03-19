@@ -1,29 +1,29 @@
-# `sys`
+# sys
 
 
 ## Functions
 
-### **std::assert**
+### std::assert
 
 
-```pat
+```rust
 fn assert(bool condition, str message);
 ```
-### **std::assert_warn**
+### std::assert_warn
 
 
-```pat
+```rust
 fn assert_warn(bool condition, str message);
 ```
-### **std::env**
+### std::env
 
 
-```pat
+```rust
 fn env(str name);
 ```
-### **std::sizeof_pack**
+### std::sizeof_pack
 
 
-```pat
+```rust
 fn sizeof_pack(auto ... pack, );
 ```

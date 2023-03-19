@@ -1,77 +1,77 @@
-# `ctype`
+# ctype
 
 
 ## Functions
 
-### **std::ctype::isdigit**
+### std::ctype::isdigit
 
 
-```pat
+```rust
 fn isdigit(char c);
 ```
-### **std::ctype::isxdigit**
+### std::ctype::isxdigit
 
 
-```pat
+```rust
 fn isxdigit(char c);
 ```
-### **std::ctype::isupper**
+### std::ctype::isupper
 
 
-```pat
+```rust
 fn isupper(char c);
 ```
-### **std::ctype::islower**
+### std::ctype::islower
 
 
-```pat
+```rust
 fn islower(char c);
 ```
-### **std::ctype::isalpha**
+### std::ctype::isalpha
 
 
-```pat
+```rust
 fn isalpha(char c);
 ```
-### **std::ctype::isalnum**
+### std::ctype::isalnum
 
 
-```pat
+```rust
 fn isalnum(char c);
 ```
-### **std::ctype::isspace**
+### std::ctype::isspace
 
 
-```pat
+```rust
 fn isspace(char c);
 ```
-### **std::ctype::isblank**
+### std::ctype::isblank
 
 
-```pat
+```rust
 fn isblank(char c);
 ```
-### **std::ctype::isprint**
+### std::ctype::isprint
 
 
-```pat
+```rust
 fn isprint(char c);
 ```
-### **std::ctype::iscntrl**
+### std::ctype::iscntrl
 
 
-```pat
+```rust
 fn iscntrl(char c);
 ```
-### **std::ctype::isgraph**
+### std::ctype::isgraph
 
 
-```pat
+```rust
 fn isgraph(char c);
 ```
-### **std::ctype::ispunct**
+### std::ctype::ispunct
 
 
-```pat
+```rust
 fn ispunct(char c);
 ```

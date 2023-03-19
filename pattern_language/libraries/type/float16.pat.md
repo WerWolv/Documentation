@@ -1,10 +1,10 @@
-# `float16`
+# float16
 
 
 ## Types
 
-### **type::float16**
+### type::float16
 
-```pat
+```rust
 using float16 = u16 [[format]];
 ```

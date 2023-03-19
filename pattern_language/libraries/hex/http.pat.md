@@ -1,11 +1,11 @@
-# `http`
+# http
 
 
 ## Functions
 
-### **hex::http::get**
+### hex::http::get
 
 
-```pat
+```rust
 fn get(str url);
 ```

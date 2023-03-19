@@ -1,25 +1,25 @@
-# `base`
+# base
 
 
 ## Types
 
-### **type::Bin**
+### type::Bin
 
-```pat
+```rust
 using Bin<T> = T [[format]];
 ```
-### **type::Dec**
+### type::Dec
 
-```pat
+```rust
 using Dec<T> = T [[format]];
 ```
-### **type::Hex**
+### type::Hex
 
-```pat
+```rust
 using Hex<T> = T [[format]];
 ```
-### **type::Oct**
+### type::Oct
 
-```pat
+```rust
 using Oct<T> = T [[format]];
 ```

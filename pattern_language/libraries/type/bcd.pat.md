@@ -1,10 +1,10 @@
-# `bcd`
+# bcd
 
 
 ## Types
 
-### **type::BCD**
+### type::BCD
 
-```pat
+```rust
 struct BCD<auto Digits> { ... } [[sealed, format_read]];
 ```

@@ -1,125 +1,125 @@
-# `limits`
+# limits
 
 
 ## Functions
 
-### **std::limits::u8_min**
+### std::limits::u8_min
 
 
-```pat
+```rust
 fn u8_min();
 ```
-### **std::limits::u8_max**
+### std::limits::u8_max
 
 
-```pat
+```rust
 fn u8_max();
 ```
-### **std::limits::s8_min**
+### std::limits::s8_min
 
 
-```pat
+```rust
 fn s8_min();
 ```
-### **std::limits::s8_max**
+### std::limits::s8_max
 
 
-```pat
+```rust
 fn s8_max();
 ```
-### **std::limits::u16_min**
+### std::limits::u16_min
 
 
-```pat
+```rust
 fn u16_min();
 ```
-### **std::limits::u16_max**
+### std::limits::u16_max
 
 
-```pat
+```rust
 fn u16_max();
 ```
-### **std::limits::s16_min**
+### std::limits::s16_min
 
 
-```pat
+```rust
 fn s16_min();
 ```
-### **std::limits::s16_max**
+### std::limits::s16_max
 
 
-```pat
+```rust
 fn s16_max();
 ```
-### **std::limits::u32_min**
+### std::limits::u32_min
 
 
-```pat
+```rust
 fn u32_min();
 ```
-### **std::limits::u32_max**
+### std::limits::u32_max
 
 
-```pat
+```rust
 fn u32_max();
 ```
-### **std::limits::s32_min**
+### std::limits::s32_min
 
 
-```pat
+```rust
 fn s32_min();
 ```
-### **std::limits::s32_max**
+### std::limits::s32_max
 
 
-```pat
+```rust
 fn s32_max();
 ```
-### **std::limits::u64_min**
+### std::limits::u64_min
 
 
-```pat
+```rust
 fn u64_min();
 ```
-### **std::limits::u64_max**
+### std::limits::u64_max
 
 
-```pat
+```rust
 fn u64_max();
 ```
-### **std::limits::s64_min**
+### std::limits::s64_min
 
 
-```pat
+```rust
 fn s64_min();
 ```
-### **std::limits::s64_max**
+### std::limits::s64_max
 
 
-```pat
+```rust
 fn s64_max();
 ```
-### **std::limits::u128_min**
+### std::limits::u128_min
 
 
-```pat
+```rust
 fn u128_min();
 ```
-### **std::limits::u128_max**
+### std::limits::u128_max
 
 
-```pat
+```rust
 fn u128_max();
 ```
-### **std::limits::s128_min**
+### std::limits::s128_min
 
 
-```pat
+```rust
 fn s128_min();
 ```
-### **std::limits::s128_max**
+### std::limits::s128_max
 
 
-```pat
+```rust
 fn s128_max();
 ```

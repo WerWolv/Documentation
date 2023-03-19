@@ -1,102 +1,102 @@
-# `string`
+# string
 
 
 ## Types
 
-### **std::string::SizedString**
+### std::string::SizedString
 
-```pat
+```rust
 using SizedString<SizeType> = std::string::SizedStringBase;
 ```
-### **std::string::SizedString16**
+### std::string::SizedString16
 
-```pat
+```rust
 using SizedString16<SizeType> = std::string::SizedStringBase;
 ```
-### **std::string::SizedStringBase**
+### std::string::SizedStringBase
 
-```pat
+```rust
 struct SizedStringBase<, > { ... } [[sealed, format, transform]];
 ```
 
 
 ## Functions
 
-### **std::string::length**
+### std::string::length
 
 
-```pat
+```rust
 fn length(str string);
 ```
-### **std::string::at**
+### std::string::at
 
 
-```pat
+```rust
 fn at(str string, u32 index);
 ```
-### **std::string::substr**
+### std::string::substr
 
 
-```pat
+```rust
 fn substr(str string, u32 pos, u32 count);
 ```
-### **std::string::parse_int**
+### std::string::parse_int
 
 
-```pat
+```rust
 fn parse_int(str string, u8 base);
 ```
-### **std::string::parse_float**
+### std::string::parse_float
 
 
-```pat
+```rust
 fn parse_float(str string);
 ```
-### **std::string::to_string**
+### std::string::to_string
 
 
-```pat
+```rust
 fn to_string(auto x);
 ```
-### **std::string::starts_with**
+### std::string::starts_with
 
 
-```pat
+```rust
 fn starts_with(str string, str part);
 ```
-### **std::string::ends_with**
+### std::string::ends_with
 
 
-```pat
+```rust
 fn ends_with(str string, str part);
 ```
-### **std::string::contains**
+### std::string::contains
 
 
-```pat
+```rust
 fn contains(str a, str b);
 ```
-### **std::string::reverse**
+### std::string::reverse
 
 
-```pat
+```rust
 fn reverse(str string);
 ```
-### **std::string::to_upper**
+### std::string::to_upper
 
 
-```pat
+```rust
 fn to_upper(str string);
 ```
-### **std::string::to_lower**
+### std::string::to_lower
 
 
-```pat
+```rust
 fn to_lower(str string);
 ```
-### **std::string::replace**
+### std::string::replace
 
 
-```pat
+```rust
 fn replace(str string, str pattern, str replace);
 ```

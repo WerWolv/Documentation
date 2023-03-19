@@ -1,16 +1,16 @@
-# `file`
+# file
 
 
 ## Types
 
-### **std::file::Handle**
+### std::file::Handle
 
-```pat
+```rust
 using Handle = s32;
 ```
-### **std::file::Mode**
+### std::file::Mode
 
-```pat
+```rust
 enum Mode : u8 {
     Create,
     Read,
@@ -21,57 +21,57 @@ enum Mode : u8 {
 
 ## Functions
 
-### **std::file::open**
+### std::file::open
 
 
-```pat
+```rust
 fn open(str path, std::file::Mode mode);
 ```
-### **std::file::close**
+### std::file::close
 
 
-```pat
+```rust
 fn close(std::file::Handle handle);
 ```
-### **std::file::read**
+### std::file::read
 
 
-```pat
+```rust
 fn read(std::file::Handle handle, u64 size);
 ```
-### **std::file::write**
+### std::file::write
 
 
-```pat
+```rust
 fn write(std::file::Handle handle, str data);
 ```
-### **std::file::seek**
+### std::file::seek
 
 
-```pat
+```rust
 fn seek(std::file::Handle handle, u64 offset);
 ```
-### **std::file::size**
+### std::file::size
 
 
-```pat
+```rust
 fn size(std::file::Handle handle);
 ```
-### **std::file::resize**
+### std::file::resize
 
 
-```pat
+```rust
 fn resize(std::file::Handle handle, u64 size);
 ```
-### **std::file::flush**
+### std::file::flush
 
 
-```pat
+```rust
 fn flush(std::file::Handle handle);
 ```
-### **std::file::remove**
+### std::file::remove
 
 
-```pat
+```rust
 fn remove(std::file::Handle handle);
 ```

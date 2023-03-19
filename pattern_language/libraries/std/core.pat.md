@@ -1,11 +1,11 @@
-# `core`
+# core
 
 
 ## Types
 
-### **std::core::BitfieldOrder**
+### std::core::BitfieldOrder
 
-```pat
+```rust
 enum BitfieldOrder : u8 {
     LeftToRight,
     RightToLeft
@@ -15,69 +15,69 @@ enum BitfieldOrder : u8 {
 
 ## Functions
 
-### **std::core::has_attribute**
+### std::core::has_attribute
 
 
-```pat
+```rust
 fn has_attribute(auto pattern, str attribute);
 ```
-### **std::core::get_attribute_value**
+### std::core::get_attribute_value
 
 
-```pat
+```rust
 fn get_attribute_value(auto pattern, str attribute);
 ```
-### **std::core::set_endian**
+### std::core::set_endian
 
 
-```pat
+```rust
 fn set_endian(std::mem::Endian endian);
 ```
-### **std::core::get_endian**
+### std::core::get_endian
 
 
-```pat
+```rust
 fn get_endian();
 ```
-### **std::core::set_bitfield_order**
+### std::core::set_bitfield_order
 
 
-```pat
+```rust
 fn set_bitfield_order(std::core::BitfieldOrder order);
 ```
-### **std::core::get_bitfield_order**
+### std::core::get_bitfield_order
 
 
-```pat
+```rust
 fn get_bitfield_order();
 ```
-### **std::core::array_index**
+### std::core::array_index
 
 
-```pat
+```rust
 fn array_index();
 ```
-### **std::core::member_count**
+### std::core::member_count
 
 
-```pat
+```rust
 fn member_count(auto pattern);
 ```
-### **std::core::has_member**
+### std::core::has_member
 
 
-```pat
+```rust
 fn has_member(auto pattern, str name);
 ```
-### **std::core::formatted_value**
+### std::core::formatted_value
 
 
-```pat
+```rust
 fn formatted_value(auto pattern);
 ```
-### **std::core::is_valid_enum**
+### std::core::is_valid_enum
 
 
-```pat
+```rust
 fn is_valid_enum(auto pattern);
 ```

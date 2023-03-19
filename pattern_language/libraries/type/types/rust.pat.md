@@ -1,50 +1,50 @@
-# `rust`
+# rust
 
 
 ## Types
 
-### **f32**
+### f32
 
-```pat
+```rust
 using f32 = float;
 ```
-### **f64**
+### f64
 
-```pat
+```rust
 using f64 = double;
 ```
-### **i128**
+### i128
 
-```pat
+```rust
 using i128 = s128;
 ```
-### **i16**
+### i16
 
-```pat
+```rust
 using i16 = s16;
 ```
-### **i32**
+### i32
 
-```pat
+```rust
 using i32 = s32;
 ```
-### **i64**
+### i64
 
-```pat
+```rust
 using i64 = s64;
 ```
-### **i8**
+### i8
 
-```pat
+```rust
 using i8 = s8;
 ```
-### **isize**
+### isize
 
-```pat
+```rust
 using isize = i64;
 ```
-### **usize**
+### usize
 
-```pat
+```rust
 using usize = u64;
 ```

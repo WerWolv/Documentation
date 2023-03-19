@@ -1,11 +1,11 @@
-# `dec`
+# dec
 
 
 ## Functions
 
-### **hex::dec::demangle**
+### hex::dec::demangle
 
 
-```pat
+```rust
 fn demangle(str mangled_name);
 ```

@@ -1,10 +1,10 @@
-# `guid`
+# guid
 
 
 ## Types
 
-### **type::GUID**
+### type::GUID
 
-```pat
+```rust
 struct GUID { ... } [[sealed, format]];
 ```

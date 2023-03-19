@@ -1,20 +1,20 @@
-# `core`
+# core
 
 
 ## Types
 
-### **hex::core::Selection**
+### hex::core::Selection
 
-```pat
+```rust
 struct Selection { ... };
 ```
 
 
 ## Functions
 
-### **hex::core::get_selection**
+### hex::core::get_selection
 
 
-```pat
+```rust
 fn get_selection();
 ```

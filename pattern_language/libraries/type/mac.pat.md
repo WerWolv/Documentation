@@ -1,10 +1,10 @@
-# `mac`
+# mac
 
 
 ## Types
 
-### **type::MACAddress**
+### type::MACAddress
 
-```pat
+```rust
 struct MACAddress { ... } [[sealed, format]];
 ```

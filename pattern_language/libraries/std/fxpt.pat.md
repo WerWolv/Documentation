@@ -1,56 +1,56 @@
-# `fxpt`
+# fxpt
 
 
 ## Types
 
-### **std::fxpt::fixed**
+### std::fxpt::fixed
 
-```pat
+```rust
 using fixed = s128;
 ```
 
 
 ## Functions
 
-### **std::fxpt::to_float**
+### std::fxpt::to_float
 
 
-```pat
+```rust
 fn to_float(std::fxpt::fixed fxt, u32 precision);
 ```
-### **std::fxpt::to_fixed**
+### std::fxpt::to_fixed
 
 
-```pat
+```rust
 fn to_fixed(double flt, u32 precision);
 ```
-### **std::fxpt::change_precision**
+### std::fxpt::change_precision
 
 
-```pat
+```rust
 fn change_precision(std::fxpt::fixed value, u32 start_precision, u32 end_precision);
 ```
-### **std::fxpt::add**
+### std::fxpt::add
 
 
-```pat
+```rust
 fn add(std::fxpt::fixed a, std::fxpt::fixed b, u32 precision);
 ```
-### **std::fxpt::subtract**
+### std::fxpt::subtract
 
 
-```pat
+```rust
 fn subtract(std::fxpt::fixed a, std::fxpt::fixed b, u32 precision);
 ```
-### **std::fxpt::multiply**
+### std::fxpt::multiply
 
 
-```pat
+```rust
 fn multiply(std::fxpt::fixed a, std::fxpt::fixed b, u32 precision);
 ```
-### **std::fxpt::divide**
+### std::fxpt::divide
 
 
-```pat
+```rust
 fn divide(std::fxpt::fixed a, std::fxpt::fixed b, u32 precision);
 ```
