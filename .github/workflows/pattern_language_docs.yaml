@@ -1,0 +1,69 @@
+name: "Dispatch"
+
+on:
+  push:
+    branches: [ '*' ]
+  pull_request:
+    branches: [ '*' ]
+  repository_dispatch:
+    types: [update_pl_docs]
+  workflow_dispatch:
+    inputs: 
+      generate_docs:
+        description: "Regenerate docs"
+        required: false
+        type: boolean
+
+jobs:
+  tests:
+    name: 📄 Update Pattern Language Documentation
+    runs-on: ubuntu-22.04
+    permissions:
+      actions: read
+      contents: read
+      security-events: write
+
+    steps:
+    - name: 🧰 Checkout
+      uses: actions/checkout@v2
+      with:
+        submodules: recursive
+
+    - name: 🖋️ Regenerate Documentation
+      run: |
+        # Download latest plcli
+        wget https://nightly.link/WerWolv/PatternLanguage/workflows/build/master/plcli%20Linux.zip
+        unzip "plcli Linux.zip"
+        chmod +x ./usr/bin/plcli
+
+        # Generate new documentation
+        for f in $(find ./ImHex-Patterns/includes -name '*.pat' -or -name '*.hexpat'); do
+            echo $f
+            ./usr/bin/plcli docs --includes ./ImHex-Patterns/includes --define __IMHEX__ --noimpls $f out/$f.md
+        done
+
+        # Delete all existing library docs files except the README.md file
+        for f in $(find ./pattern_language/libraries -name '*.md' ! -name 'README.md'); do
+            rm $f
+        done
+
+        # Copy over generated folders to output
+        for d in ./out/ImHex-Patterns/includes/*/ ; do
+            mv $d ./pattern_language/libraries
+        done
+
+        # Cleanup
+        rm -rf ImHex-Patterns
+        rm -rf "plcli Linux.zip"
+        rm -rf out
+        rm -rf usr
+
+    - name: ⬆️ Commit changes
+      uses: EndBug/add-and-commit@v9
+      with:
+        add: './pattern_language'
+        message: Updated Pattern Language Libraries documentation
+        committer_name: GitHub Actions
+        committer_email: 41898282+github-actions[bot]@users.noreply.github.com
+
+
