@@ -55,7 +55,7 @@ jobs:
         for d in libraries/*/ ; do
                 echo $d
                 toc="${toc}* [$(basename $d)](${d}README.md)\n"
-                for f in $(find ${d} ! -name "README.md"); do
+                for f in $(find ${d} -name "*.pat.md"); do
                         toc="${toc}    * [$(basename $f .pat.md)](${f})\n"
                 done
         done
