@@ -16,6 +16,6 @@
 * [Comments](core-language/comments.md)
 * [Sections](core-language/sections.md)
 
-## Group 1
+## Libraries
 
-* [Libraries](group-1/libraries.md)
+* [Libraries](libraries/libraries.md)
