@@ -1,4 +1,5 @@
 # hash
+**The hash library contains various data hash functions**
 
 
 ## Functions
