@@ -8,19 +8,19 @@ Basic helper functions
 
 
 ```rust
-fn assert(bool condition, str message);
+fn assert( bool condition,  str message);
 ```
 ### `std::assert_warn`
 
 
 ```rust
-fn assert_warn(bool condition, str message);
+fn assert_warn( bool condition,  str message);
 ```
 ### `std::env`
 
 
 ```rust
-fn env(str name);
+fn env( str name);
 ```
 ### `std::sizeof_pack`
 

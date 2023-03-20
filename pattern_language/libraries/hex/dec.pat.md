@@ -7,5 +7,5 @@
 
 
 ```rust
-fn demangle(str mangled_name);
+fn demangle( str mangled_name);
 ```

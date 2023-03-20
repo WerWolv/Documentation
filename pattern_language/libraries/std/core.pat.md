@@ -8,7 +8,7 @@ get extra help from the runtime to fulfill their purpose.
 ### `std::core::BitfieldOrder`
 
 ```rust
-enum BitfieldOrder : u8 {
+enum BitfieldOrder :  u8 {
     LeftToRight,
     RightToLeft
 };
@@ -21,19 +21,19 @@ enum BitfieldOrder : u8 {
 
 
 ```rust
-fn has_attribute(auto pattern, str attribute);
+fn has_attribute( auto pattern,  str attribute);
 ```
 ### `std::core::get_attribute_value`
 
 
 ```rust
-fn get_attribute_value(auto pattern, str attribute);
+fn get_attribute_value( auto pattern,  str attribute);
 ```
 ### `std::core::set_endian`
 
 
 ```rust
-fn set_endian(std::mem::Endian endian);
+fn set_endian(  std::mem::Endian endian);
 ```
 ### `std::core::get_endian`
 
@@ -45,7 +45,7 @@ fn get_endian();
 
 
 ```rust
-fn set_bitfield_order(std::core::BitfieldOrder order);
+fn set_bitfield_order(  std::core::BitfieldOrder order);
 ```
 ### `std::core::get_bitfield_order`
 
@@ -63,19 +63,19 @@ fn array_index();
 
 
 ```rust
-fn member_count(auto pattern);
+fn member_count( auto pattern);
 ```
 ### `std::core::has_member`
 
 
 ```rust
-fn has_member(auto pattern, str name);
+fn has_member( auto pattern,  str name);
 ```
 ### `std::core::formatted_value`
 
 
 ```rust
-fn formatted_value(auto pattern);
+fn formatted_value( auto pattern);
 ```
 ### `std::core::is_valid_enum`
 
@@ -85,5 +85,5 @@ Checks if the given enum value corresponds has a corresponding constant
 
 
 ```rust
-fn is_valid_enum(auto pattern);
+fn is_valid_enum( auto pattern);
 ```

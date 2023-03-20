@@ -7,5 +7,5 @@
 
 
 ```rust
-fn get(str url);
+fn get( str url);
 ```

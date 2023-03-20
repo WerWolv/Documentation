@@ -6,5 +6,5 @@
 ### `type::float16`
 
 ```rust
-using float16 = u16 [[format]];
+using float16 =  u16 [[format]];
 ```

@@ -17,5 +17,5 @@ Calculates the CRC32 hash of the bytes inside of a given pattern
 
 
 ```rust
-fn crc32(auto pattern, u32 init, u32 poly, u32 xorout, bool reflect_in, bool reflect_out);
+fn crc32( auto pattern,  u32 init,  u32 poly,  u32 xorout,  bool reflect_in,  bool reflect_out);
 ```
