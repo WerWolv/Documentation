@@ -12,6 +12,16 @@ description: >-
 
 **Database Repo**: [https://github.com/WerWolv/ImHex-Patterns](https://github.com/WerWolv/ImHex-Patterns)
 
+
+
+#### Pattern Language
+
+{% content-ref url="https://app.gitbook.com/o/xfl3734L2rDBS2sD53Zi/s/WZzDdGjxmgMSIE3xly6o/" %}
+[Pattern Language](https://app.gitbook.com/o/xfl3734L2rDBS2sD53Zi/s/WZzDdGjxmgMSIE3xly6o/)
+{% endcontent-ref %}
+
+{% embed url="https://github.com/WerWolv/ImHex-Patterns" %}
+
 #### Screenshots
 
 <figure><img src="https://user-images.githubusercontent.com/10835354/139717326-8044769d-527b-4d88-8adf-2d4ecafdca1f.png" alt=""><figcaption></figcaption></figure>
