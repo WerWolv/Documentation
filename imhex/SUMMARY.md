@@ -7,6 +7,7 @@
 * [Input Text Boxes](common/input-text-boxes.md)
 * [Binary Pattern](common/binary-pattern.md)
 * [Providers](common/providers.md)
+* [Fonts](common/fonts.md)
 
 ## Features
 
