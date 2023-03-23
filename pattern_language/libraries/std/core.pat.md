@@ -87,3 +87,15 @@ Checks if the given enum value corresponds has a corresponding constant
 ```rust
 fn is_valid_enum( auto pattern);
 ```
+### `std::core::set_pattern_color`
+
+
+```rust
+fn set_pattern_color( auto pattern,  u32 color);
+```
+### `std::core::set_display_name`
+
+
+```rust
+fn set_display_name( auto pattern,  str name);
+```
