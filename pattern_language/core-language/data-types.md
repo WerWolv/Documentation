@@ -49,13 +49,13 @@ Floating Point types represent a IEEE754 formatted floating pointer number
 
 #### Special
 
-| Name     | Size     | Description                                             |
-| -------- | -------- | ------------------------------------------------------- |
-| `char`   | 1 Byte   | ASCII Character                                         |
-| `char16` | 2 Bytes  | UTF-16 Wide Character                                   |
-| `bool`   | 1 Byte   | Boolean value `true`/`false`                            |
-| `str`    | Varying  | Heap allocated String, can only be used in functions    |
-| `auto`   | Varying  | Automatic type inferring, can only be used in functions |
+| Name     | Size    | Description                                             |
+| -------- | ------- | ------------------------------------------------------- |
+| `char`   | 1 Byte  | ASCII Character                                         |
+| `char16` | 2 Bytes | UTF-16 Wide Character                                   |
+| `bool`   | 1 Byte  | Boolean value `true`/`false`                            |
+| `str`    | Varying | Heap allocated String, can only be used in functions    |
+| `auto`   | Varying | Automatic type inferring, can only be used in functions |
 
 ### Endianess[¶](https://imhex.werwolv.net/docs/core\_language/data\_types.html#endianess)
 
@@ -86,9 +86,6 @@ Literals are fixed values representing a specific constant. The following litera
 | Boolean                 | `true`, `false`     |
 | Character               | `'A'`               |
 | String                  | `"Hello World"`     |
-
-\
-
 
 ### Enums
 
@@ -181,8 +178,6 @@ This code declares a pointer to an array of 10 `u32``s and the pointer has a siz
 
 The address will always be treated as absolute. Make sure to set the base address of your data correctly in order for pointers to work as intended.
 
-&#x20;
-
 <figure><img src="../.gitbook/assets/pointers/data.png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../.gitbook/assets/pointers/hex.png" alt=""><figcaption></figcaption></figure>
@@ -231,8 +226,6 @@ struct Vector3f {
 ```
 
 Placing it into memory using the placement syntax will place all members of the struct directly adjacent to each other starting at the specified address.
-
-&#x20;
 
 <figure><img src="../.gitbook/assets/structs/data.png" alt=""><figcaption></figcaption></figure>
 
@@ -302,8 +295,6 @@ union Converter {
 };
 ```
 
-&#x20;
-
 <figure><img src="../.gitbook/assets/unions/data.png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../.gitbook/assets/unions/hex.png" alt=""><figcaption></figcaption></figure>
@@ -346,7 +337,7 @@ struct B {
 
 Templates can be used to substitute parts of a custom type’s member’s types with placeholders which can then be defined later on when instantiating this type.
 
-Templates can be used with `struct`,  `union` and `using` declarations:
+Templates can be used with `struct`, `union` and `using` declarations:
 
 ```rust
 struct MyTemplateStruct<T> {
