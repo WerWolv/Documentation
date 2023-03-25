@@ -20,6 +20,6 @@ To change your font, first open the `Settings` interface through `Help -> Settin
 The Font file is not copied, only the path is stored in ImHex's settings. Don't remove the font file after it has been selected or ImHex will revert back to the default font.
 {% endhint %}
 
-Doing this also made the `Font Size` slider selectable now and can be used to adjust the font size independent of ImHex's scaling.
+After a custom font has been selected, the `Font Size` slider also becomes available and can be used to specify the font's scaling.
 
 ImHex needs to be restarted now for the changes to come into effect.
