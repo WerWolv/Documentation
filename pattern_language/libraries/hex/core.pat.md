@@ -18,3 +18,4 @@ struct Selection { ... };
 ```rust
 fn get_selection();
 ```
+

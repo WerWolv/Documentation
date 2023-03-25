@@ -7,8 +7,10 @@ get extra help from the runtime to fulfill their purpose.
 
 ### `std::core::BitfieldOrder`
 
+The default ordering of bitfield members
+
 ```rust
-enum BitfieldOrder :  u8 {
+enum BitfieldOrder : u8 {
     LeftToRight,
     RightToLeft
 };
@@ -19,64 +21,114 @@ enum BitfieldOrder :  u8 {
 
 ### `std::core::has_attribute`
 
+Checks if a pattern has a specific attribute assigned to it
+- `pattern`: The pattern to check
+- `attribute`: The attribute's name to check for
+
 
 ```rust
-fn has_attribute( auto pattern,  str attribute);
+fn has_attribute(auto pattern, str attribute);
 ```
+
 ### `std::core::get_attribute_value`
 
+Returns the first parameter of the attribute of a pattern if it has one
+- `pattern`: The pattern to check
+- `attribute`: The attribute's name to query
+
 
 ```rust
-fn get_attribute_value( auto pattern,  str attribute);
+fn get_attribute_value(auto pattern, str attribute);
 ```
+
 ### `std::core::set_endian`
 
+Sets the current default endianess.
+Any patterns created following this attribute will be created using the set endianess.
+- `endian`: The new default endianess
+
 
 ```rust
-fn set_endian(  std::mem::Endian endian);
+fn set_endian(std::mem::Endian endian);
 ```
+
 ### `std::core::get_endian`
+
+Gets the current default endianess.
+- `return`: The currently set default endianess
 
 
 ```rust
 fn get_endian();
 ```
+
 ### `std::core::set_bitfield_order`
+
+Sets the default bitfield order.
+- `order`: The new default bitfield order
 
 
 ```rust
-fn set_bitfield_order(  std::core::BitfieldOrder order);
+fn set_bitfield_order(std::core::BitfieldOrder order);
 ```
+
 ### `std::core::get_bitfield_order`
+
+Gets thee current default bitfield order
+- `return`: The currently set default bitfield order
 
 
 ```rust
 fn get_bitfield_order();
 ```
+
 ### `std::core::array_index`
+
+When used inside of a pattern that's being created using a pattern,
+returns the current array index that's being processed.
+If used outside of an array, always yields 0.
+- `return`: The current array index
 
 
 ```rust
 fn array_index();
 ```
+
 ### `std::core::member_count`
 
+Queries the number of members of a struct, union or bitfield or the number of entries in an array
+- `pattern`: The pattern to check
+- `return`: The number of members in `pattern`
+
 
 ```rust
-fn member_count( auto pattern);
+fn member_count(auto pattern);
 ```
+
 ### `std::core::has_member`
 
+Checks whether or not a given pattern has a member with a given name
+- `pattern`: The pattern to check
+- `name`: The name of the member to look for
+- `return`: True if a member called `name` exists, false otherwise
+
 
 ```rust
-fn has_member( auto pattern,  str name);
+fn has_member(auto pattern, str name);
 ```
+
 ### `std::core::formatted_value`
 
+Formats a pattern using it's default formatter or its custom formatter function set through
+the `[[format]]` or `[[format_read]]` attribute
+- `pattern`: The pattern to format
+- `return`: Formatted string representation of `pattern`
+
 
 ```rust
-fn formatted_value( auto pattern);
+fn formatted_value(auto pattern);
 ```
+
 ### `std::core::is_valid_enum`
 
 Checks if the given enum value corresponds has a corresponding constant
@@ -85,17 +137,20 @@ Checks if the given enum value corresponds has a corresponding constant
 
 
 ```rust
-fn is_valid_enum( auto pattern);
+fn is_valid_enum(auto pattern);
 ```
+
 ### `std::core::set_pattern_color`
 
 
 ```rust
-fn set_pattern_color( auto pattern,  u32 color);
+fn set_pattern_color(auto pattern, u32 color);
 ```
+
 ### `std::core::set_display_name`
 
 
 ```rust
-fn set_display_name( auto pattern,  str name);
+fn set_display_name(auto pattern, str name);
 ```
+

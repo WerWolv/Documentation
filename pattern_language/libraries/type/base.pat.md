@@ -6,20 +6,20 @@
 ### `type::Bin`
 
 ```rust
-using Bin<T> =   T [[format]];
+using Bin<T> = T [[format]];
 ```
 ### `type::Dec`
 
 ```rust
-using Dec<T> =   T [[format]];
+using Dec<T> = T [[format]];
 ```
 ### `type::Hex`
 
 ```rust
-using Hex<T> =   T [[format]];
+using Hex<T> = T [[format]];
 ```
 ### `type::Oct`
 
 ```rust
-using Oct<T> =   T [[format]];
+using Oct<T> = T [[format]];
 ```
