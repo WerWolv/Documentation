@@ -49,7 +49,7 @@ jobs:
         chmod +x ./usr/bin/plcli
 
         # Generate new documentation
-        for f in $(find ./ImHex-Patterns/includes -name '*.pat' -or -name '*.hexpat'); do
+        for f in $(find ./ImHex-Patterns/includes -not -path '*/impl/*' -name '*.pat' -or -name '*.hexpat'); do
             echo $f
             ./usr/bin/plcli docs --includes ./ImHex-Patterns/includes --define __IMHEX__ --noimpls $f out/$f.md
         done
