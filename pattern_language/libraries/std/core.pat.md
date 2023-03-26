@@ -142,12 +142,20 @@ fn is_valid_enum(auto pattern);
 
 ### `std::core::set_pattern_color`
 
+Changes the color of the given pattern to a new color
+- `pattern`: The pattern to modify
+- `color`: The RGBA8 color
+
 
 ```rust
 fn set_pattern_color(auto pattern, u32 color);
 ```
 
 ### `std::core::set_display_name`
+
+Changes the display name of a given pattern
+- `pattern`: The pattern to modify
+- `name`: The new display name of the pattern
 
 
 ```rust

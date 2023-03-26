@@ -1,4 +1,5 @@
 # math
+Library containing more advanced mathematical operations.
 
 
 ## Types
@@ -20,6 +21,11 @@ enum AccumulateOperation : u8 {
 
 ### `std::math::min`
 
+Compares the values `a` and `b` with each other and returns the smaller of the two
+- `a`: First value
+- `b`: Second value
+- `return`: `a` if `a` is smaller than `b`, otherwise `b`
+
 
 ```rust
 fn min(auto a, auto b);
@@ -27,12 +33,23 @@ fn min(auto a, auto b);
 
 ### `std::math::max`
 
+Compares the values `a` and `b` with each other and returns the bigger of the two
+- `a`: First value
+- `b`: Second value
+- `return`: `a` if `a` is bigger than `b`, otherwise `b`
+
 
 ```rust
 fn max(auto a, auto b);
 ```
 
 ### `std::math::clamp`
+
+Clamps the value of `x` between `min` and `max`.
+- `x`: Value
+- `min`: Minimum value
+- `max`: Maximum value
+- `return`: `min` if `x` is smaller than `min`, `max` if `x` is bigger than `max`, `x` otherwise
 
 
 ```rust
