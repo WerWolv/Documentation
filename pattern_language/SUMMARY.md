@@ -22,7 +22,6 @@
 
 * [hex](libraries/hex/README.md)
     * [dec](libraries/hex/dec.pat.md)
-    * [imhex_check](libraries/hex/impl/imhex_check.pat.md)
     * [mangled](libraries/hex/type/mangled.pat.md)
     * [core](libraries/hex/core.pat.md)
     * [http](libraries/hex/http.pat.md)
