@@ -21,6 +21,7 @@
 <!-- LIBRARIES START -->
 
 * [hex](libraries/hex/README.md)
+    * [provider](libraries/hex/provider.pat.md)
     * [dec](libraries/hex/dec.pat.md)
     * [mangled](libraries/hex/type/mangled.pat.md)
     * [core](libraries/hex/core.pat.md)
