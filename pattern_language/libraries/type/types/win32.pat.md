@@ -1,4 +1,5 @@
 # win32
+Alias definitions for various type names used in Windows applications
 
 
 ## Types

@@ -14,7 +14,6 @@ enum Distribution : u8 {
     Binomial,
     Cauchy,
     ChiSquared,
-    Discrete,
     Exponential,
     ExtremeValue,
     FisherF,
@@ -47,6 +46,25 @@ fn set_seed(u64 seed);
 
 Generates a random number using the given distribution with the given parameters.
 The random number generator used internally is C++'s std::mt19937_64 Mersenne Twister implementation.
+
+> **Distributions**
+> - `Uniform(min, max) -> i128`
+> - `Normal(mean, stddev) -> double`
+> - `Exponential(lambda) -> double`
+> - `Gamma(alpha, beta) -> double`
+> - `Weibull(a, b) -> double`
+> - `ExtremeValue(a, b) -> double`
+> - `ChiSquared(n) -> double`
+> - `Cauchy(a, b) -> double`
+> - `FisherF(m, n) -> double`
+> - `StudentT(n) -> double`
+> - `LogNormal(m, s) -> double`
+> - `Bernoulli(p) -> bool`
+> - `Binomial(t, p) -> i128`
+> - `NegativeBinomial(k, p) -> i128`
+> - `Geometric(p) -> i128`
+> - `Poisson(mean) -> i128`
+
 - `distribution`: Distribution to use
 - `param1`: This parameter depends on the type of distribution used.
 - `param2`: This parameter depends on the type of distribution used.

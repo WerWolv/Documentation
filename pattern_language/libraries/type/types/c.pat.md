@@ -1,4 +1,5 @@
 # c
+Alias definitions for all C stdint and regular data types
 
 
 ## Types

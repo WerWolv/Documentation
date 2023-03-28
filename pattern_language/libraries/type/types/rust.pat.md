@@ -1,4 +1,5 @@
 # rust
+Alias definitions for Rust's data types
 
 
 ## Types
