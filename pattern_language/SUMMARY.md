@@ -27,6 +27,7 @@
     * [http](libraries/hex/http.pat.md)
 * [std](libraries/std/README.md)
     * [time](libraries/std/time.pat.md)
+    * [random](libraries/std/random.pat.md)
     * [array](libraries/std/array.pat.md)
     * [hash](libraries/std/hash.pat.md)
     * [file](libraries/std/file.pat.md)
