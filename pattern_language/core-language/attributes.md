@@ -88,7 +88,11 @@ Forces all members of the struct, union or array to be highlighted using the sam
 
 #### `[[static]]`
 
-The Pattern Language by default optimizes arrays of built-in types so they don’t use up as much memory and are evaluated quicker.This same optimization can be applied to custom data types when they are marked with this attribute to tell the runtime the size and layout of this type will always be the same. **However** if the layout of the type this is applied to is not static, highlighing and decoding of the data will be wrong and only use the layout of the first array entry.
+The Pattern Language by default optimizes arrays of built-in types so they don’t use up as much memory and are evaluated quicker.
+
+This same optimization can be applied to custom data types when they are marked with this attribute to tell the runtime the size and layout of this type will always be the same.&#x20;
+
+**However** if the layout of the type this is applied to is not static or you're using functions or function statements (such as local variables) in them, highlighing and decoding of the data will be wrong! The behaviour is undefined and can change with any release. Do not depend on it!
 
 #### `[[left_to_right]]` / `[[right_to_left]]`
 
