@@ -7,11 +7,12 @@ get extra help from the runtime to fulfill their purpose.
 
 ### `std::core::BitfieldOrder`
 
-The default ordering of bitfield members
 
 ```rust
 enum BitfieldOrder : u8 {
+    LeastToMostSignificant,
     LeftToRight,
+    MostToLeastSignificant,
     RightToLeft
 };
 ```
@@ -64,8 +65,6 @@ fn get_endian();
 
 ### `std::core::set_bitfield_order`
 
-Sets the default bitfield order.
-- `order`: The new default bitfield order
 
 
 ```rust
@@ -74,8 +73,6 @@ fn set_bitfield_order(std::core::BitfieldOrder order);
 
 ### `std::core::get_bitfield_order`
 
-Gets thee current default bitfield order
-- `return`: The currently set default bitfield order
 
 
 ```rust

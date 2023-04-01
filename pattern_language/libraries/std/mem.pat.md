@@ -167,6 +167,28 @@ Reads a string value from the memory
 fn read_string(u128 address, u8 size);
 ```
 
+### `std::mem::current_bit_offset`
+
+Gets the current bit offset within the current byte that a bitfield will read.
+
+
+```rust
+fn current_bit_offset();
+```
+
+### `std::mem::read_bits`
+
+Reads a number of bits from the specified bit offset within the specified byte
+- `byteOffset`: The byte offset within the data
+- `bitOffset`: The bit offset to start the read at within the current byte
+- `bitSize`: The total number of bits to read
+- `return`: A u128 containing the value read
+
+
+```rust
+fn read_bits(u128 byteOffset, u128 bitOffset, u64 bitSize);
+```
+
 ### `std::mem::create_section`
 
 Creates a new custom section with the given name
