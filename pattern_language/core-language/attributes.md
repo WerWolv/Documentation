@@ -94,9 +94,13 @@ This same optimization can be applied to custom data types when they are marked 
 
 **However** if the layout of the type this is applied to is not static or you're using functions or function statements (such as local variables) in them, highlighing and decoding of the data will be wrong! The behaviour is undefined and can change with any release. Do not depend on it!
 
-#### `[[left_to_right]]` / `[[right_to_left]]`
+#### `[[bitfield_order(ordering, size)]]`
 
-These attributes can be applied to bitfields to set if bits should be indexed from left to right or from right to left
+This attribute changes the ordering and alignment of the fields within the bitfield it is applied to.
+
+&#x20;`ordering` can either be `std::core::BitfieldOrder::LeastToMostSignificant` or `std::core::BitfieldOrder::MostToLeastSignificant`. Ordering the fields from least to most significant bit is the default.
+
+When using most to least significant also requires you to specify the full size of the bitfield so the runtime knows where to start placing the fields.
 
 #### `[[sealed]]`
 

@@ -198,6 +198,34 @@ Each entry inside of a bitfield consists of a field name followed by a colon and
 
 <figure><img src="../.gitbook/assets/bitfields/data.png" alt=""><figcaption></figcaption></figure>
 
+Bitfields can also be nested or used as arrays inside of other bitfields. In this case, alignment rules do not apply within the bitfield but only once the outer-most bitfield is placed within a struct type.
+
+#### Bitfield field types
+
+By default, every bitfield field is interpreted as a unsigned value, however it's also possible to interpret it as a signed number, boolean or enum as well.
+
+```cpp
+bitfield TestBitfield {
+    regular_value           : 4;    // Regular field, regular unsigned value
+    unsigned unsigned_value : 5;    // Unsigned field, same as regular_value
+    signed   signed_value   : 4;    // Signed field, interpreting the value as two's complement
+    bool     boolean_value  : 1;    // Boolean field, 
+    TestEnum enum_value     : 8;    // Enum field, displays the enum value corresponding to that value
+};
+```
+
+Besides this, it's also possible to interleaf regular types with bitfield fields
+
+```rust
+bitfield InterleafedBitfield {
+    field_1 : 4;
+    field_2 : 2;
+    u16 regular_value;
+};
+```
+
+Using full sized fields in a bitfield will always cause the current bit offset within the bitfield to be aligned to the next full byte boundary.
+
 #### Padding
 
 It’s also possible to insert padding inbetween fields using the padding syntax.
