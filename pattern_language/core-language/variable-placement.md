@@ -12,11 +12,9 @@ In order for the runtime to start decoding data, variables need to be placed som
 u32 myPlacedVariable @ 0x110;
 ```
 
-This creates a new unsigned 32 bit variable named `myPlacedVariable` and place it at address `0x100`.
+This creates a new unsigned 32 bit variable named `myPlacedVariable` and place it at address `0x110`.
 
-The runtime will now treat the 4 bytes starting at offset `0x100` as a u32 and decodes the bytes at this address accordingly.
-
-&#x20;
+The runtime will now treat the 4 bytes starting at offset `0x110` as a u32 and decodes the bytes at this address accordingly.
 
 <figure><img src="../.gitbook/assets/placement/data.png" alt=""><figcaption></figcaption></figure>
 
