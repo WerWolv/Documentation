@@ -197,7 +197,6 @@ fn log2(auto value);
 
 Calculates the natural logarithm of `value`.
 - `value`: Value
-- `base`: Base
 - `return`: Logarithm of `value` with base `e`
 
 
@@ -226,6 +225,17 @@ Calculates the value of `base` raised to the power of `exp`.
 
 ```rust
 fn pow(auto base, auto exp);
+```
+
+### `std::math::exp`
+
+Calculates the value of the natural number `e`	raised to the power of `value`.
+- `value`: Exponent
+- `return`: `e` raised to the power of `value`
+
+
+```rust
+fn exp(auto value);
 ```
 
 ### `std::math::sqrt`
