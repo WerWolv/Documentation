@@ -69,6 +69,8 @@ be double myDouble; // Big endian 64 bit double precision floating point
 s8 myInteger;       // Native endian 8 bit signed integer
 ```
 
+Refer to [the endianess pragma](preprocessor.md#endian) for setting the global endianess
+
 ### Literals
 
 Literals are fixed values representing a specific constant. The following literals are available:
