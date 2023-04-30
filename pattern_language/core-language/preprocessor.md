@@ -80,7 +80,7 @@ This pragma sets the maximum number of entries allowed in an array. To prevent t
 
 **Possible values:** Any integer value **Default:** `0x2000`
 
-This pragma sets the maximum number of patterns allowed to be created. To prevent the runtime using up a lot of memory when creating a lot of patterns, execution will stop prematurely if too many patterns are existing simultaneously. This is similar to the `array_limit` pragma but catches smaller, nested arrays as well.
+This pragma sets the maximum number of patterns allowed to be created. To prevent the runtime using up a lot of memory when creating a lot of patterns, execution will stop prematurely if too many patterns exist simultaneously. This is similar to the `array_limit` pragma but catches smaller, nested arrays as well.
 
 #### `once`
 

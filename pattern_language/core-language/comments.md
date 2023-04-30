@@ -12,7 +12,7 @@ Single line comments start with a double slash (//) and continue to the end of t
 
 ### Multi line comments
 
-Multi line comments start with /\* and end with [\*](https://imhex.werwolv.net/docs/core\_language/comments.html#id1)/.
+Multi line comments start with /\* and end with \*/.
 
 ```cpp
 /* This is
@@ -38,7 +38,7 @@ There are multiple ways to write doc comments:
 */
 
 /**
-    This is a doc comment documenting a function that adds two number together
+    This is a doc comment documenting a function that adds two numbers together
     @param x The first parameter.
     @param y The second parameter.
     @return The sum of the two parameters.

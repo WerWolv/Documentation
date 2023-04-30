@@ -87,7 +87,7 @@ struct Packet {
 Packet packet[3] @ 0xF0;
 ```
 
-But the match statement allows for much more than just a simple switch. It also allows you to match multiple values at once and use more complex comparison logic. Alongside is also the _\__ wildcard that matches any value, and thus also creates the default case.
+But the match statement allows for much more than just a simple switch. It also allows you to match multiple values at once and use more complex comparison logic. Alongside this is the _\__ wildcard that matches any value, and thus also creates the default case.
 
 ```rust
 struct Packet {
@@ -104,7 +104,7 @@ struct Packet {
 Packet packet[3] @ 0xF0;
 ```
 
-Also the match statement has special comparisons for allowing for more batchful comparisons. The _…_ operator allows you to match a range of values, and the _|_ operator allows to match between multiple values.
+Also the match statement has special comparisons that allow for more batchful comparisons. The _…_ operator allows you to match a range of values, and the _|_ operator allows to match between multiple values.
 
 ```rust
 struct Packet {
@@ -144,7 +144,7 @@ Test tests[1000] @ 0x00;
 
 `break` can also be used in regular patterns to prematurely stop parsing of the current pattern.
 
-&#x20;If the pattern where `break` is being used in is nested inside of another pattern, only evaluation of the current pattern is being stopped and continues in the parent struct after the definition of the current pattern.
+&#x20;If the pattern where `break` is being used in is nested inside of another pattern, only evaluation of the current pattern is stopped and continues in the parent struct after the definition of the current pattern.
 
 #### Continue
 
@@ -167,10 +167,10 @@ Test tests[1000] @ 0x00;
 
 `continue` can also be used in regular patterns to discard the pattern entirely.
 
-If the pattern where `continue` is being used in is nested inside of another pattern, only the current pattern is being discarded and evaluation continues in the parent struct after the definition of the current pattern.
+If the pattern where `continue` is being used in is nested inside of another pattern, only the current pattern is discarded and evaluation continues in the parent struct after the definition of the current pattern.
 
 ### Return statements
 
 Return statements outside of functions can be used to prematurely terminate execution of the current program.
 
-Evaluation stops at the location the `return` statement was executed. All patterns that have been evaluated up until this point will be finished up and placed into memory before the execution will halt.
+Evaluation stops at the location the `return` statement was executed. All patterns that have been evaluated up until this point will be finished up and placed into memory before execution halts.

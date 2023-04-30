@@ -2,7 +2,7 @@
 
 In and Out variables are a way to pass config or input data into the pattern and read result data back out from the pattern.
 
-Each `in` and `out` variable creates an entry in the Settings tab of the Pattern Editor view. `in` variables create a input field, `out` variables create a label.
+Each `in` and `out` variable creates an entry in the Settings tab of the Pattern Editor view. `in` variables create an input field, `out` variables create a label.
 
 Before executing the pattern, the user can now enter a value in the input field of the `in` variable. This value will be copied into the corresponding `in` variable before the pattern is executed.
 

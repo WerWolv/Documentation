@@ -2,9 +2,9 @@
 
 Sections are a way to create additional buffers of data whose content can be generated dynamically.
 
-The following code creates a new section named “My Section” and then creates a buffer of 256 bytes in that section. The buffer is then filled with data.
+The following code creates a new section named “My Section” and then creates a buffer of 0x100 bytes in that section. The buffer is then filled with data.
 
-At the end, it is possible to access to place additional patterns inside the section to decode the data in it.
+At the end, it shows it is possible to place additional patterns inside the section to decode the data in it.
 
 ```rust
 #include <std/mem.pat>
