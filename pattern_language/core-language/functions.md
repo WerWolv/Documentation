@@ -40,7 +40,7 @@ The above function will print out all passed values in sequence by printing the 
 
 ### Default parameters
 
-Default parameters can be used to set a default value for parameters, if they weren provided when the functon got called.
+Default parameters can be used to set a default value for parameters, if they weren't provided when the functon got called.
 
 ```rust
 fn print_numbers(u32 a, u32 b, u32 c = 3, u32 d = 4) {
@@ -150,7 +150,7 @@ for (u8 i = 0, i < 10, i = i + 1) {
 
 ### Loop control flow statements
 
-Inside of loops, the `break` and `continue` keyword may be used to to control the execution flow inside the loop.
+Inside of loops, the `break` and `continue` keyword may be used to control the execution flow inside the loop.
 
 When a `break` statement is reached, the loop is terminated immediately and code flow continues after the loop. When a `continue` statement is reached, the current iteration is terminated immediately and code flow continues at the start of the loop again, checking the condition again.
 
