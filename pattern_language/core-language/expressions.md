@@ -27,7 +27,7 @@
 | `a ^^ b`      | Boolean XOR                                                                   |
 | `a ? b : c`   | Ternary                                                                       |
 | `(a)`         | Parenthesis                                                                   |
-| `function(a)` | [Function](./functions.md) call |
+| `function(a)` | [Function](functions.md) call |
 
 `a`, `b` and `c` can be any numeric literal or another expression.
 
