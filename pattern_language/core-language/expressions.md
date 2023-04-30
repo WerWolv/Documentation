@@ -27,11 +27,11 @@
 | `a ^^ b`      | Boolean XOR                                                                   |
 | `a ? b : c`   | Ternary                                                                       |
 | `(a)`         | Parenthesis                                                                   |
-| `function(a)` | [Function](https://imhex.werwolv.net/docs/core\_language/functions.html) call |
+| `function(a)` | [Function](./functions.md) call |
 
 `a`, `b` and `c` can be any numeric literal or another expression.
 
-#### Type Operators
+### Type Operators
 
 Type Operators are operators that work on types. They can only be used on a variable, not on a mathematical expression.
 
@@ -51,7 +51,7 @@ Type Operators are operators that work on types. They can only be used on a vari
 | `addressof($)` | Base address of the loaded data |
 | `sizeof($)`    | Size of the loaded data         |
 
-#### String Operators
+### String Operators
 
 String operators are any operators acting on strings directly.
 
@@ -66,7 +66,7 @@ String operators are any operators acting on strings directly.
 | `a < b`        | Lexical less-than              |
 | `a <= b`       | Lexical less than-or-equals    |
 
-#### Member Access
+### Member Access
 
 Member access is the act of accessing members inside a struct, union or bitfield or referencing the index of an array to access its value.
 
@@ -79,7 +79,7 @@ Below the simplest operations are shown, however they may be concatinated and ex
 | `parent.var`    | Accessing a variable inside the parent struct or union of the current struct or union |
 | `this`          | Refering to the current pattern. Can only be used inside of a struct or union         |
 
-#### `$` Dollar Operator
+### `$` Dollar Operator
 
 The Dollar Operator is a special operator which expands to the current offset within the current pattern.
 
@@ -103,7 +103,7 @@ The dollar operator can also be used to access single bytes of the main data.
 std::print($[0]); // Prints the value of the byte at address 0x00
 ```
 
-#### Casting Operator
+### Casting Operator
 
 The cast operator changes the type of an expression into another.
 
