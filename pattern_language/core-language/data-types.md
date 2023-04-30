@@ -57,7 +57,7 @@ Floating Point types represent a IEEE754 formatted floating pointer number
 | `str`    | Varying | Heap allocated String, can only be used in functions    |
 | `auto`   | Varying | Automatic type inferring, can only be used in functions |
 
-### Endianess[¶](https://imhex.werwolv.net/docs/core\_language/data\_types.html#endianess)
+### Endianess
 
 By default all built-in types are interpreted in native endianess. Meaning if the runtime is running on a little endian machine, all types will be treated as little endian. On a big endian machine they will be treated as big endian.
 
@@ -107,7 +107,7 @@ The type following the colon after the enum name declares the enum’s underlyin
 
 #### Enum Range
 
-Sometimes a range of values can refer to the same enum value in which case enum ranges can be useful. Enum ranges will cause all values inside of the specified range to be visualized as that enum entry. When using a range value in a mathematical expression, it will yield the start value of the range.
+Sometimes, a range of values can refer to the same enum value, in which case enum ranges can be useful. Enum ranges will cause all values inside of the specified range to be visualized as that enum entry. When using a range value in a mathematical expression, it will yield the start value of the range.
 
 ```rust
 enum NumberType : u16 {
@@ -119,7 +119,7 @@ enum NumberType : u16 {
 
 ### Arrays
 
-Arrays are a contiguous collection of one or more value of the same type.
+Arrays are a contiguous collection of one or more values of the same type.
 
 #### Constant sized array
 
@@ -174,7 +174,7 @@ This code declares a pointer whose address is a `u32` and points to a `u16`.
 u32 *pointerToArray[10] : s16 @ 0x10;
 ```
 
-This code declares a pointer to an array of 10 `u32``s and the pointer has a size of ``s16`
+This code declares a pointer to an array of 10 `u32`'s and the pointer has a size of `s16`
 
 The address will always be treated as absolute. Make sure to set the base address of your data correctly in order for pointers to work as intended.
 
@@ -279,7 +279,7 @@ This code will insert a 4 byte padding between the members `x` and `y` as well a
 
 #### Inheritance
 
-Inheritance allows copying all members of the parent struct into the child struct and make them available there.
+Inheritance allows copying all members of the parent struct into the child struct, making them available there.
 
 ```rust
 struct Parent {
@@ -402,7 +402,7 @@ Array<u32, 0x100> array @ 0x00;
 
 #### Pattern local variables
 
-It’s possible to declare local variables inside of patterns that don’t show up in the final type but can be used to store information for later use. To declare a local variable, simple initialize it with a value using the `=` operator.
+It’s possible to declare local variables inside of patterns that don’t show up in the final type but can be used to store information for later use. To declare a local variable, simply initialize it with a value using the `=` operator.
 
 ```rust
 struct MyType {
