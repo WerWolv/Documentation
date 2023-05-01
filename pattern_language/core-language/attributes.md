@@ -1,6 +1,6 @@
 # Attributes
 
-Attributes are special directives that can add extra configuration individual variables and types.
+Attributes are special directives that can add extra configuration to individual variables and types.
 
 ```rust
 struct RGBA8 {
@@ -64,7 +64,7 @@ Can only be applied to Arrays and Struct-like types. Visually inlines all member
 
 #### `[[transform("transformer_function_name")]]`
 
-Specifies a function that will be executed to preprocess the value read from that variable before it’s being accessed through the dot syntax (`some_struct.some_value`). The function requires a single argument representing the original value that was read (e.g `u32` if this attribute was applied to a variable of type `u32`) and return a value that will be returned instead.
+Specifies a function that will be executed to preprocess the value read from that variable before it’s accessed through the dot syntax (`some_struct.some_value`). The function requires a single argument representing the original value that was read (e.g `u32` if this attribute was applied to a variable of type `u32`) and return a value that will be returned instead.
 
 #### `[[transform_entries("transformer_function_name")]]`
 
@@ -72,7 +72,7 @@ Can be applied to arrays and works the same as the `[[transform]]` attribute but
 
 #### `[[pointer_base("pointer_base_function_name")]]`
 
-Specifies a function that will be executed to preprocess the address of the pointer this attribute was applied to points to. The function requires a single argument representing the original pointer address that was read (e.g `u32` if this attribute was applied to a pointer with size type `u32`) and return the offset the pointer should point to instead.
+Specifies a function that will be executed to preprocess the address of the pointer this attribute was applied to. The function requires a single argument representing the original pointer address that was read (e.g `u32` if this attribute was applied to a pointer with size type `u32`) and return the offset the pointer should point to instead.
 
 There’s a number of predefined pointer helper functions available in the standard library (`std::ptr`) to rebase pointers off of different places.
 
@@ -100,11 +100,11 @@ This attribute changes the ordering and alignment of the fields within the bitfi
 
 &#x20;`ordering` can either be `std::core::BitfieldOrder::LeastToMostSignificant` or `std::core::BitfieldOrder::MostToLeastSignificant`. Ordering the fields from least to most significant bit is the default.
 
-When using most to least significant also requires you to specify the full size of the bitfield so the runtime knows where to start placing the fields.
+Using most to least significant also requires you to specify the full size of the bitfield so the runtime knows where to start placing the fields.
 
 #### `[[sealed]]`
 
-This attribute can be applied to structs, unions and bitfields. It causes tools that display Patterns in some way to not display the implementation details (such as children of this type) anymore but instead treat like a built-in type. This is mainly useful for making custom types that should decode and display the bytes in a custom format using the `[[format]]` attribute.
+This attribute can be applied to structs, unions and bitfields. It causes tools that display Patterns in some way to not display the implementation details (such as children of this type) anymore but instead treat it like a built-in type. This is mainly useful for making custom types that should decode and display the bytes in a custom format using the `[[format]]` attribute.
 
 #### `[[highlight_hidden]]`
 
