@@ -70,11 +70,11 @@ fn read(std::file::Handle handle, u64 size);
 
 Writes the content of a string into a file
 - `handle`: The file handle to write to
-- `data`: String to write to the file
+- `data`: String or Pattern to write to the file
 
 
 ```rust
-fn write(std::file::Handle handle, str data);
+fn write(std::file::Handle handle, auto data);
 ```
 
 ### `std::file::seek`
