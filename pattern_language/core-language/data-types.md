@@ -40,12 +40,12 @@ Signed integer types represent signed binary numbers in Two's Completement repre
 
 #### Floating Points
 
-Floating Point types represent a IEEE754 formatted floating pointer number
+Floating Point types represent a floating pointer number. On most modern platforms this is IEEE754 but it's not guaranteed.
 
-| Name     | Size    |
-| -------- | ------- |
-| `float`  | 4 Bytes |
-| `double` | 8 Bytes |
+| Name     | Size                                   |
+| -------- | -------------------------------------- |
+| `float`  | Unspecified (4 Bytes, IEEE754 usually) |
+| `double` | Unspecified (8 Bytes, IEEE754 usually) |
 
 #### Special
 
