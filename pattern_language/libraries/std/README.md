@@ -11,3 +11,7 @@ The `std` library is the Pattern Language's very own standard library. It contai
 
 Instead, include the correct library file and use the functions defined in there. Failing to do so will result in your pattern randomly breaking between updates.
 {% endhint %}
+
+{% hint style="note" %}
+The [`io`](./io.pat) and [`sys`](./sys.pat) modules define members in the bare `std::` namespace.
+{% endhint %}
