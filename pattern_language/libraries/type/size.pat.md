@@ -10,7 +10,7 @@ A generic size type which displays its value in Bytes (or kiB, MiB, GiB, TiB, Pi
 - `<T>`: Underlying type
 
 ```rust
-using Size<T> = T [[format]];
+using Size<> = u128 [[format]];
 ```
 ### `type::Size128`
 
