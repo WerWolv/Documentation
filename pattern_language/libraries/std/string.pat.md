@@ -27,7 +27,7 @@ Base type for sized strings. Represents a string with its size preceeding it.
 - `<DataType>`: The type of the characters.
 
 ```rust
-struct SizedStringBase<, > { ... } [[sealed, format, transform]];
+struct SizedStringBase<SizeType, DataType> { ... } [[sealed, format, transform]];
 ```
 
 
