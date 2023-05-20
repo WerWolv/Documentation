@@ -45,8 +45,6 @@ This code looks at the first byte of each `Packet` to determine its type so it c
 
 Conditionals like this can be used in Structs, Unions and Bitfields
 
-&#x20;
-
 <figure><img src="../.gitbook/assets/conditionals/data.png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../.gitbook/assets/conditionals/hex.png" alt=""><figcaption></figcaption></figure>
@@ -144,7 +142,7 @@ Test tests[1000] @ 0x00;
 
 `break` can also be used in regular patterns to prematurely stop parsing of the current pattern.
 
-&#x20;If the pattern where `break` is being used in is nested inside of another pattern, only evaluation of the current pattern is stopped and continues in the parent struct after the definition of the current pattern.
+If the pattern where `break` is being used in is nested inside of another pattern, only evaluation of the current pattern is stopped and continues in the parent struct after the definition of the current pattern.
 
 #### Continue
 
@@ -174,3 +172,20 @@ If the pattern where `continue` is being used in is nested inside of another pat
 Return statements outside of functions can be used to prematurely terminate execution of the current program.
 
 Evaluation stops at the location the `return` statement was executed. All patterns that have been evaluated up until this point will be finished up and placed into memory before execution halts.
+
+### Try-Catch statements
+
+Try-Catch blocks are used to try placing down patterns that might error and then handling that error.
+
+The following code will try to place all the patterns in the `try` block and if any error occurred while doing so, it will discard the patterns it tried to place, revert the cursor back to where it was at the start of the `try` block and then execute the `catch` block instead.
+
+```rust
+struct Test {
+    try {
+        u32 x;
+        SomeStructThatWillError someStruct;
+    } catch {
+        SomeAlternativeStruct someStruct;
+    }
+};
+```
