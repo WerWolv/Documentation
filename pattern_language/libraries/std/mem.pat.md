@@ -238,10 +238,9 @@ fn copy_section_to_section(std::mem::Section from_section, u64 from_address, std
 ### `std::mem::copy_value_to_section`
 
 Copies a range of bytes from the main section into a custom section
-- `from_section`: The section to copy from
-- `from_address`: The address to copy from
+- `value`: The pattern whose bytes should be copied
+- `to_section`: The section to copy to
 - `to_address`: The address to copy to
-- `size`: The size of the range to copy
 
 
 ```rust
