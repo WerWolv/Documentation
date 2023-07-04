@@ -6,7 +6,7 @@ description: Viewing, editing and analysing binary data
 
 The Hex Editor View is the most important View in ImHex. It displays the currently loaded data as a range of hexadecimal values and ASCII and lets you modify it.
 
-<figure><img src="../.gitbook/assets/imhex_ioIIFHyxqs.png" alt=""><figcaption><p>The Hex Editor View</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/imhex_ioIIFHyxqs (1).png" alt=""><figcaption><p>The Hex Editor View</p></figcaption></figure>
 
 ### Selections
 
