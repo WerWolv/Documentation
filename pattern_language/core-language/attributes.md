@@ -90,7 +90,7 @@ Forces all members of the struct, union or array to be highlighted using the sam
 
 The Pattern Language by default optimizes arrays of built-in types so they don’t use up as much memory and are evaluated quicker.
 
-This same optimization can be applied to custom data types when they are marked with this attribute to tell the runtime the size and layout of this type will always be the same.&#x20;
+This same optimization can be applied to custom data types when they are marked with this attribute to tell the runtime the size and layout of this type will always be the same.
 
 **However** if the layout of the type this is applied to is not static or you're using functions or function statements (such as local variables) in them, highlighing and decoding of the data will be wrong! The behaviour is undefined and can change with any release. Do not depend on it!
 
@@ -98,7 +98,7 @@ This same optimization can be applied to custom data types when they are marked 
 
 This attribute changes the ordering and alignment of the fields within the bitfield it is applied to.
 
-&#x20;`ordering` can either be `std::core::BitfieldOrder::LeastToMostSignificant` or `std::core::BitfieldOrder::MostToLeastSignificant`. Ordering the fields from least to most significant bit is the default.
+`ordering` can either be `std::core::BitfieldOrder::LeastToMostSignificant` or `std::core::BitfieldOrder::MostToLeastSignificant`. Ordering the fields from least to most significant bit is the default.
 
 Using most to least significant also requires you to specify the full size of the bitfield so the runtime knows where to start placing the fields.
 
@@ -109,3 +109,9 @@ This attribute can be applied to structs, unions and bitfields. It causes tools 
 #### `[[highlight_hidden]]`
 
 Works the same as the `[[hidden]]` attribute but only hides the highlighting of the variable and not the variable in the pattern data view.
+
+#### `[[export]]`
+
+This attribute allows exporting of pattern local variables. By default pattern local variables will not end up in the output and are only used to store temporary values within patterns. Adding this attribute to one will make it end up in the output the same as a regular variable.
+
+Very useful if a value needs to be pre-processed before being output.
