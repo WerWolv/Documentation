@@ -9,8 +9,17 @@ and pass arrays to functions as parameters.
 
 Simple one dimensional array wrapper
 - `<T>`: The array types
-- `<Size>`: Size of the array
+- `<Size>`: Number of entries in the array
 
 ```rust
-struct Array<T, auto Size> { ... };
+struct Array<T, auto Size> { ... } [[format]];
+```
+### `std::ByteSizedArray`
+
+Simple array wrapper for an array with a size in bytes
+- `<T>`: The array types
+- `<NumBytes>`: Number of bytes the array contains
+
+```rust
+struct ByteSizedArray<T, auto NumBytes> { ... } [[format]];
 ```
