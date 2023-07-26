@@ -12,6 +12,8 @@ description: >-
 
 **Database Repo**: [https://github.com/WerWolv/ImHex-Patterns](https://github.com/WerWolv/ImHex-Patterns)
 
+**Documentation Repo**: [https://github.com/WerWolv/Documentation](https://github.com/WerWolv/Documentation)
+
 
 
 #### Pattern Language
