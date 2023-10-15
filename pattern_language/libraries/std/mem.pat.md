@@ -221,6 +221,17 @@ Gets the size of a custom section
 fn get_section_size(std::mem::Section section);
 ```
 
+### `std::mem::set_section_size`
+
+Changes the size of a custom section
+- `section`: The handle to the section
+- `size`: The new size of the section
+
+
+```rust
+fn set_section_size(std::mem::Section section, u128 size);
+```
+
 ### `std::mem::copy_section_to_section`
 
 Copies a range of bytes from one section into another
