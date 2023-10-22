@@ -334,7 +334,7 @@ Calculates the arc tangent of `value`.
 
 
 ```rust
-fn atan2(auto value);
+fn atan2(auto y, auto x);
 ```
 
 ### `std::math::sinh`
