@@ -329,7 +329,8 @@ fn atan(auto value);
 ### `std::math::atan2`
 
 Calculates the arc tangent of `value`.
-- `value`: Value
+- `y`: Value representing the proportion of the y-coordinate
+- `x`: Value representing the proportion of the x-coordinate.
 - `return`: Arc tangent of `value` in radians between `-pi` and `pi`
 
 
