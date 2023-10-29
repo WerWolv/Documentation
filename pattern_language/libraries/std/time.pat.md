@@ -118,6 +118,17 @@ Converts a value to a DOS time.
 fn to_dos_time(u16 value);
 ```
 
+### `std::time::filetime_to_unix`
+
+Converts a FILETIME to unix time.
+- `value`: The value to convert.
+- `return`: Timestamp formatted as unix time.
+
+
+```rust
+fn filetime_to_unix(u64 value);
+```
+
 ### `std::time::format`
 
 Formats a time according to the specified format string.

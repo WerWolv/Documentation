@@ -18,6 +18,13 @@ A DOS Time value
 ```rust
 using DOSTime = u16 [[format]];
 ```
+### `type::FILETIME`
+
+A 64bit FILETIME value
+
+```rust
+using FILETIME = u64 [[format]];
+```
 ### `type::time32_t`
 
 A 32 bit Unix time value
