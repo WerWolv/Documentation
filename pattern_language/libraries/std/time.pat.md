@@ -23,7 +23,7 @@ bitfield DOSTime { ... } [[sealed]];
 A type to represent a time in seconds since the epoch.
 
 ```rust
-using EpochTime = u128;
+using EpochTime = u32;
 ```
 ### `std::time::Time`
 
