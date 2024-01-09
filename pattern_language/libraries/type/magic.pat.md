@@ -12,3 +12,14 @@ A Magic number. Throws an error if the magic number does not match the expected 
 ```rust
 struct Magic<auto ExpectedValue> { ... } [[sealed, format]];
 ```
+
+
+## Functions
+
+### `type::fm`
+
+
+```rust
+fn fm(auto value);
+```
+
