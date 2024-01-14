@@ -6,7 +6,7 @@ Types dealing with various kinds of resource paths
 
 ### `type::DOSPath`
 
-A type representing a DOS path using a '\' backslash as delimeter
+A type representing a DOS path using a '\\' backslash as delimeter
 
 ```rust
 using DOSPath = type::Path;
