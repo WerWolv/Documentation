@@ -164,7 +164,7 @@ Reads a string value from the memory
 
 
 ```rust
-fn read_string(u128 address, u8 size);
+fn read_string(u128 address, u128 size);
 ```
 
 ### `std::mem::current_bit_offset`
