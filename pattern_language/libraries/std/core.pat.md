@@ -159,3 +159,14 @@ Changes the display name of a given pattern
 fn set_display_name(auto pattern, str name);
 ```
 
+### `std::core::set_pattern_comment`
+
+Changes the comment attached to a pattern
+- `pattern`: The pattern to modify
+- `name`: The new comment of the pattern
+
+
+```rust
+fn set_pattern_comment(auto pattern, str comment);
+```
+
