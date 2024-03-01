@@ -4,6 +4,83 @@ Type representing a Base64 encoded string
 
 ## Types
 
+### `std::mem::AlignTo`
+
+Aligns the cursor to the given alignment
+- `<alignment>`: The alignment to align to
+
+```rust
+struct AlignTo<auto Alignment> { ... } [[hidden, sealed]];
+```
+### `std::mem::Bytes`
+
+A type representing a sequence of bytes without any specific meaning
+- `<Size>`: The size of the sequence
+
+```rust
+struct Bytes<auto Size> { ... } [[sealed, format]];
+```
+### `std::mem::Endian`
+
+The Endianess of a value
+
+```rust
+enum Endian : u8 {
+    Big,
+    Little,
+    Native
+};
+```
+### `std::mem::MagicSearch`
+
+Searches for a sequence of bytes and places the given type at that address
+- `<Magic>`: The magic sequence to search for
+- `<T>`: The type to place at the address
+
+```rust
+struct MagicSearch<auto Magic, T> { ... };
+```
+### `std::mem::Reinterpreter`
+
+Reinterprets a value as a different one
+- `<From>`: The type to reinterpret from
+- `<To>`: The type to reinterpret to
+
+```rust
+union Reinterpreter<From, To> { ... };
+```
+### `std::mem::Section`
+
+A Handle for a custom Section
+
+```rust
+using Section = u128;
+```
+### `std::string::SizedString`
+
+A ASCII string with a prefixed size.
+- `<SizeType>`: The type of the size field.
+
+```rust
+using SizedString<SizeType> = std::string::SizedStringBase;
+```
+### `std::string::SizedString16`
+
+A UTF-16 string with a prefixed size.
+- `<SizeType>`: The type of the size field.
+
+```rust
+using SizedString16<SizeType> = std::string::SizedStringBase;
+```
+### `std::string::SizedStringBase`
+
+Base type for sized strings. Represents a string with its size preceeding it.
+- `<SizeType>`: The type of the size field.
+- `<DataType>`: The type of the characters.
+
+```rust
+struct SizedStringBase<, > { ... } [[sealed, format, transform]];
+```
 ### `type::Base64`
 
 Type representing a Base64 encoded string

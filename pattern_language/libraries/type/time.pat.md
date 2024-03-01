@@ -4,6 +4,51 @@ Types used to decode various different time formats
 
 ## Types
 
+### `std::time::DOSDate`
+
+A type to represent a DOS date.
+
+```rust
+bitfield DOSDate { ... } [[sealed]];
+```
+### `std::time::DOSTime`
+
+A type to represent a DOS time.
+
+```rust
+bitfield DOSTime { ... } [[sealed]];
+```
+### `std::time::EpochTime`
+
+A type to represent a time in seconds since the epoch.
+
+```rust
+using EpochTime = u32;
+```
+### `std::time::Time`
+
+A structured representation of a time and date.
+
+```rust
+struct Time { ... } [[sealed]];
+```
+### `std::time::TimeConverter`
+
+A helper type to convert between Time and u128.
+
+```rust
+union TimeConverter { ... };
+```
+### `std::time::TimeZone`
+
+A type to represent a time zone.
+
+```rust
+enum TimeZone : u8 {
+    Local,
+    UTC
+};
+```
 ### `type::DOSDate`
 
 A DOS Date value
