@@ -8,6 +8,7 @@
 * [Binary Pattern](common/binary-pattern.md)
 * [Providers](common/providers.md)
 * [Fonts](common/fonts.md)
+* [Extending ImHex](common/extending-imhex.md)
 
 ## Views
 
@@ -27,7 +28,7 @@
 
 ## Miscellaneous <a href="#misc" id="misc"></a>
 
-* [Welcome Screen](misc/welcome-screen.md)
-* [Content Store](misc/content-store.md)
-* [Settings](misc/settings.md)
+* [Welcome Screen](features/welcome-screen.md)
+* [Content Store](features/content-store.md)
+* [Settings](features/settings.md)
 * [Layouts and Workspaces](misc/layouts-and-workspaces.md)
