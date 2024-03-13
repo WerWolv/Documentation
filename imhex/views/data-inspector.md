@@ -4,7 +4,7 @@ description: Quickly decode bytes as various different encodings
 
 # Data Inspector
 
-<figure><img src="../.gitbook/assets/imhex_c3Id6DPQdl.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption><p>Data Inspector view</p></figcaption></figure>
 
 The Data Inspector aids identifying of encoded values in binary data without needing to write a full Pattern definition for it. It simply takes one or more bytes (depending on the type it decodes the bytes as) from the current cursor position in the data and decodes it as it.
 
@@ -14,7 +14,13 @@ Not all rows necessarily display a useful value. The Inspector tries to identify
 
 To copy the decoded value of a row, simply click on it once.
 
-### Editing
+### Hiding Rows
+
+It's possible to hide individual rows in the data inspector that aren't important for the current file. To do this, simply click on the `Edit` button and click on the Eye icon on the rows that should be hidden. Clicking on the `Edit` button again then, hides all the selected rows.
+
+<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption><p>Hiding / Unhiding rows</p></figcaption></figure>
+
+### Modifying values
 
 Some rows can also be modified for the data inspector to write the encoded byte value of your input back to where it read the previous value. This is not possible for all rows.
 

@@ -58,7 +58,7 @@ This visualizer expects an array of 4 Byte `float` values and will visualize it 
 
 This visualizer expects two arrays of 4 Byte `float` values and will visualize it as a Scatter Plot using the first array for the X Coordinates and the second array for the Y Coordinates. These two arrays need to have the same size.
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption><p>Scatter Plot Visualizer</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Scatter Plot Visualizer</p></figcaption></figure>
 
 `[[hex::visualize("image", pattern)]]`
 
@@ -72,7 +72,7 @@ Supported formats are: JPG, PNG, TGA, BMP, PSD, GIF, HDR and PIC
 
 This visualizer expects any pattern that contains raw RGBA8 values in the form of `RR GG BB AA`, one byte per color channel as well as the width and height in pixels of the resulting image. It will draw these bytes as is.
 
-<figure><img src="../.gitbook/assets/image (2) (1) (1) (1).png" alt=""><figcaption><p>Bitmap visualizer</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1) (1) (1) (1).png" alt=""><figcaption><p>Bitmap visualizer</p></figcaption></figure>
 
 `[[hex::visualize("sound", pattern, num_channels, sample_rate)]]`
 
