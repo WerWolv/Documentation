@@ -4,17 +4,19 @@ description: Binary analysis and visualisation of binary data
 
 # Data Information
 
-<figure><img src="../.gitbook/assets/imhex_ic53FLg2O6.png" alt=""><figcaption><p>The Data Information View</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image.png" alt="" width="518"><figcaption><p>The Data Information View</p></figcaption></figure>
 
 The Data Information View gives visual insight into various aspects of the file's binary composition through analysis information, diagrams and tables.
 
 ### Starting the analysis
 
-To start the analysis, first select the start and end address that will be analysed as well as the block size that's being used in the `Settings` section at the top.
+To start the analysis, first select the start and end address that will be analyzed. Afterwards simply click on `Analyze page` to start the analysis.
 
-{% hint style="info" %}
-The block size heavily depends on the kind of data you're interested in. Lowering it will show finer details but also increases the noise level. Increasing it will average out small details but also remove most of the noise.
-{% endhint %}
+<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption><p>Settings field</p></figcaption></figure>
+
+Further analysis options can be specified on a per-analysis basis by clicking on the gear icon of the individual blocks and changing their settings there.
+
+It's also possible to disable certain analysis blocks by unchecking their checkbox next to their name.
 
 ### Provider Information
 
@@ -40,13 +42,17 @@ The Byte distribution graph is a Histogram which displays the number of occurren
 
 #### Byte Types
 
-<figure><img src="../.gitbook/assets/imhex_VLCiHbZIVe.png" alt=""><figcaption><p>Byte types graph</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption><p>Byte types graph</p></figcaption></figure>
 
 The byte types graph displays a stacked relative frequency graph which contains information about how often a certain type of byte occurres within a block of data. The X-Axis of this graph represents the block's address and the Y-Axis the percentage of bytes in this block that are of the relevant type.&#x20;
 
 The byte type is determined using the [`<cctype>`](https://en.cppreference.com/w/c/string/byte) functions listed in the legend below. To hide certain types, simply click on their legend entry. There's also a drag bar on the graph that can be moved around to jump to the offset of that block in the Hex Editor View.image
 
 <figure><img src="../.gitbook/assets/msedge_obci52Dx8p.png" alt=""><figcaption><p>Table representing which bytes are captured by which byte type</p></figcaption></figure>
+
+Besides just byte types, the graph also highlights regions that have a lot of bytes of the same value in green and regions that most likely contain English plain text in purple.
+
+<figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption><p>Highlighted plain text </p></figcaption></figure>
 
 #### Entropy
 
@@ -73,6 +79,10 @@ This table displays information about the entire composition of the data.&#x20;
 * `Highest block entropy` and `Lowest block entropy` shows the value and address of the block with the highest or lowest entropy value.
 * `Plain text percentage` shows the percentage of the file that consists of plain text ASCII characters.
 
+{% hint style="info" %}
+The block size heavily depends on the kind of data you're interested in. Lowering it will show finer details but also increases the noise level. Increasing it will average out small details but also remove most of the noise.
+{% endhint %}
+
 #### Inferred properties
 
 ImHex tries to figure out potential properties of data based on the parameters it calculated before. These are displayed in Red below the composition information.
@@ -80,6 +90,8 @@ ImHex tries to figure out potential properties of data based on the parameters i
 <figure><img src="../.gitbook/assets/imhex_ul2qJfJ8kr.png" alt=""><figcaption><p>Compressed or encrypted data with a high entropy<br>was analyzed</p></figcaption></figure>
 
 <figure><img src="../.gitbook/assets/imhex_hOK0Y9k4qq.png" alt=""><figcaption><p>Data with a very high number of ASCII<br>characters was analyzed</p></figcaption></figure>
+
+### Byte Relationship
 
 #### Digram
 
@@ -94,3 +106,26 @@ The Digram visualizer takes random pairs of two bytes from the data and calculat
 The Layered Distribution or Layered Digram plot works the same way as the regular Digram visualizer but takes the position in the file into account as well. To do this, the file is split into a number of equally sized chunks and a byte value density map is generated for each of them. Each chunk then represents a single horizontal line in the diagram. The value 0x00 is all the way at the left, 0xFF all the way at the right of each row. The lighter the color, the more abundant that value is. The first row represents the byte density at the very start of the data, the last row represents the one at the very end.
 
 For more information about both the Digram and Layered Distribution plots, check out this [Blog Post by Codisec](https://codisec.com/binary-visualization-explained/).
+
+### Advanced Data Information
+
+This analysis runs a set of Yara rules on the data to determine things like the Programming language a binary was written in or what kind of compiler was used. More rules can be downloaded from the content store or added manually to the `<ImHex Folder>/yara/advanced_analysis` folder.
+
+<figure><img src="../.gitbook/assets/image (4).png" alt=""><figcaption><p>Advanced Data Information analysis</p></figcaption></figure>
+
+Example:
+
+```css
+rule CompilerMSVC {
+    meta:
+        category = "Compiler"
+        name = "MSVC"
+
+    strings:
+        $iostreams_mangled_name = "$basic_iostream@DU" ascii
+        $std_namespace = "@@std@@" ascii
+
+    condition:
+        any of them
+}
+```
