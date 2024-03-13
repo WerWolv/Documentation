@@ -4,9 +4,9 @@ description: Comparing two sets of data with each other
 
 # Diffing
 
-<figure><img src="../.gitbook/assets/imhex_vMa79kKuvH.png" alt=""><figcaption><p>The Diffing View</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption><p>The Diffing View</p></figcaption></figure>
 
-The Diffing View implements a simple byte-to-byte comparison algorithm to allow for easy detection of differences between two sets of binary data.
+The Diffing View can find differences between two files, highlight them and create a list containing all differences.&#x20;
 
 ### Diffing
 
@@ -17,6 +17,16 @@ All bytes that differ from each other between the two providers will now be high
 * `Yellow` marked bytes differ from each other in their value.
 * `Green` marked bytes exist in Provider A but not in Provider B.
 * `Red` marked bytes exist in Provider B but not in Provider A.
+
+### Diffing Options
+
+There's multiple diffing algorithms available in ImHex that can be chosen and configured by clicking on the Gear icon next to the provider selector.
+
+<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption><p>Diffing options</p></figcaption></figure>
+
+* `Simple byte-by-byte algorithm` does a primitive byte-by-byte comparison. If the two bytes at the same address in the two providers differ from each other, they're highlighted in yellow
+* `Myers's bit-vector algorithm` does a more advanced comparison trying to find inserted and removed byte regions besides just changes in the file. The Window size parameter specifies how many bytes to look ahead for possible insertions. \
+  This algorithm is significantly slower than the primitive one, however it can also be much more useful.
 
 ### Differences list
 
