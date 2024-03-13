@@ -4,7 +4,7 @@ description: Downloading additional external features
 
 # Content Store
 
-<figure><img src="../.gitbook/assets/image (1).png" alt="" width="557"><figcaption><p>The Content Store</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1).png" alt="" width="557"><figcaption><p>The Content Store</p></figcaption></figure>
 
 The Content Store is a simple store front that can be used to download extra features made by the community.&#x20;
 
@@ -14,7 +14,7 @@ If you'd like to add your own items to the store, please submit a PR to the [htt
 
 To access the Content Store, simply click on `Extras` in the Menu Bar and select `Content Store`.
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (14).png" alt=""><figcaption></figcaption></figure>
 
 ### Content
 

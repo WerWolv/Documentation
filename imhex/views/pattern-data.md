@@ -44,7 +44,7 @@ struct Coordinates {
 } [[hex::visualize("coordinates", latitude, longitude)]];
 ```
 
-The entry in the Value column will then turn into a Button <img src="../.gitbook/assets/image (5).png" alt="" data-size="line">that will open the visualizer popup with the specific visualization inside.
+The entry in the Value column will then turn into a Button <img src="../.gitbook/assets/image (5) (1).png" alt="" data-size="line">that will open the visualizer popup with the specific visualization inside.
 
 #### Available Visualizers
 
@@ -52,13 +52,13 @@ The entry in the Value column will then turn into a Button <img src="../.gitbook
 
 This visualizer expects an array of 4 Byte `float` values and will visualize it using a Line Plot
 
-<figure><img src="../.gitbook/assets/image (4) (1) (1).png" alt=""><figcaption><p>Line Plot Visualizer</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (4) (1) (1) (1).png" alt=""><figcaption><p>Line Plot Visualizer</p></figcaption></figure>
 
 `[[hex::visualize("scatter_plot", x_float_array, y_float_array)]]`
 
 This visualizer expects two arrays of 4 Byte `float` values and will visualize it as a Scatter Plot using the first array for the X Coordinates and the second array for the Y Coordinates. These two arrays need to have the same size.
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption><p>Scatter Plot Visualizer</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption><p>Scatter Plot Visualizer</p></figcaption></figure>
 
 `[[hex::visualize("image", pattern)]]`
 
@@ -66,19 +66,19 @@ This visualizer expects any pattern that contains the bytes of an image (such as
 
 Supported formats are: JPG, PNG, TGA, BMP, PSD, GIF, HDR and PIC
 
-<figure><img src="../.gitbook/assets/image (9).png" alt=""><figcaption><p>Image Visualizet</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (9) (1).png" alt=""><figcaption><p>Image Visualizet</p></figcaption></figure>
 
 `[[hex::visualize("bitmap", pattern, width, height)]]`
 
 This visualizer expects any pattern that contains raw RGBA8 values in the form of `RR GG BB AA`, one byte per color channel as well as the width and height in pixels of the resulting image. It will draw these bytes as is.
 
-<figure><img src="../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption><p>Bitmap visualizer</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1) (1) (1).png" alt=""><figcaption><p>Bitmap visualizer</p></figcaption></figure>
 
 `[[hex::visualize("sound", pattern, num_channels, sample_rate)]]`
 
 This visualizer expects any pattern that contains all the bytes of a raw PCM audio stream, the number of channels that are being used and the sample rate. It allows you to convert this data to sound to listen to.
 
-<figure><img src="../.gitbook/assets/image (8).png" alt=""><figcaption><p>Sound Visualizer</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (8) (1).png" alt=""><figcaption><p>Sound Visualizer</p></figcaption></figure>
 
 `[[hex::visualize("3d", vertices, indices)]]`
 
@@ -86,22 +86,22 @@ This visualizer expects an array of 4-Byte `float` values containing the vertex 
 
 The visualizer takes this data and renders a 3D model out of it
 
-<figure><img src="../.gitbook/assets/image (6).png" alt=""><figcaption><p>3D Visualizer</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (6) (1).png" alt=""><figcaption><p>3D Visualizer</p></figcaption></figure>
 
 `[[hex::visualize("chunk_entropy", pattern, chunk_size)]]`
 
 This visualizer expects any pattern whose bytes will be split into chunks of the size specified by the `chunk_size` parameter. It will then display an entropy graph of these bytes
 
-<figure><img src="../.gitbook/assets/image (7).png" alt=""><figcaption><p>Enropy Visualizer</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (7) (1).png" alt=""><figcaption><p>Enropy Visualizer</p></figcaption></figure>
 
 `[[hex::visualize("hex_viewer", pattern)]]`
 
 This visualizer expects any pattern whose bytes will be displayed in a hex viewer similar to the one in the hex editor view. This is mainly useful for splitting out large chunks of bytes and looking at them individually or for debugging when getting patterns into the right format for other visualizers to work with.
 
-<figure><img src="../.gitbook/assets/image (3) (1).png" alt=""><figcaption><p>Hex Viewer Visualizer</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3) (1) (1).png" alt=""><figcaption><p>Hex Viewer Visualizer</p></figcaption></figure>
 
 `[[hex::visualize("coordinates", latitude, longitude)]]`
 
 This visualizer expects a latitude and longitude value in form of a floating point number and visualizes this coordinate on a map of our planet. It also allows for checking the internet for the approximate name / address of this location.
 
-<figure><img src="../.gitbook/assets/image (4) (1).png" alt=""><figcaption><p>Coordinates Visualizer</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (4) (1) (1).png" alt=""><figcaption><p>Coordinates Visualizer</p></figcaption></figure>
