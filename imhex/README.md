@@ -16,8 +16,8 @@ description: >-
 
 #### Pattern Language
 
-{% content-ref url="http://localhost:5000/o/xfl3734L2rDBS2sD53Zi/s/WZzDdGjxmgMSIE3xly6o/" %}
-[Pattern Language](http://localhost:5000/o/xfl3734L2rDBS2sD53Zi/s/WZzDdGjxmgMSIE3xly6o/)
+{% content-ref url="https://app.gitbook.com/o/xfl3734L2rDBS2sD53Zi/s/WZzDdGjxmgMSIE3xly6o/" %}
+[Pattern Language](https://app.gitbook.com/o/xfl3734L2rDBS2sD53Zi/s/WZzDdGjxmgMSIE3xly6o/)
 {% endcontent-ref %}
 
 {% embed url="https://github.com/WerWolv/ImHex-Patterns" %}

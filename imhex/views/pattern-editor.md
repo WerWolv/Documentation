@@ -12,7 +12,7 @@ The Pattern Editor view is the main way to interact with the Pattern Language in
 
 The Pattern Language is a custom C++ and Rust inspired scripting language that can be used to analyse binary data. In ImHex it's tightly integrated with the Hex Editor View to provide highlighting of byte regions and the Pattern Data View to display all generated patterns.
 
-For more information on the Pattern Language, consult the [Pattern Language Documentation](http://localhost:5000/o/xfl3734L2rDBS2sD53Zi/s/WZzDdGjxmgMSIE3xly6o/).
+For more information on the Pattern Language, consult the [Pattern Language Documentation](https://app.gitbook.com/o/xfl3734L2rDBS2sD53Zi/s/WZzDdGjxmgMSIE3xly6o/).
 
 ### Writing Pattern Language code
 

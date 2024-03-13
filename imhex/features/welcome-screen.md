@@ -4,13 +4,23 @@ description: The initial page greeting you when starting ImHex
 
 # Welcome Screen
 
-<figure><img src="../.gitbook/assets/imhex_6fdYrm8xYB.png" alt=""><figcaption><p>The Welcome Screen</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption><p>The Welcome Screen</p></figcaption></figure>
 
 The Welcome Screen is what shows up at the start when ImHex is loaded. It contains a bunch of frequently used options and information.
 
 {% hint style="info" %}
 Pressing the `X` button at the top right will close the Welcome Screen without loading any file. Useful when you want to interact with features of ImHex that don't require any data to be loaded.
 {% endhint %}
+
+### Quick Settings
+
+ImHex has a simplified mode which drastically reduces the visual load when using ImHex. Enabling it will turn ImHex into a pure hex viewer editor without any extra analysis tools.
+
+To enable it, turn on the `Simplified` Toggle at the bottom of the Welcome Screen.
+
+| Welcome Screen                                                                                    | Editing Screen                                                                                 |
+| ------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------- |
+| <img src="../.gitbook/assets/image (2).png" alt="Simplified Welcome Screen" data-size="original"> | <img src="../.gitbook/assets/image (1).png" alt="Simplified Editor Mode" data-size="original"> |
 
 ### Start
 
@@ -44,3 +54,5 @@ Links to customization options within ImHex such as the Settings.
 ### Learn
 
 Learning resources about ImHex including a link to this documentation page, a link to the latest release and the Plugin API Documentation.
+
+Right below, there's buttons that take you to ImHex's interactive tutorials as well as the achievement page. Both are meant to teach the user the basics of how to use ImHex quickly.
