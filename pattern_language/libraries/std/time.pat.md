@@ -88,7 +88,7 @@ fn to_utc(std::time::EpochTime epoch_time);
 ### `std::time::now`
 
 Queries the current time in the specified time zone.
-- `time_zone`: The time zone to query.
+- `[time_zone]`: The time zone to query. Defaults to local.
 - `return`: The current time in the specified time zone.
 
 
@@ -133,7 +133,7 @@ fn filetime_to_unix(u64 value);
 
 Formats a time according to the specified format string.
 - `time`: The time to format.
-- `format_string`: The format string to use.
+- `[format_string]`: The format string to use. Defaults to "%c".
 - `return`: The formatted time.
 
 
@@ -145,7 +145,7 @@ fn format(std::time::Time time, str format_string);
 
 Formats a DOS date according to the specified format string.
 - `date`: The DOS date to format.
-- `format_string`: The format string to use.
+- `[format_string]`: The format string to use. Defaults to "{}/{}/{}".
 - `return`: The formatted DOS date.
 
 
@@ -157,7 +157,7 @@ fn format_dos_date(std::time::DOSDate date, str format_string);
 
 Formats a DOS time according to the specified format string.
 - `time`: The DOS time to format.
-- `format_string`: The format string to use.
+- `[format_string]`: The format string to use. Defaults to "{:02}:{:02}:{:02}".
 - `return`: The formatted DOS time.
 
 

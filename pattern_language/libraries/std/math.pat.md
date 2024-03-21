@@ -462,9 +462,9 @@ Calculates the sum of all values in the specified memory range.
 - `start`: Start address
 - `end`: End address
 - `valueSize`: Size of each value in bytes
-- `section`: Section to use
-- `operation`: Operation to use
-- `endian`: Endianness to use
+- `[section]`: Section to use
+- `[operation]`: Operation to use. Defaults to addition
+- `[endian]`: Endianness to use. Defaults to native
 - `return`: Sum of all values in the specified memory range
 
 

@@ -83,11 +83,20 @@ Checks if a pattern has a specific attribute assigned to it
 fn has_attribute(auto pattern, str attribute);
 ```
 
-### `std::core::get_attribute_value`
+### `std::core::get_attribute_argument`
 
-Returns the first parameter of the attribute of a pattern if it has one
+Returns the nth parameter of the attribute of a pattern if it has one
 - `pattern`: The pattern to check
 - `attribute`: The attribute's name to query
+- `[index]`: The parameter index of the attribute to return. Defaults to 0
+
+
+```rust
+fn get_attribute_argument(auto pattern, str attribute, u32 index);
+```
+
+### `std::core::get_attribute_value`
+
 
 
 ```rust
