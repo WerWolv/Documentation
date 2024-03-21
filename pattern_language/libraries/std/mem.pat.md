@@ -134,11 +134,12 @@ fn find_sequence_in_range(u128 occurrence_index, u128 offsetFrom, u128 offsetTo,
 Reads a unsigned value from the memory
 - `address`: The address to read from
 - `size`: The size of the value to read
-- `endian`: The endianess of the value to read
+- `[endian]`: The endianess of the value to read. Defaults to native
 - `return`: The value read
 
 
 ```rust
+fn read_unsigned(u128 address, u8 size);
 fn read_unsigned(u128 address, u8 size, std::mem::Endian endian);
 ```
 
@@ -147,11 +148,12 @@ fn read_unsigned(u128 address, u8 size, std::mem::Endian endian);
 Reads a signed value from the memory
 - `address`: The address to read from
 - `size`: The size of the value to read
-- `endian`: The endianess of the value to read
+- `[endian]`: The endianess of the value to read. Defaults to native
 - `return`: The value read
 
 
 ```rust
+fn read_signed(u128 address, u8 size);
 fn read_signed(u128 address, u8 size, std::mem::Endian endian);
 ```
 

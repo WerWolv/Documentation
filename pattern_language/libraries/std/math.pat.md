@@ -462,13 +462,16 @@ Calculates the sum of all values in the specified memory range.
 - `start`: Start address
 - `end`: End address
 - `valueSize`: Size of each value in bytes
-- `section`: Section to use
-- `operation`: Operation to use
-- `endian`: Endianness to use
+- `[section]`: Section to use. Optional
+- `[operation]`: Operation to use. Defaults to addition
+- `[endian]`: Endianness to use. Defaults to native
 - `return`: Sum of all values in the specified memory range
 
 
 ```rust
+fn accumulate(u128 start, u128 end, u128 valueSize);
+fn accumulate(u128 start, u128 end, u128 valueSize, std::mem::Section section);
+fn accumulate(u128 start, u128 end, u128 valueSize, std::mem::Section section, std::math::AccumulateOperation operation);
 fn accumulate(u128 start, u128 end, u128 valueSize, std::mem::Section section, std::math::AccumulateOperation operation, std::mem::Endian endian);
 ```
 

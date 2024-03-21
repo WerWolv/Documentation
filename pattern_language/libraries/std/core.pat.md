@@ -83,15 +83,17 @@ Checks if a pattern has a specific attribute assigned to it
 fn has_attribute(auto pattern, str attribute);
 ```
 
-### `std::core::get_attribute_value`
+### `std::core::get_attribute_argument`
 
-Returns the first parameter of the attribute of a pattern if it has one
+Returns the nth parameter of the attribute of a pattern if it has one
 - `pattern`: The pattern to check
 - `attribute`: The attribute's name to query
+- `[index]`: The attribute's parameter index to get. Defaults to 0
 
 
 ```rust
-fn get_attribute_value(auto pattern, str attribute);
+fn get_attribute_attribute(auto pattern, str attribute);
+fn get_attribute_attribute(auto pattern, str attribute, u32 index);
 ```
 
 ### `std::core::set_endian`
@@ -113,22 +115,6 @@ Gets the current default endianess.
 
 ```rust
 fn get_endian();
-```
-
-### `std::core::set_bitfield_order`
-
-
-
-```rust
-fn set_bitfield_order(std::core::BitfieldOrder order);
-```
-
-### `std::core::get_bitfield_order`
-
-
-
-```rust
-fn get_bitfield_order();
 ```
 
 ### `std::core::array_index`

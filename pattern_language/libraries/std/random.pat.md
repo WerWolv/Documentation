@@ -66,22 +66,26 @@ The random number generator used internally is C++'s std::mt19937_64 Mersenne Tw
 > - `Poisson(mean) -> i128`
 
 - `distribution`: Distribution to use
-- `param1`: This parameter depends on the type of distribution used.
-- `param2`: This parameter depends on the type of distribution used.
+- `[param1]`: This parameter depends on the type of distribution used. Defaults to 0
+- `[param2]`: This parameter depends on the type of distribution used. Defaults to 0
 
 
 ```rust
+fn generate_using(std::random::Distribution distribution);
+fn generate_using(std::random::Distribution distribution, auto param1);
 fn generate_using(std::random::Distribution distribution, auto param1, auto param2);
 ```
 
 ### `std::random::generate`
 
 Generates a uniformly distributed random number between `min` and `max`
-- `min`: Minimum number
-- `max`: Maximum number
+- `[min]`: Minimum number. Defaults to 0
+- `[max]`: Maximum number. Defaults to `u64_max`
 
 
 ```rust
+fn generate();
+fn generate(u64 min);
 fn generate(u64 min, u64 max);
 ```
 
