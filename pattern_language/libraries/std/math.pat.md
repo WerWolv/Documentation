@@ -281,7 +281,7 @@ fn pow(auto base, auto exp);
 
 ### `std::math::exp`
 
-Calculates the value of the natural number `e`	raised to the power of `value`.
+Calculates the value of the natural number `e`    raised to the power of `value`.
 - `value`: Exponent
 - `return`: `e` raised to the power of `value`
 
