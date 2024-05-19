@@ -129,3 +129,13 @@ Deletes a file from disk. This will also automatically close this file
 fn remove(std::file::Handle handle);
 ```
 
+### `std::file::create_directories`
+
+Create all directories for the provided path
+- `path`: The path for which all directories should be created
+
+
+```rust
+fn create_directories(str path);
+```
+
