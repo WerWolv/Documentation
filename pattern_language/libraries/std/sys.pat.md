@@ -7,7 +7,7 @@ Basic helper functions
 ### `std::assert`
 
 Asserts that a given value is true. If it's not, abort evaluation and print the given message to the console
-- `conditoon`: The condition that is required to be true
+- `condition`: The condition that is required to be true
 - `message`: The message to print in case the assertion doesn't hold
 
 
@@ -18,7 +18,7 @@ fn assert(bool condition, str message);
 ### `std::assert_warn`
 
 Asserts that a given value is true. If it's not, print the given message to the console as a warning
-- `conditoon`: The condition that is required to be true
+- `condition`: The condition that is required to be true
 - `message`: The message to print in case the assertion doesn't hold
 
 
