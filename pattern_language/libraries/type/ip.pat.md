@@ -4,6 +4,28 @@ Types used to decode IP addresses
 
 ## Types
 
+### `std::string::NullString`
+
+A null-terminated ASCII string.
+
+```rust
+using NullString = std::string::NullStringBase;
+```
+### `std::string::NullString16`
+
+A null-terminated UTF-16 string.
+
+```rust
+using NullString16 = std::string::NullStringBase;
+```
+### `std::string::NullStringBase`
+
+Base type for null-terminated strings. Represents a string with its size determined by the first 0x00 byte found.
+- `<DataType>`: The type of the characters.
+
+```rust
+struct NullStringBase<> { ... } [[format]];
+```
 ### `std::string::SizedString`
 
 A ASCII string with a prefixed size.
