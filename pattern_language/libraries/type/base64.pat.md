@@ -76,7 +76,7 @@ Base type for null-terminated strings. Represents a string with its size determi
 - `<DataType>`: The type of the characters.
 
 ```rust
-struct NullStringBase<> { ... } [[format]];
+struct NullStringBase<> { ... } [[sealed, format, transform]];
 ```
 ### `std::string::SizedString`
 
