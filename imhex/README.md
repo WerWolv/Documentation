@@ -14,7 +14,11 @@ description: >-
 
 
 
-#### Pattern Language
+### Pattern Language
+
+{% hint style="info" %}
+The **Pattern Language** is ImHex's custom data processing language. For more information about the Language itself, check out its documentation page or the file format repository below&#x20;
+{% endhint %}
 
 {% content-ref url="https://app.gitbook.com/o/xfl3734L2rDBS2sD53Zi/s/WZzDdGjxmgMSIE3xly6o/" %}
 [Pattern Language](https://app.gitbook.com/o/xfl3734L2rDBS2sD53Zi/s/WZzDdGjxmgMSIE3xly6o/)
@@ -22,7 +26,7 @@ description: >-
 
 {% embed url="https://github.com/WerWolv/ImHex-Patterns" %}
 
-#### Screenshots
+### Screenshots
 
 <figure><img src="https://user-images.githubusercontent.com/10835354/139717326-8044769d-527b-4d88-8adf-2d4ecafdca1f.png" alt=""><figcaption></figcaption></figure>
 
