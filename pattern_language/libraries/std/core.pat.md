@@ -231,3 +231,14 @@ Changes the comment attached to a pattern
 fn set_pattern_comment(auto pattern, str comment);
 ```
 
+### `std::core::execute_function`
+
+Executes the function with the given name, passing in all given arguments
+- `function_name`: The namespace-prefixed name of the function
+- `args`: Arguments to pass to the function
+
+
+```rust
+fn execute_function(str function_name, auto ... args);
+```
+
