@@ -48,3 +48,12 @@ Returns the number of parameters in a parameter pack.
 fn sizeof_pack(auto ... pack, );
 ```
 
+### `std::unimplemented`
+
+Throws an error notifying the developer that the current codepath is not implemented currently.
+
+
+```rust
+fn unimplemented();
+```
+

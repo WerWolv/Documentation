@@ -167,15 +167,6 @@ Reads a string value from the memory
 fn read_string(u128 address, u128 size);
 ```
 
-### `std::mem::current_bit_offset`
-
-Gets the current bit offset within the current byte that a bitfield will read.
-
-
-```rust
-fn current_bit_offset();
-```
-
 ### `std::mem::read_bits`
 
 Reads a number of bits from the specified bit offset within the specified byte
@@ -256,5 +247,15 @@ Copies a range of bytes from the main section into a custom section
 
 ```rust
 fn copy_value_to_section(auto value, std::mem::Section to_section, u64 to_address);
+```
+
+### `std::mem::current_bit_offset`
+
+Returns the current bit offset when inside of a bitfield.
+- `return`: The current bit offset between 0 and 7
+
+
+```rust
+fn current_bit_offset();
 ```
 
