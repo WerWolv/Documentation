@@ -85,7 +85,7 @@ fn align_to(u128 alignment, u128 value);
 
 ### `std::mem::base_address`
 
-Gets the base address of the memory
+Gets the base address of the data
 - `return`: The base address of the memory
 
 
@@ -95,7 +95,7 @@ fn base_address();
 
 ### `std::mem::size`
 
-Gets the size of the memory
+Gets the size of the data
 - `return`: The size of the memory
 
 
@@ -105,7 +105,7 @@ fn size();
 
 ### `std::mem::find_sequence`
 
-Finds a sequence of bytes in the memory
+Finds a sequence of bytes in the data
 - `occurrence_index`: The index of the occurrence to find
 - `bytes`: The bytes to find
 - `return`: The address of the sequence
@@ -117,7 +117,7 @@ fn find_sequence(u128 occurrence_index, auto ... bytes);
 
 ### `std::mem::find_sequence_in_range`
 
-Finds a sequence of bytes in a specific region of the memory
+Finds a sequence of bytes in a specific region of the data
 - `occurrence_index`: The index of the occurrence to find
 - `offsetFrom`: The offset from which to start searching
 - `offsetTo`: The offset to which to search
@@ -127,6 +127,32 @@ Finds a sequence of bytes in a specific region of the memory
 
 ```rust
 fn find_sequence_in_range(u128 occurrence_index, u128 offsetFrom, u128 offsetTo, auto ... bytes);
+```
+
+### `std::mem::find_string`
+
+Finds a string in the data
+- `occurrence_index`: The index of the occurrence to find
+- `string`: The string to find
+- `return`: The address of the sequence
+
+
+```rust
+fn find_string(u128 occurrence_index, str string);
+```
+
+### `std::mem::find_string_in_range`
+
+Finds a string in a specific region of the data
+- `occurrence_index`: The index of the occurrence to find
+- `offsetFrom`: The offset from which to start searching
+- `offsetTo`: The offset to which to search
+- `string`: The string to find
+- `return`: The address of the sequence
+
+
+```rust
+fn find_string_in_range(u128 occurrence_index, u128 offsetFrom, u128 offsetTo, str string);
 ```
 
 ### `std::mem::read_unsigned`
