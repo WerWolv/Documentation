@@ -58,6 +58,14 @@ This pragma overwrites the default endianess of all variables declared in the fi
 
 This pragma specifies the MIME type of files that can be interpreted by this pattern. This is useful for automatically loading relevant patterns when a file is opened. The MIME type of the loaded file will be matched against the MIME type specified here and if it matches, a popup will appear asking if this pattern should get loaded.
 
+#### `magic`
+
+**Possible values:** A byte pattern in the form of `[ AA BB ?? D? ] @ 0x00`
+
+This pragma specifies a binary pattern that is used to check the loaded data in order to determine if this pattern can be used to parse this data.
+
+The pattern consists of two parts. The first one is a list of hexadecimal values where ? denotes a wildcard. This list is checked in order against the data, nibbles that are marked as wildcards are ignored and not compared. The second part is the hexadecimal value after the @ symbol which is interpreted as an address where to look for that pattern in the data.
+
 #### `base_address`
 
 **Possible values:** Any integer value **Default:** `0x00`
