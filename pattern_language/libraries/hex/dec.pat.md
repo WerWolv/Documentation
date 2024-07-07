@@ -120,3 +120,16 @@ Decompresses the bytes of a pattern into a section using the zstd algorithm
 fn zstd_decompress(auto pattern, std::mem::Section section);
 ```
 
+### `hex::dec::lz4_decompress`
+
+Decompresses the bytes of a pattern into a section using the lz4 algorithm
+- `pattern`: The pattern whose bytes should be decompressed
+- `section`: The section to decompress the data into
+- `frame`: Whether the data is framed or not
+- `return`: true if successful, false otherwise
+
+
+```rust
+fn lz4_decompress(auto pattern, std::mem::Section section, bool frame);
+```
+
