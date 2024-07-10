@@ -98,7 +98,7 @@ This same optimization can be applied to custom data types when they are marked 
 
 This attribute changes the ordering and alignment of the fields within the bitfield it is applied to.
 
-`ordering` can either be `std::core::BitfieldOrder::LeastToMostSignificant` or `std::core::BitfieldOrder::MostToLeastSignificant`. Ordering the fields from least to most significant bit is the default.
+`ordering` can either be `std::core::BitfieldOrder::LeastToMostSignificant` or `std::core::BitfieldOrder::MostToLeastSignificant`. By default, if no custom bitfield ordering is set, if the bitfield is little endian, it orders the fields from least to most significant bit. If it's big endian, it orders the fields from most to least significant bit.
 
 Using most to least significant also requires you to specify the full size of the bitfield so the runtime knows where to start placing the fields.
 
