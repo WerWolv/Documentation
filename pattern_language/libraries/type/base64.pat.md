@@ -22,7 +22,7 @@ struct Bytes<auto Size> { ... } [[sealed, format]];
 ```
 ### `std::mem::Endian`
 
-The Endianess of a value
+The endianness of a value
 
 ```rust
 enum Endian : u8 {
@@ -96,7 +96,7 @@ using SizedString16<SizeType> = std::string::SizedStringBase;
 ```
 ### `std::string::SizedStringBase`
 
-Base type for sized strings. Represents a string with its size preceeding it.
+Base type for sized strings. Represents a string with its size preceding it.
 - `<SizeType>`: The type of the size field.
 - `<DataType>`: The type of the characters.
 

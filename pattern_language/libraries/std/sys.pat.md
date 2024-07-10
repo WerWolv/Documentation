@@ -50,7 +50,7 @@ fn sizeof_pack(auto ... pack, );
 
 ### `std::unimplemented`
 
-Throws an error notifying the developer that the current codepath is not implemented currently.
+Throws an error notifying the developer that the current code path is not implemented currently.
 
 
 ```rust

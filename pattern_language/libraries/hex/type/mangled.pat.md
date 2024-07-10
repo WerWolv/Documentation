@@ -29,7 +29,7 @@ struct Bytes<auto Size> { ... } [[sealed, format]];
 ```
 ### `std::mem::Endian`
 
-The Endianess of a value
+The endianness of a value
 
 ```rust
 enum Endian : u8 {

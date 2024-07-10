@@ -34,7 +34,7 @@ struct Bytes<auto Size> { ... } [[sealed, format]];
 ```
 ### `std::mem::Endian`
 
-The Endianess of a value
+The endianness of a value
 
 ```rust
 enum Endian : u8 {
@@ -105,9 +105,9 @@ fn get_attribute_value(auto pattern, str attribute);
 
 ### `std::core::set_endian`
 
-Sets the current default endianess.
-Any patterns created following this attribute will be created using the set endianess.
-- `endian`: The new default endianess
+Sets the current default endianness.
+Any patterns created following this attribute will be created using the set endianness.
+- `endian`: The new default endianness
 
 
 ```rust
@@ -116,8 +116,8 @@ fn set_endian(std::mem::Endian endian);
 
 ### `std::core::get_endian`
 
-Gets the current default endianess.
-- `return`: The currently set default endianess
+Gets the current default endianness.
+- `return`: The currently set default endianness
 
 
 ```rust

@@ -22,7 +22,7 @@ struct Bytes<auto Size> { ... } [[sealed, format]];
 ```
 ### `std::mem::Endian`
 
-The Endianess of a value
+The endianness of a value
 
 ```rust
 enum Endian : u8 {
@@ -160,7 +160,7 @@ fn find_string_in_range(u128 occurrence_index, u128 offsetFrom, u128 offsetTo, s
 Reads a unsigned value from the memory
 - `address`: The address to read from
 - `size`: The size of the value to read
-- `[endian]`: The endianess of the value to read. Defaults to native
+- `[endian]`: The endianness of the value to read. Defaults to native
 - `return`: The value read
 
 
@@ -173,7 +173,7 @@ fn read_unsigned(u128 address, u8 size, std::mem::Endian endian);
 Reads a signed value from the memory
 - `address`: The address to read from
 - `size`: The size of the value to read
-- `[endian]`: The endianess of the value to read. Defaults to native
+- `[endian]`: The endianness of the value to read. Defaults to native
 - `return`: The value read
 
 

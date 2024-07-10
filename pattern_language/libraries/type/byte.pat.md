@@ -33,7 +33,7 @@ struct Bytes<auto Size> { ... } [[sealed, format]];
 ```
 ### `std::mem::Endian`
 
-The Endianess of a value
+The endianness of a value
 
 ```rust
 enum Endian : u8 {
@@ -76,7 +76,7 @@ bitfield Bits { ... } [[format, bitfield_order]];
 ```
 ### `type::Byte`
 
-Type representing a single Byte. Decodes the byte as it's hexadeicmal value, individual bits and nibbles
+Type representing a single Byte. Decodes the byte as it's hexadecimal value, individual bits and nibbles
 
 ```rust
 union Byte { ... } [[format, single_color]];

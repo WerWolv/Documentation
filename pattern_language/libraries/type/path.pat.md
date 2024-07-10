@@ -22,7 +22,7 @@ struct Bytes<auto Size> { ... } [[sealed, format]];
 ```
 ### `std::mem::Endian`
 
-The Endianess of a value
+The endianness of a value
 
 ```rust
 enum Endian : u8 {
@@ -58,30 +58,30 @@ using Section = u128;
 ```
 ### `type::DOSPath`
 
-A type representing a DOS path using a '\\' backslash as delimeter
+A type representing a DOS path using a '\\' backslash as delimiter
 
 ```rust
 using DOSPath = type::Path;
 ```
 ### `type::Path`
 
-A generic type representing a path with an arbitrary delimeter
-- `<Delimeter>`: The delimeter sequence used to separate two path segments
+A generic type representing a path with an arbitrary delimiter
+- `<Delimiter>`: The delimiter sequence used to separate two path segments
 
 ```rust
-struct Path<auto Delimeter> { ... } [[format]];
+struct Path<auto Delimiter> { ... } [[format]];
 ```
 ### `type::PathSegment`
 
 Type representing a single path segment. Use the `Path` type instead of using this on its own
-- `<Delimeter>`: The delimeter sequence used to separate two path segments
+- `<Delimiter>`: The delimiter sequence used to separate two path segments
 
 ```rust
-struct PathSegment<auto Delimeter> { ... } [[sealed, format]];
+struct PathSegment<auto Delimiter> { ... } [[sealed, format]];
 ```
 ### `type::UnixPath`
 
-A type representing a Unix path using a '/' forwardslash as delimeter
+A type representing a Unix path using a '/' forward slash as delimiter
 
 ```rust
 using UnixPath = type::Path;
