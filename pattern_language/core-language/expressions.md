@@ -57,7 +57,7 @@ String operators are any operators acting on strings directly.
 
 | Operator       | Description                    |
 | -------------- | ------------------------------ |
-| `a + b`        | String concatination           |
+| `a + b`        | String concatenation           |
 | `str * number` | String repetition              |
 | `a == b`       | Lexical equality               |
 | `a != b`       | Lexical inequality             |
@@ -70,14 +70,14 @@ String operators are any operators acting on strings directly.
 
 Member access is the act of accessing members inside a struct, union or bitfield or referencing the index of an array to access its value.
 
-Below the simplest operations are shown, however they may be concatinated and extended indefinitely as suitable.
+Below the simplest operations are shown, however they may be concatenated and extended indefinitely as suitable.
 
 | Operation       | Access type                                                                           |
 | --------------- | ------------------------------------------------------------------------------------- |
 | `structVar.var` | Accessing a variable inside a struct, union or bitfield                               |
 | `arrayVar[x]`   | Accessing a variable inside an array                                                  |
 | `parent.var`    | Accessing a variable inside the parent struct or union of the current struct or union |
-| `this`          | Refering to the current pattern. Can only be used inside of a struct or union         |
+| `this`          | Referring to the current pattern. Can only be used inside of a struct or union        |
 
 ### `$` Dollar Operator
 

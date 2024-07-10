@@ -25,7 +25,7 @@ Unsigned integer types represent regular binary numbers. They are displayed as a
 
 #### Signed Integers
 
-Signed integer types represent signed binary numbers in Two's Completement representation. They are displayed as a integer value ranging from $$-(2^{8*Size}-1)$$ to $$(2^{8*Size}-1) - 1$$
+Signed integer types represent signed binary numbers in Two's Complement representation. They are displayed as a integer value ranging from $$-(2^{8*Size}-1)$$ to $$(2^{8*Size}-1) - 1$$
 
 | Name   | Size     |
 | ------ | -------- |
@@ -57,9 +57,9 @@ Floating Point types represent a floating pointer number. On most modern platfor
 | `str`    | Varying | Heap allocated String, can only be used in functions    |
 | `auto`   | Varying | Automatic type inferring, can only be used in functions |
 
-### Endianess
+### Endianness
 
-By default all built-in types are interpreted in native endianess. Meaning if the runtime is running on a little endian machine, all types will be treated as little endian. On a big endian machine they will be treated as big endian.
+By default all built-in types are interpreted in native endianness. Meaning if the runtime is running on a little endian machine, all types will be treated as little endian. On a big endian machine they will be treated as big endian.
 
 However it’s possible to override this default on a global, per-type or per-variable basis. Simply prefix any type with the `le` for little endian or `be` for big endian keyword:
 
@@ -69,7 +69,7 @@ be double myDouble; // Big endian 64 bit double precision floating point
 s8 myInteger;       // Native endian 8 bit signed integer
 ```
 
-Refer to [the endianess pragma](preprocessor.md#endian) for setting the global endianess
+Refer to [the endianness pragma](preprocessor.md#endian) for setting the global endianness.
 
 ### Literals
 
@@ -91,7 +91,7 @@ Literals are fixed values representing a specific constant. The following litera
 
 ### Enums
 
-Enums are datatypes that consist of a set of named constants of a specific size.
+Enums are a data type that consist of a set of named constants of a specific size.
 
 They are particularly useful for associating meaning to a value found in memory. Defining an enum works similar to other C-like languages. The first entry in the enum will be associated the value `0x00` and each following one will count up from there. If an entry has an explicit value assigned to it, every entry following it will continue counting from there.
 
@@ -125,7 +125,7 @@ Arrays are a contiguous collection of one or more values of the same type.
 
 #### Constant sized array
 
-A contant size can be specified by entering the number of entries in the square brackets. This value may also name another variable which will be read to get the size.
+A constant size can be specified by entering the number of entries in the square brackets. This value may also name another variable which will be read to get the size.
 
 ```rust
 u32 array[100] @ 0x00;
@@ -141,7 +141,7 @@ char string[] @ 0x00;
 
 #### Loop sized array
 
-Sometimes arrays need to keep on growing as long as a certian condition is met. The following array will grow until it hits a byte with the value `0xFF`.
+Sometimes arrays need to keep on growing as long as a certain condition is met. The following array will grow until it hits a byte with the value `0xFF`.
 
 ```rust
 u8 string[while(std::mem::read_unsigned($, 1) != 0xFF)] @ 0x00;
@@ -216,10 +216,10 @@ bitfield TestBitfield {
 };
 ```
 
-Besides this, it's also possible to interleaf regular types with bitfield fields
+Besides this, it's also possible to interleave regular types with bitfield fields
 
 ```rust
-bitfield InterleafedBitfield {
+bitfield InterleavedBitfield {
     field_1 : 4;
     field_2 : 2;
     u16 regular_value;
@@ -230,7 +230,7 @@ Using full sized fields in a bitfield will always cause the current bit offset w
 
 #### Padding
 
-It’s also possible to insert padding inbetween fields using the padding syntax.
+It’s also possible to insert padding in between fields using the padding syntax.
 
 ```rust
 bitfield Flags {
@@ -314,7 +314,7 @@ The pattern language provides advanced features that allow for much more complex
 
 ### Unions
 
-Unions are similar to structs in that they bundle multiple variables together into a new type, however instead of these variables being placed consequitive, they all share the same start address.
+Unions are similar to structs in that they bundle multiple variables together into a new type, however instead of these variables being placed consecutively, they all share the same start address.
 
 This can be useful to interpret and inspect data as multiple different types as shown here:
 
