@@ -40,7 +40,7 @@ The above function will print out all passed values in sequence by printing the 
 
 ### Default parameters
 
-Default parameters can be used to set a default value for parameters, if they weren't provided when the functon got called.
+Default parameters can be used to set a default value for parameters, if they weren't provided when the function got called.
 
 ```rust
 fn print_numbers(u32 a, u32 b, u32 c = 3, u32 d = 4) {

@@ -50,7 +50,7 @@ The following pragmas are available:
 
 **Possible values:** `big`, `little`, `native` **Default:** `native`
 
-This pragma overwrites the default endianess of all variables declared in the file.
+This pragma overwrites the default endianness of all variables declared in the file.
 
 #### `MIME`
 
@@ -110,4 +110,4 @@ This pragma enables the debug mode in the evaluator. This causes the following t
 * Any memory access will be logged to the console
 * Any creation and assignment of variables will be logged to the console
 * Any function call and their parameters will be logged to the console
-* If an error occures, the patterns that were already placed in memory will not be deleted
+* If an error occurs, the patterns that were already placed in memory will not be deleted
