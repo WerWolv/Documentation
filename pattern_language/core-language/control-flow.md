@@ -85,7 +85,7 @@ struct Packet {
 Packet packet[3] @ 0xF0;
 ```
 
-But the match statement allows for much more than just a simple switch. It also allows you to match multiple values at once and use more complex comparison logic. Alongside this is the _\__ wildcard that matches any value, and thus also creates the default case.
+But the match statement allows for much more than just a simple switch. It also allows you to match multiple values at once and use more complex comparison logic. Alongside this is the `_` wildcard that matches any value, and thus also creates the default case.
 
 ```rust
 struct Packet {
@@ -102,7 +102,7 @@ struct Packet {
 Packet packet[3] @ 0xF0;
 ```
 
-Also the match statement has special comparisons that allow for more batchful comparisons. The _…_ operator allows you to match a range of values, and the _|_ operator allows to match between multiple values.
+Also the match statement has special comparisons that allow for more batchful comparisons. The _…_ operator allows you to match a range of values, and the `|` operator allows to match between multiple values.
 
 ```rust
 struct Packet {
