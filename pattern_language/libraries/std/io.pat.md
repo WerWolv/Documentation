@@ -8,25 +8,25 @@ The IO library allows formatting strings and outputting text to the console
 
 Formats the given arguments using the format string and prints the result to the console
 This function uses the C++20 `std::format` or libfmt's `fmt::format` syntax.
-- `fmt`: Format string
+- `fmt`: Format string or any other value that can be converted to a string
 - `args`: Values to use in the formatting
 
 
 ```rust
-fn print(str fmt, auto ... args);
+fn print(auto fmt, auto ... args);
 ```
 
 ### `std::format`
 
 Formats the given arguments using the format string and returns the result as a string
 This function uses the C++20 `std::format` or libfmt's `fmt::format` syntax.
-- `fmt`: Format string
+- `fmt`: Format string or any other value that can be converted to a string
 - `args`: Values to use in the formatting
 - `return`: The formatted string
 
 
 ```rust
-fn format(str fmt, auto ... args);
+fn format(auto fmt, auto ... args);
 ```
 
 ### `std::error`

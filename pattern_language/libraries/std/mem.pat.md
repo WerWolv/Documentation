@@ -71,6 +71,17 @@ This is usually used in while-sized arrays in the form of `u8 array[while(!std::
 fn eof();
 ```
 
+### `std::mem::reached`
+
+Function that returns true if the cursor position is at or beyond the given address
+- `address`: The address to compare against
+- `return`: True if the cursor is at or beyond the given address
+
+
+```rust
+fn reached(u128 address);
+```
+
 ### `std::mem::align_to`
 
 Aligns the given value to the given alignment

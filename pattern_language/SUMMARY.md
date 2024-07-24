@@ -37,6 +37,7 @@
     * [array](libraries/std/array.pat.md)
     * [limits](libraries/std/limits.pat.md)
     * [time](libraries/std/time.pat.md)
+    * [attrs](libraries/std/attrs.pat.md)
     * [mem](libraries/std/mem.pat.md)
     * [string](libraries/std/string.pat.md)
     * [bit](libraries/std/bit.pat.md)
