@@ -66,7 +66,7 @@ This visualizer expects any pattern that contains the bytes of an image (such as
 
 Supported formats are: JPG, PNG, TGA, BMP, PSD, GIF, HDR and PIC
 
-<figure><img src="../.gitbook/assets/image (9) (1).png" alt=""><figcaption><p>Image Visualizet</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (9) (1).png" alt=""><figcaption><p>Image Visualizer</p></figcaption></figure>
 
 `[[hex::visualize("bitmap", pattern, width, height)]]`
 
