@@ -76,7 +76,7 @@ This visualizer expects any pattern that contains raw RGBA8 values in the form o
 
 `[[hex::visualize("sound", pattern, num_channels, sample_rate)]]`
 
-This visualizer expects any pattern that contains all the bytes of a raw PCM audio stream, the number of channels that are being used and the sample rate. It allows you to convert this data to sound to listen to.
+This visualizer expects any pattern that contains all the bytes of a raw signed 16-bit PCM audio stream, the number of channels that are being used and the sample rate. It allows you to convert this data to sound to listen to.
 
 <figure><img src="../.gitbook/assets/image (8) (1).png" alt=""><figcaption><p>Sound Visualizer</p></figcaption></figure>
 
