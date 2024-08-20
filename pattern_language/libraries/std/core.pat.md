@@ -224,7 +224,7 @@ fn set_display_name(auto pattern, str name);
 
 Changes the comment attached to a pattern
 - `pattern`: The pattern to modify
-- `name`: The new comment of the pattern
+- `comment`: The new comment of the pattern
 
 
 ```rust
