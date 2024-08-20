@@ -16,7 +16,6 @@
 * [Importing Modules](core-language/importing-modules.md)
 * [Comments](core-language/comments.md)
 * [Sections](core-language/sections.md)
-* [Libraries](core-language/libraries.md)
 
 ## Libraries
 
