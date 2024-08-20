@@ -16,7 +16,7 @@ This directive causes a find-and-replace to be performed. In the example above, 
 #include <mylibrary.hexpat>
 ```
 
-This directive allows inclusion of other files into the current program. The content of the specified file gets copied directly into the current file.
+This directive allows inclusion of other files into the current program. The content of the specified file gets copied directly into the current file. See [importing modules](importing-modules.md#include-directive) for more info.
 
 ### `#ifdef`, `#ifndef`, `#endif`
 
@@ -76,13 +76,13 @@ This pragma automatically adjusts the base address of the currently loaded file.
 
 **Possible values:** Any integer value **Default:** `32`
 
-This pragma sets the evaluation depth of recursive functions and types. To prevent the runtime from crashing when evaluating infinitely deep recursive types, execution will stop prematurely if it detects recursion that is too deep. This pragma can adjust the maximum depth allowed
+This pragma sets the evaluation depth of recursive functions and types. To prevent the runtime from crashing when evaluating infinitely deep recursive types, execution will stop prematurely if it detects recursion that is too deep. This pragma can adjust the maximum depth allowed.
 
 #### `array_limit`
 
 **Possible values:** Any integer value **Default:** `0x1000`
 
-This pragma sets the maximum number of entries allowed in an array. To prevent the runtime using up a lot of memory when creating huge arrays, execution will stop prematurely if an array with too many entries is evaluated. This pragma can adjust the maximum number of entries allowed
+This pragma sets the maximum number of entries allowed in an array. To prevent the runtime using up a lot of memory when creating huge arrays, execution will stop prematurely if an array with too many entries is evaluated. This pragma can adjust the maximum number of entries allowed.
 
 #### `pattern_limit`
 
@@ -96,11 +96,13 @@ This pragma takes no value and simply marks the current file to only be includab
 
 This is mainly useful to prevent functions, types and variables that are defined in that file, from being defined multiple times.
 
+The `import` statement and `#include` directive each keep a separate list of files marked with `#pragma once`. That means that a set of headers using one system for importing should stick to it. See [Importing Modules](importing-modules.md) for more info.
+
 #### `bitfield_order`
 
 **Possible values:** `right_to_left`, `left_to_right` **Default:** `right_to_left`
 
-This pragma overrides the default bitfield bit order. It works the same as the `[[left_to_right]]` and `[[right_to_left]]` attributes but is automatically applied to all created bitfields
+This pragma overrides the default bitfield bit order. It works the same as the `[[left_to_right]]` and `[[right_to_left]]` attributes but is automatically applied to all created bitfields.
 
 #### `debug`
 
