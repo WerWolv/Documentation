@@ -19,7 +19,7 @@ To use the `#include` directive, specify a path to the file to include followed 
 
 ### `import` statement
 
-The `import` statement is processed during the parsing stage. Once the parser encounters this statement, a separate parser is created to parse the imported file as a separate compilation unit. It's then inserted into the abstract syntax tree (AST) of the current file. Because of this, the imported file can't use the types already declared in the current file, while included files can. The preprocessor defines *don't propagate* when using the `import` statement.
+The `import` statement is processed during the parsing stage. Once the parser encounters this statement, a separate parser is created to parse the imported file as a separate compilation unit. It's then inserted into the abstract syntax tree (AST) of the current file. The preprocessor defines *don't propagate* when using the `import` statement.
 
 The `import` keyword is followed by the path to the file to include with the dot (`.`) as the folder separator. The file extension will be resolved automatically. The statement looks for a file with extensions `.pat` and `.hexpat`. As with any other language statement, the line must end with a semicolon (`;`).
 
@@ -31,7 +31,7 @@ import sys.mem;
 
 #### `#pragma once` directive
 
-To prevent duplicate declarations, files meant for importing to other files can use the `#pragma once` directive to prevent multiple inclusions. **Important**, both `#include` directive and `import` statement keeps its own list of files marked with `#pragma once`. That means when a file is included in the current file, and then transitively imported by importing a different file, the current file would get duplicate declarations. In other words, a file should only ever be included by using one of the systems: the `#include` directive or the `import` statement to prevent duplicate declarations.
+To prevent duplicate declarations, files meant for importing to other files can use the `#pragma once` directive to prevent multiple inclusions. **Important**, both `#include` directive and `import` statements keep their own list of files marked with `#pragma once`. That means when a file is included in the current file, and then transitively imported by importing a different file, the current file would get duplicate declarations. In other words, a file should only ever be included by using one of the systems: the `#include` directive or the `import` statement to prevent duplicate declarations.
 
 #### Manual include guards
 
