@@ -13,6 +13,7 @@
 * [In / Out Variables](core-language/in-out-variables.md)
 * [Attributes](core-language/attributes.md)
 * [Preprocessor](core-language/preprocessor.md)
+* [Importing Modules](core-language/importing-modules.md)
 * [Comments](core-language/comments.md)
 * [Sections](core-language/sections.md)
 
