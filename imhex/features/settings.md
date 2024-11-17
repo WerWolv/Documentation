@@ -4,7 +4,7 @@ description: Configuring your ImHex experience
 
 # Settings
 
-The Settings page can be accessed through the Main Menu by choosing `Help -> Settings`. It contains multiple tabs with settings for various parts of ImHex.
+The Settings page can be accessed through the Main Menu by choosing `Extras -> Settings`. It contains multiple tabs with settings for various parts of ImHex.
 
 <figure><img src="../.gitbook/assets/image (10) (1).png" alt=""><figcaption><p>The Settings Window</p></figcaption></figure>
 
