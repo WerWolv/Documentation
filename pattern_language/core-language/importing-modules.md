@@ -2,8 +2,8 @@
 
 Patterns can be split into multiple files to better separate pattern code into logical sections. To import other files into the current file, pattern language provides two facilities: the `#include` directive and the `import` statement. Both will search for a given file inside the `includes` folder in pattern search paths. The default search paths are:
 
-* The `includes` folder inside the ImHex installation directory.
-* The `AppData/Local/imhex/includes` directory.
+* The ImHex installation directory.
+* The `AppData/Local/imhex` directory.
 * Additional search paths. To add additional search paths go to `Extras > Settings > Folders` menu.
 
 ### `#include` directive
