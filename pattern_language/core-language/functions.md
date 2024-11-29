@@ -135,9 +135,15 @@ while (check()) {
 }
 ```
 
-#### For-Statement
+#### For-Loops
 
-For loops are another kind of loop similar to the while loop. Its head consists of three blocks separated by commas. The first block is a variable declaration which will only be available inside the current for loop. The second block is a condition that will continuously be checked. The body is executed as long as this condition evaluates to true. The third block is a variable assignment which will be executed after all statements in the body have run.
+For loops are another kind of loop similar to the while loop. Its head consists of three blocks (ex. `i < 10`) that are separated by commas.
+
+The first block is for declaring an iterating variable. This variable can only be used inside of the for loop. The value that this variable is declared as is the iteration that it starts at. In the given example, the first block is `u8 i = 0`.
+
+The second block is a condition used to determine when the loop should run again, and when it should stop. Every time the loop repeats, this condition is checked. In the given example, the second block is `i < 10`. At the start of each loop, the current value of `i` is checked to see if it is still less than `10`. When `i` becomes `10` or greater, the loop will stop executing. As long as the statement in this block resolves to `true`, the loop will continue.
+
+The third block only executes after the body of the loop. It assigns the iterating variable a new number, one that is incremented by a specified amount - in short, it increments the iterating variable. In the example, the increment used is `1`, but it doesn't have to be `1`. If it's necessary to increment by `2`, `3`, etc., just use that number instead of `1`.
 
 ```rust
 // Declare a variable called i available only inside the for
@@ -145,6 +151,14 @@ for (u8 i = 0, i < 10, i = i + 1) {
     // Keeps on executing as long as i is less than 10
 
     // At the end, increment i by 1
+}
+```
+
+The assignment operator `+=` can also be used for incrementing a for loop:
+
+```rust
+for (u8 i = 0, i < 10, i += 1) {
+    // Body of loop
 }
 ```
 
