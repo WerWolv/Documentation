@@ -21,7 +21,7 @@ The table in the Pattern Data view consists of six columns:
 
 ### Interacting with the patterns
 
-Each line in the table correspons to one pattern that was generated. Simple patterns such as a `u32` will stand on their own and simply display their decoded value. Other more complicated patterns such as custom struct types might have children that can be displayed. If a pattern has any children, an arrow icon appears to the left of their name. Clicking on the name will expand the tree view of that pattern and display its children.
+Each line in the table corresponds to one pattern that was generated. Simple patterns such as a `u32` will stand on their own and simply display their decoded value. Other more complicated patterns such as custom struct types might have children that can be displayed. If a pattern has any children, an arrow icon appears to the left of their name. Clicking on the name will expand the tree view of that pattern and display its children.
 
 Clicking anywhere else on the pattern will cause the Hex Editor View to jump to the address of this pattern and select it.
 
