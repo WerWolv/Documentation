@@ -190,3 +190,23 @@ Executes the function with the given name, passing in all given arguments
 fn execute_function(str function_name, auto ... args);
 ```
 
+### `std::core::set_pattern_palette_colors`
+
+Sets the pattern color palette for all future created patterns
+- `args`: RGBA8 colors as 32 bit integers (0xAABBGGRR)
+
+
+```rust
+fn set_pattern_palette_colors(auto ... colors, );
+```
+
+### `std::core::reset_pattern_palette`
+
+Resets the current pattern palette progress back to zero.
+This can be useful to force all instances of a type to have the same coloring for its members
+
+
+```rust
+fn reset_pattern_palette();
+```
+
