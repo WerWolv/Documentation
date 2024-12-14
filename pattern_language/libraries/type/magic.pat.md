@@ -16,10 +16,14 @@ struct Magic<auto ExpectedValue> { ... } [[sealed, format]];
 
 ## Functions
 
-### `type::fm`
+### `type::escape_bytes`
+
+Escapes all bytes in a string to only contain printable characters. All non-printable bytes will be transformed to sequences in the form form \xFF
+- `value`: Byte array to escape
+- `return`: Escaped string
 
 
 ```rust
-fn fm(auto value);
+fn escape_bytes(auto value);
 ```
 
