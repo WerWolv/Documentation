@@ -184,7 +184,9 @@ std::print("{}", get_value()); // 1234
 
 ### Pattern views
 
-Pattern views are a way to access bytes as a certain type without actually placing a pattern there that will end up in the output.
+When using the placement syntax inside of functions or function statements in the global scope (such as `if` , `for`, or `while` statements), a view of that data is created instead.
+
+A view acts very similar to a placed pattern - you can access and pass that value around as if it was a placed variable. However, it will not generate an output pattern like a regular placement would.
 
 ```rust
 fn read_u32(u32 address) {
@@ -197,4 +199,4 @@ std::print("{}", read_u32(0x1234)); // Prints the value at address 0x1234 format
 ```
 
 [\
-](https://imhex.werwolv.net/docs/core\_language/control\_flow.html)
+](https://imhex.werwolv.net/docs/core_language/control_flow.html)
