@@ -52,6 +52,27 @@ if (c::isdigit(character)) {
 }
 ```
 
+### Importing other Patterns
+
+When working with file formats, it sometimes happens that other files or formats are nested inside of the current data. For example, in an Archive file there might be a header and file table followed by data in other formats such as if the Archive contains some executables and images side by side.
+
+In cases like this, it's often useful to import other patterns into the current one so that the code for these other formats can still be used separately.&#x20;
+
+To accomplish this, an `import * from <Pattern File> as <Type Name>` statement may be used.
+
+```python
+import * from pe as Executable;
+
+Executable executable @ 0x1234;
+```
+
+This code creates a new struct type called `Executable` from the content of the `pe.hexpat` Pattern file. Whenever the `Executable` type is placed anywhere in the current pattern now, the code in the imported pattern is evaluated instead, as the content was copy-pasted into the current file with all offsets adjusted.
+
+The following implementation details might be interesting to know:
+
+* When placing the created type at address `0x1000` for example, the imported pattern will see the file as if it started at address `0x1000`. It cannot access any bytes before `0x1000` and it will think address `0x1000` in the file is address `0x00`.
+* If there's only a single global placement in the imported pattern file, the content that pattern will be inlined into the newly created struct to not create another unnecessary indirection. If there's multiple global placements, they will be put in the created struct individually.
+
 ### `auto namespace`
 
 Since a single library file can contain more than one namespace and it's not always desirable to dump the content of all these namespaces into the same renamed namespace, it's possible to specify which namespace should be the one imported and renamed if needed.
@@ -90,7 +111,7 @@ To prevent duplicate declarations, files meant for importing to other files can 
 
 When using `#include`, you can write include guards manually using `#ifndef` and `#define` directives:
 
-```C++
+```c++
 #ifndef FOO_HEXPAT
 #define FOO_HEXPAT
 
