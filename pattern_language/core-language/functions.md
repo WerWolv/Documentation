@@ -198,5 +198,24 @@ fn read_u32(u32 address) {
 std::print("{}", read_u32(0x1234)); // Prints the value at address 0x1234 formatted as a u32
 ```
 
-[\
-](https://imhex.werwolv.net/docs/core_language/control_flow.html)
+### User-defined Literals
+
+User-defined Literals are ultimately syntactic sugar for function calls which in some cases is easier to read than regular function calls. To create one, simply define a function whose name starts with an underscore and takes a single character.
+
+```rust
+fn _literal(u32 value) {
+    return value * 2;
+};
+
+u32 two_times = 123_literal; // two_times = 246
+```
+
+It's also possible to define user-defined literals that take in multiple parameters. In this case, the value the literal is applied to is passed in as the first parameter and the remaining ones are passed as the second and following parameters.
+
+```rust
+fn _literal(u32 value, u32 multiplier) {
+    return value * multiplier;
+};
+
+u32 three_times = 123_literal(3); // three_times = 369
+```
