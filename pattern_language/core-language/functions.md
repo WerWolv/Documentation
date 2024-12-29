@@ -219,3 +219,5 @@ fn _literal(u32 value, u32 multiplier) {
 
 u32 three_times = 123_literal(3); // three_times = 369
 ```
+
+Any built-in type can be used as the first parameter. This allows user-defined literals to be used with integers, floats, character literals and strings.
