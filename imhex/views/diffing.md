@@ -22,7 +22,7 @@ All bytes that differ from each other between the two providers will now be high
 
 There's multiple diffing algorithms available in ImHex that can be chosen and configured by clicking on the Gear icon next to the provider selector.
 
-<figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption><p>Diffing options</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption><p>Diffing options</p></figcaption></figure>
 
 * `Simple byte-by-byte algorithm` does a primitive byte-by-byte comparison. If the two bytes at the same address in the two providers differ from each other, they're highlighted in yellow
 * `Myers's bit-vector algorithm` does a more advanced comparison trying to find inserted and removed byte regions besides just changes in the file. The Window size parameter specifies how many bytes to look ahead for possible insertions. \

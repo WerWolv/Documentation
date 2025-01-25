@@ -18,7 +18,7 @@ To copy the decoded value of a row, simply click on it once.
 
 It's possible to hide individual rows in the data inspector that aren't important for the current file. To do this, simply click on the `Edit` button and click on the Eye icon on the rows that should be hidden. Clicking on the `Edit` button again then, hides all the selected rows.
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption><p>Hiding / Unhiding rows</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Hiding / Unhiding rows</p></figcaption></figure>
 
 ### Modifying values
 

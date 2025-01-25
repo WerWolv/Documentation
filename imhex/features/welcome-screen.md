@@ -18,9 +18,9 @@ ImHex has a simplified mode which drastically reduces the visual load when using
 
 To enable it, turn on the `Simplified` Toggle at the bottom of the Welcome Screen.
 
-| Welcome Screen                                                                                                            | Editing Screen                                                                                                         |
-| ------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------- |
-| <img src="../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1).png" alt="Simplified Welcome Screen" data-size="original"> | <img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1).png" alt="Simplified Editor Mode" data-size="original"> |
+| Welcome Screen                                                                                                                | Editing Screen                                                                                                             |
+| ----------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------- |
+| <img src="../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1).png" alt="Simplified Welcome Screen" data-size="original"> | <img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Simplified Editor Mode" data-size="original"> |
 
 ### Start
 

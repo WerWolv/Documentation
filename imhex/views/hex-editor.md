@@ -6,13 +6,13 @@ description: Viewing, editing and analysing binary data
 
 The Hex Editor View is the most important View in ImHex. It displays the currently loaded data as a range of hexadecimal values and ASCII and lets you modify it.
 
-<figure><img src="../.gitbook/assets/image (2) (1) (1) (1).png" alt=""><figcaption><p>The Hex Editor View</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1) (1) (1) (1).png" alt=""><figcaption><p>The Hex Editor View</p></figcaption></figure>
 
 ### Footer
 
 The Hex Editor footer is the portion at the bottom of the hex editor window that contains basic information on the current selection and the loaded data. By default only the most important parts are visible, the rest is hidden and can be shown by clicking on the up arrow button in the middle.
 
-<figure><img src="../.gitbook/assets/image (2) (1) (1) (1) (1).png" alt=""><figcaption><p>Full Hex Editor footer</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Full Hex Editor footer</p></figcaption></figure>
 
 #### Information
 
@@ -109,7 +109,7 @@ These operations are rarely needed when analysing or patching data since they ca
 
 All of these operations can be found in the `Edit` main menu or in the Hex Editor's right-click menu.
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Operations in the edit menu</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Operations in the edit menu</p></figcaption></figure>
 
 A popup window will open asking for the start address of the operation and the number of bytes that will be affected. Clicking on `Set` executes it. In the case of the following image, `0x10` zero bytes will be inserted at address `0x1A0`. The Remove and Resize operation work similarly.
 

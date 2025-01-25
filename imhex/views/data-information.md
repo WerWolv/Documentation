@@ -4,7 +4,7 @@ description: Binary analysis and visualisation of binary data
 
 # Data Information
 
-<figure><img src="../.gitbook/assets/image (2) (1).png" alt="" width="518"><figcaption><p>The Data Information View</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1) (1).png" alt="" width="518"><figcaption><p>The Data Information View</p></figcaption></figure>
 
 The Data Information View gives visual insight into various aspects of the file's binary composition through analysis information, diagrams and tables.
 
@@ -12,7 +12,7 @@ The Data Information View gives visual insight into various aspects of the file'
 
 To start the analysis, first select the start and end address that will be analyzed. Afterwards simply click on `Analyze page` to start the analysis.
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption><p>Settings field</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption><p>Settings field</p></figcaption></figure>
 
 Further analysis options can be specified on a per-analysis basis by clicking on the gear icon of the individual blocks and changing their settings there.
 
@@ -42,7 +42,7 @@ The Byte distribution graph is a Histogram which displays the number of occurren
 
 #### Byte Types
 
-<figure><img src="../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption><p>Byte types graph</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1) (1) (1).png" alt=""><figcaption><p>Byte types graph</p></figcaption></figure>
 
 The byte types graph displays a stacked relative frequency graph which contains information about how often a certain type of byte occurres within a block of data. The X-Axis of this graph represents the block's address and the Y-Axis the percentage of bytes in this block that are of the relevant type.&#x20;
 
