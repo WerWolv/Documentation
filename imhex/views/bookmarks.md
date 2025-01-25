@@ -4,7 +4,7 @@ description: Manage and keep track of data regions
 
 # Bookmarks
 
-<figure><img src="../.gitbook/assets/image (15).png" alt=""><figcaption><p>The bookmarks view</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (19).png" alt="" width="563"><figcaption><p>The Bookmarks View</p></figcaption></figure>
 
 ### Creating a bookmark
 
@@ -28,10 +28,10 @@ All information entered here will also show up when hovering over the bookmark i
 
 <figure><img src="../.gitbook/assets/imhex_IZihhibts8.png" alt=""><figcaption><p>Hover popup</p></figcaption></figure>
 
-### Jump to bookmark
+### Bookmark actions
 
-<figure><img src="../.gitbook/assets/imhex_koyF1J6O36.png" alt=""><figcaption><p>Jump to<br>and open<br>in<br>Provider</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (20).png" alt=""><figcaption><p>Available options</p></figcaption></figure>
 
-In order to jump to the location of a bookmark, the left `Jump to` button in the Address row can be used.
-
-If the content of this bookmark should be opened directly in a new tab instead, the right `Open View Provider` button can be used.
+* Jump to Bookmark : Clicking this jumps to the bookmark in the Hex Editor view
+* Open View Provider: Clicking this opens the content of this bookmark in a new tab
+* Show/Hide: Clicking this will toggle the visibility of the bookmark's highlighting
