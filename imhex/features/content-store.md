@@ -4,7 +4,7 @@ description: Downloading additional external features
 
 # Content Store
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="557"><figcaption><p>The Content Store</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="" width="557"><figcaption><p>The Content Store</p></figcaption></figure>
 
 The Content Store is a simple store front that can be used to download extra features made by the community.&#x20;
 

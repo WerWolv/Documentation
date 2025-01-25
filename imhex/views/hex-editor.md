@@ -6,36 +6,29 @@ description: Viewing, editing and analysing binary data
 
 The Hex Editor View is the most important View in ImHex. It displays the currently loaded data as a range of hexadecimal values and ASCII and lets you modify it.
 
-<figure><img src="../.gitbook/assets/image (2) (1) (1) (1) (1).png" alt=""><figcaption><p>The Hex Editor View</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption><p>The Hex Editor View</p></figcaption></figure>
 
 ### Footer
 
 The Hex Editor footer is the portion at the bottom of the hex editor window that contains basic information on the current selection and the loaded data. By default only the most important parts are visible, the rest is hidden and can be shown by clicking on the up arrow button in the middle.
 
-<figure><img src="../.gitbook/assets/image (2) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Full Hex Editor footer</p></figcaption></figure>
-
-#### Information
-
-* `Page` shows the currently visible data page and its region. By default the entire data is shown on one page but the size can be changed through `Edit -> Set page size`.
-* `Selection` shows the start and end address as well as the size of the currently selected region
-* `Region` shows the start and end address of the current page
-* `Data Size` shows the base address as well as the size of the entire loaded data
+<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption><p>Hex Editor Footer</p></figcaption></figure>
 
 #### Visualization options
 
-<figure><img src="../.gitbook/assets/image (3) (1) (1).png" alt=""><figcaption><p>Visualization Options</p></figcaption></figure>
+Use the toggles to change various visualization options. Below are explanations for each of the options in order.
 
 **Upper case hex characters**
 
 This option determines if ImHex uses upper- or lowercase letters to display hex values
 
-<figure><img src="../.gitbook/assets/image (4) (1).png" alt=""><figcaption><p>Lower case hex characters</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (4) (1) (1).png" alt=""><figcaption><p>Lower case hex characters</p></figcaption></figure>
 
 **Gray out zeros**
 
 This option enables or disables if ImHex should gray out all zero bytes in the editor.
 
-<figure><img src="../.gitbook/assets/image (5) (1).png" alt=""><figcaption><p>Non-grayed out zeros</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (5) (1) (1).png" alt=""><figcaption><p>Non-grayed out zeros</p></figcaption></figure>
 
 **Display ASCII column**
 
@@ -57,17 +50,13 @@ The Mini Map shows information about hex editor lines in the current vicinity. E
 
 <figure><img src="../.gitbook/assets/image (8).png" alt=""><figcaption><p>Mini Map settings popup</p></figcaption></figure>
 
-**Convert sizes to human-readable units**
-
-Enabling this option displays all sizes in the footer in human-readable form. For example instead of `143287488`, it will display `136.65 MiB`.
-
 #### Data visualizers
 
 Another option to customize the look of the Hex Editor is through cell visualizers. By default a 8 bit hex visualizer is used but many different ones are available such as decimals, floats or colors.
 
-<figure><img src="../.gitbook/assets/image (13).png" alt=""><figcaption><p>Data visualizer options panel</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 
-The dropdown in the middle selects the visualizer to be used and the toggle to the left of it determines if the (potentially multi-byte value) is interpreted in big or little endian format.
+The first dropdown selects the visualizer to be used and the slider below determines if the (potentially multi-byte value) should be interpreted in big or little endian format.
 
 <figure><img src="../.gitbook/assets/image (9).png" alt=""><figcaption><p>Float visualizer</p></figcaption></figure>
 
@@ -75,7 +64,21 @@ The dropdown in the middle selects the visualizer to be used and the toggle to t
 
 <figure><img src="../.gitbook/assets/image (12).png" alt=""><figcaption><p>Color visualizer</p></figcaption></figure>
 
-The slider all the way to the right changes the number of bytes to be displayed on a single row. Ctrl clicking it lets you enter an arbitrary number.
+The columns slider selects the number of columns that should be shown on screen. Moving it all the way to the left will cause the hex view to auto resize itself to show as many columns as fit on the screen.
+
+The Segment Separator option allows inserting separator lines after every N bytes.
+
+<figure><img src="../.gitbook/assets/image (4).png" alt=""><figcaption><p>Segment Separators</p></figcaption></figure>
+
+The Format option decides the radix in which the addresses should be displayed. It can be set to Hexadecimal, Decimal and Octal.
+
+#### Display Information
+
+In the second row of the footer (shown when expanding the footer using the chevron button), information about the currently displayed data is shown
+
+* The left side shows the currently visible data page and its region. By default the entire data is shown on one page but the size can be changed through `Edit -> Set page size`.
+  * If a custom page size is set, the currently displayed page can be switched by moving the slider left or right
+* The right side shows the base address of the data as well as the total size in hexadecimal and in human readable bytes.
 
 ### Selections
 
@@ -109,7 +112,7 @@ These operations are rarely needed when analysing or patching data since they ca
 
 All of these operations can be found in the `Edit` main menu or in the Hex Editor's right-click menu.
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Operations in the edit menu</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Operations in the edit menu</p></figcaption></figure>
 
 A popup window will open asking for the start address of the operation and the number of bytes that will be affected. Clicking on `Set` executes it. In the case of the following image, `0x10` zero bytes will be inserted at address `0x1A0`. The Remove and Resize operation work similarly.
 

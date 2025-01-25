@@ -44,7 +44,7 @@ struct Coordinates {
 } [[hex::visualize("coordinates", latitude, longitude)]];
 ```
 
-The entry in the Value column will then turn into a Button <img src="../.gitbook/assets/image (5) (1) (1).png" alt="" data-size="line">that will open the visualizer popup with the specific visualization inside.
+The entry in the Value column will then turn into a Button <img src="../.gitbook/assets/image (5) (1) (1) (1).png" alt="" data-size="line">that will open the visualizer popup with the specific visualization inside.
 
 #### Available Visualizers
 
@@ -52,13 +52,13 @@ The entry in the Value column will then turn into a Button <img src="../.gitbook
 
 This visualizer expects an array of 4 Byte `float` values and will visualize it using a Line Plot
 
-<figure><img src="../.gitbook/assets/image (4) (1) (1) (1) (1).png" alt=""><figcaption><p>Line Plot Visualizer</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (4) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Line Plot Visualizer</p></figcaption></figure>
 
 `[[hex::visualize("scatter_plot", x_float_array, y_float_array)]]`
 
 This visualizer expects two arrays of 4 Byte `float` values and will visualize it as a Scatter Plot using the first array for the X Coordinates and the second array for the Y Coordinates. These two arrays need to have the same size.
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Scatter Plot Visualizer</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Scatter Plot Visualizer</p></figcaption></figure>
 
 `[[hex::visualize("image", pattern)]]`
 
@@ -72,7 +72,7 @@ Supported formats are: JPG, PNG, TGA, BMP, PSD, GIF, HDR and PIC
 
 This visualizer expects any pattern that contains raw RGBA8 values in the form of `RR GG BB AA`, one byte per color channel as well as the width and height in pixels of the resulting image. It will draw these bytes as is.
 
-<figure><img src="../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Bitmap visualizer</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Bitmap visualizer</p></figcaption></figure>
 
 `[[hex::visualize("sound", pattern, num_channels, sample_rate)]]`
 
@@ -98,13 +98,13 @@ This visualizer expects any pattern whose bytes will be split into chunks of the
 
 This visualizer expects any pattern whose bytes will be displayed in a hex viewer similar to the one in the hex editor view. This is mainly useful for splitting out large chunks of bytes and looking at them individually or for debugging when getting patterns into the right format for other visualizers to work with.
 
-<figure><img src="../.gitbook/assets/image (3) (1) (1) (1) (1).png" alt=""><figcaption><p>Hex Viewer Visualizer</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Hex Viewer Visualizer</p></figcaption></figure>
 
 `[[hex::visualize("coordinates", latitude, longitude)]]`
 
 This visualizer expects a latitude and longitude value in form of a floating point number and visualizes this coordinate on a map of our planet. It also allows for checking the internet for the approximate name / address of this location.
 
-<figure><img src="../.gitbook/assets/image (4) (1) (1) (1).png" alt=""><figcaption><p>Coordinates Visualizer</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (4) (1) (1) (1) (1).png" alt=""><figcaption><p>Coordinates Visualizer</p></figcaption></figure>
 
 ### Inline Visualizers
 
@@ -114,16 +114,16 @@ Inline visualizers work the same as the normal visualizers but instead of displa
 
 This visualizer expects separate r, g, b and a color values, each ranging from 0 to 255. It displays this color then in the value column.
 
-<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption><p>Color Inline Visualizer</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1).png" alt=""><figcaption><p>Color Inline Visualizer</p></figcaption></figure>
 
 `[[hex::inline_visualize("gauge", progress)]]`
 
 This visualizer expects a progress value ranging from 0 to 100. It displays this value as a progress bar where 0 means the progress bar is entirely empty and 100 means it's completely filled.
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption><p>Gauge Inline Visualizer</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption><p>Gauge Inline Visualizer</p></figcaption></figure>
 
 `[[hex::inline_visualize("button", function_name)]]`
 
 This visualizer replaces the value column with a button that executes the specified function when clicked. It expects the name of the function as a string.
 
-<figure><img src="../.gitbook/assets/image (2) (1).png" alt=""><figcaption><p>Button Inline Visualizer</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption><p>Button Inline Visualizer</p></figcaption></figure>
