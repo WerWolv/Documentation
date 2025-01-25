@@ -44,6 +44,8 @@ To do this, simply double click the row you want to edit and a input text field 
 
 At the bottom of the Inspector there are multiple sliders to customize how values are being displayed in the Value column.
 
+<figure><img src="../.gitbook/assets/image (18).png" alt=""><figcaption><p>Settings</p></figcaption></figure>
+
 * `Endian`: This setting specifies the endianess of read data. Switching it from `Little` to `Big` will invert the order of bytes before trying to decode it
 * `Format`: This setting changes the numeric base the values are displayed in such as Decimal, Hexadecimal or Octal. This only makes sense for numeric values so it only applies to these.
 * `Invert`: This setting bitwise inverts the value of every read byte before decoding it. As such the byte `0xFA (0b1111'1010)` will become `0x05 (0b0000'0101)`.
