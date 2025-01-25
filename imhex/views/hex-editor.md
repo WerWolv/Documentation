@@ -109,7 +109,7 @@ These operations are rarely needed when analysing or patching data since they ca
 
 All of these operations can be found in the `Edit` main menu or in the Hex Editor's right-click menu.
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Operations in the edit menu</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Operations in the edit menu</p></figcaption></figure>
 
 A popup window will open asking for the start address of the operation and the number of bytes that will be affected. Clicking on `Set` executes it. In the case of the following image, `0x10` zero bytes will be inserted at address `0x1A0`. The Remove and Resize operation work similarly.
 

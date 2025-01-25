@@ -58,7 +58,7 @@ This visualizer expects an array of 4 Byte `float` values and will visualize it 
 
 This visualizer expects two arrays of 4 Byte `float` values and will visualize it as a Scatter Plot using the first array for the X Coordinates and the second array for the Y Coordinates. These two arrays need to have the same size.
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Scatter Plot Visualizer</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Scatter Plot Visualizer</p></figcaption></figure>
 
 `[[hex::visualize("image", pattern)]]`
 
@@ -120,7 +120,7 @@ This visualizer expects separate r, g, b and a color values, each ranging from 0
 
 This visualizer expects a progress value ranging from 0 to 100. It displays this value as a progress bar where 0 means the progress bar is entirely empty and 100 means it's completely filled.
 
-<figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption><p>Gauge Inline Visualizer</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption><p>Gauge Inline Visualizer</p></figcaption></figure>
 
 `[[hex::inline_visualize("button", function_name)]]`
 

@@ -12,7 +12,7 @@ The Data Information View gives visual insight into various aspects of the file'
 
 To start the analysis, first select the start and end address that will be analyzed. Afterwards simply click on `Analyze page` to start the analysis.
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption><p>Settings field</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Settings field</p></figcaption></figure>
 
 Further analysis options can be specified on a per-analysis basis by clicking on the gear icon of the individual blocks and changing their settings there.
 
