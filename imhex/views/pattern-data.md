@@ -35,7 +35,7 @@ Most built-in pattern types as well as custom types that have been attributed wi
 
 Visualizers are a ImHex-specific extension to the Pattern Language. They allow you to visualize data in more advanced ways than by just using text and colors.
 
-To use a visualizer, simply apply the `[[hex::visualize("visualizer_name", params...)]]` attribute to the type or varibale you want to visualize.
+To use a visualizer, simply apply the `[[hex::visualize("visualizer_name", params...)]]` attribute to the type or variable you want to visualize.
 
 ```cpp
 struct Coordinates {
