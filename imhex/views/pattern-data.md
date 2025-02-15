@@ -82,9 +82,66 @@ This visualizer expects any pattern that contains all the bytes of a raw signed 
 
 `[[hex::visualize("3d", vertices, indices)]]`
 
-This visualizer expects an array of 4-Byte `float` values containing the vertex coordinates of a model and an optional `u32` array containing indices into the vertices array. `null` can be used for the indicies array if it shouldn't be used.
+This visualizer expects an array of structures containing three 4-Byte `float` values, representing X, Y and Z coordinates of each vertex in a model and an optional `u32` array containing indices into the vertices array. `null` can be used for the indicies array if it shouldn't be used.
 
-The visualizer takes this data and renders a 3D model out of it
+Each group of 3 vertices makes a triangle and there are two ways to represent these triangles:
+- If indices array is `null`, then vertices array should contain N*3 vertices, to represent N triangles of a model.
+- Otherwise, the indices array should contain N*3 indices, each group representing a triangle by indexing into the vertices array.
+
+For example:
+- Vertices array containing 12 elements will represent 4 triangles, array elements with indices 0,1,2 representing the first triangle, indices 3,4,5 representing the second triangle and so on.
+- Vertices array containing 5 elements can also represent 4 triangles by using a 12-element `indices` array - every group of 3 elements in that array representing a triangle, so indices array elements with indices 0,1,2 is the first triangle, indices 3,4,5 are the second triangle and so on.
+
+<figure><img src="../.gitbook/assets/3d_mesh.png" alt=""><figcaption><p>3D mesh example</p></figcaption></figure>
+
+With the above example of four triangles these two representations are equivalent:
+
+- with `vertices` array only
+
+```
+vertices = [
+    // 1st triangle
+    { -1.0, -1.0, 0.0 }, // vertex (0)
+    { 1.0, -1.0, 0.0 },  // vertex (1)
+    { 0.0, 0.0, 0.0 },   // vertex (2)
+    // 2nd triangle
+    { 1.0, -1.0, 0.0 },  // vertex (1)
+    { 0.0, 0.0, 0.0 },   // vertex (2)
+    { 1.0, 1.0, 0.0 },   // vertex (3)
+    // 3rd triangle
+    { 1.0, 1.0, 0.0 },   // vertex (3)
+    { 0.0, 0.0, 0.0 },   // vertex (2)
+    { -1.0, 1.0, 0.0 },  // vertex (4)
+    // 4th triangle
+    { -1.0, 1.0, 0.0 },  // vertex (4)
+    { 0.0, 0.0, 0.0 },   // vertex (2)
+    { -1.0, -1.0, 0.0 }, // vertex (0)
+]
+```
+
+- or, with both `vertices` and `indices` arrays
+
+```
+vertices = [
+    { -1.0, -1.0, 0.0 }, // vertex (0)
+    { 1.0, -1.0, 0.0 },  // vertex (1)
+    { 0.0, 0.0, 0.0 },   // vertex (2)
+    { 1.0, 1.0, 0.0 },   // vertex (3)
+    { -1.0, 1.0, 0.0 },  // vertex (4)
+]
+indices = [
+    // 1st triangle
+    0, 1, 2,
+    // 2nd triangle
+    1, 2, 3,
+    // 3rd triangle
+    2, 3, 4,
+    // 4th triangle
+    4, 2, 0
+]
+```
+
+A final render may look like this:
 
 <figure><img src="../.gitbook/assets/image (6) (1).png" alt=""><figcaption><p>3D Visualizer</p></figcaption></figure>
 
