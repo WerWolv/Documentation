@@ -46,12 +46,12 @@ jobs:
         git clone https://github.com/WerWolv/ImHex-Patterns
 
         # Make plcli executable
-        chmod +x ./usr/bin/plcli
+        chmod +x ./bin/plcli
 
         # Generate new documentation
         for f in $(find ./ImHex-Patterns/includes -not -path '*/impl/*' -name '*.pat' -or -name '*.hexpat'); do
             echo $f
-            ./usr/bin/plcli docs --includes ./ImHex-Patterns/includes --define __IMHEX__ --noimpls $f out/$f.md
+            ./bin/plcli docs --includes ./ImHex-Patterns/includes --define __IMHEX__ --noimpls $f out/$f.md
         done
 
         # Delete all existing library docs
@@ -82,7 +82,7 @@ jobs:
         rm -rf ImHex-Patterns
         rm -rf "plcli Linux.zip"
         rm -rf out
-        rm -rf usr
+        rm -rf bin
 
     - name: ⬆️ Commit changes
       uses: EndBug/add-and-commit@v9
