@@ -6,13 +6,13 @@ description: Viewing, editing and analysing binary data
 
 The Hex Editor View is the most important View in ImHex. It displays the currently loaded data as a range of hexadecimal values and ASCII and lets you modify it.
 
-<figure><img src="../.gitbook/assets/image (2) (1).png" alt=""><figcaption><p>The Hex Editor View</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/views/hex_editor.png" alt=""><figcaption><p>The Hex Editor View</p></figcaption></figure>
 
 ### Footer
 
 The Hex Editor footer is the portion at the bottom of the hex editor window that contains basic information on the current selection and the loaded data. By default only the most important parts are visible, the rest is hidden and can be shown by clicking on the up arrow button in the middle.
 
-<figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption><p>Hex Editor Footer</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/views/hex_editor_footer.png" alt=""><figcaption><p>Hex Editor Footer</p></figcaption></figure>
 
 #### Visualization options
 
@@ -22,13 +22,13 @@ Use the toggles to change various visualization options. Below are explanations 
 
 This option determines if ImHex uses upper- or lowercase letters to display hex values
 
-<figure><img src="../.gitbook/assets/image (4) (1) (1).png" alt=""><figcaption><p>Lower case hex characters</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/views/hex_editor_lcase.png" alt=""><figcaption><p>Lower case hex characters</p></figcaption></figure>
 
 **Gray out zeros**
 
 This option enables or disables if ImHex should gray out all zero bytes in the editor.
 
-<figure><img src="../.gitbook/assets/image (5) (1) (1).png" alt=""><figcaption><p>Non-grayed out zeros</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/views/hex_editor_zeros.png" alt=""><figcaption><p>Non-grayed out zeros</p></figcaption></figure>
 
 **Display ASCII column**
 
@@ -38,37 +38,37 @@ This option shows or hides the ASCII column to the right of the bytes column
 
 Enabling this option will show the advanced decoding column. By default this option is grayed out and only enabled when when a custom encoding has been loaded through `File -> Import -> Custom Encoding`.
 
-<figure><img src="../.gitbook/assets/image (6).png" alt=""><figcaption><p>Bytes, ASCII and custom encoding column</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/views/hex_editor_custom_encoding.png" alt=""><figcaption><p>Bytes, ASCII and custom encoding column</p></figcaption></figure>
 
 **Mini Map**
 
 Enabling this option shows or hides the Mini Map next to the scroll bar.
 
-<figure><img src="../.gitbook/assets/image (7).png" alt=""><figcaption><p>Mini Map visualizing local entropy</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/views/hex_editor_mini_map.png" alt=""><figcaption><p>Mini Map visualizing local entropy</p></figcaption></figure>
 
 The Mini Map shows information about hex editor lines in the current vicinity. Each colored line represents one row in the hex editor. By default the color corresponds to to the entropy of that line, the bluer the color, the higher the entropy. Other options can be specified through by right clicking the Mini Map icon and choosing a different visualizer in the popup.
 
-<figure><img src="../.gitbook/assets/image (8).png" alt=""><figcaption><p>Mini Map settings popup</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/hex_editor_mini_map_settings.png" alt=""><figcaption><p>Mini Map settings popup</p></figcaption></figure>
 
 #### Data visualizers
 
 Another option to customize the look of the Hex Editor is through cell visualizers. By default a 8 bit hex visualizer is used but many different ones are available such as decimals, floats or colors.
 
-<figure><img src="../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/views/hex_editor_vizualizer_settings.png" alt=""><figcaption></figcaption></figure>
 
 The first dropdown selects the visualizer to be used and the slider below determines if the (potentially multi-byte value) should be interpreted in big or little endian format.
 
-<figure><img src="../.gitbook/assets/image (9).png" alt=""><figcaption><p>Float visualizer</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/views/hex_editor_visualizer_float.png" alt=""><figcaption><p>Float visualizer</p></figcaption></figure>
 
 
 
-<figure><img src="../.gitbook/assets/image (12).png" alt=""><figcaption><p>Color visualizer</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/views/hex_editor_visualizer_color.png" alt=""><figcaption><p>Color visualizer</p></figcaption></figure>
 
 The columns slider selects the number of columns that should be shown on screen. Moving it all the way to the left will cause the hex view to auto resize itself to show as many columns as fit on the screen.
 
 The Segment Separator option allows inserting separator lines after every N bytes.
 
-<figure><img src="../.gitbook/assets/image (4).png" alt=""><figcaption><p>Segment Separators</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/views/hex_editor_visualiser_segment_separator.png" alt=""><figcaption><p>Segment Separators</p></figcaption></figure>
 
 The Format option decides the radix in which the addresses should be displayed. It can be set to Hexadecimal, Decimal and Octal.
 
@@ -90,7 +90,7 @@ Once a selection has been made, the current cursor can also be moved around usin
 
 Through the use of the Edit -> Set base address option, ImHex can virtually load a file not at address 0x000000 but at any arbitrary address. This is mainly useful for analysing memory dumps that have been dumped from a specific address. Doing this will affect displayed addresses throughout all of ImHex.
 
-<figure><img src="../.gitbook/assets/imhex_uuGD2v1ASw.png" alt=""><figcaption><p>Hex editor view with its base address changed to 0x1234</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/views/hex_editor_base_address_changed.png" alt=""><figcaption><p>Hex editor view with its base address changed to 0x1234</p></figcaption></figure>
 
 ### Selection Views
 
@@ -100,7 +100,7 @@ Sometimes files consist of multiple different parts in which case it might be ea
 
 To edit the value of a byte, simply double click it to enter editing mode. The value of the byte becomes highlighted and a new value can be entered. Once enough characters have been entered, the cursor automatically advances to the next cell so the next value can be entered. Notice how modified bytes are highlighted in red.
 
-<figure><img src="../.gitbook/assets/imhex_L0V0YrFdWT.png" alt=""><figcaption><p>Modified bytes</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/views/hex_editor_modified_bytes.png" alt=""><figcaption><p>Modified bytes</p></figcaption></figure>
 
 #### Size changing operations
 
@@ -112,11 +112,11 @@ These operations are rarely needed when analysing or patching data since they ca
 
 All of these operations can be found in the `Edit` main menu or in the Hex Editor's right-click menu.
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Operations in the edit menu</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/menu/edit_cropped_resize_2_remove.png" alt=""><figcaption><p>Operations in the edit menu</p></figcaption></figure>
 
 A popup window will open asking for the start address of the operation and the number of bytes that will be affected. Clicking on `Set` executes it. In the case of the following image, `0x10` zero bytes will be inserted at address `0x1A0`. The Remove and Resize operation work similarly.
 
-<figure><img src="../.gitbook/assets/imhex_4ONHkkK3j7.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/views/hex_editor_insert_settings.png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="danger" %}
 As of v1.34.0, ImHex loads files that are smaller than 128MiB into memory and only writes back the modified data when saving.
@@ -128,7 +128,7 @@ Files that are larger than that will apply operations on the file directly. Oper
 
 These operations let you copy bytes in various ways and paste them back into the data later on. All copy and paste operations only operate on the currently selected bytes. Using `Edit -> Copy` on the following selection will copy the string `1B D2 E6` into the clipboard. Selecting only two other bytes now and using `Edit -> Paste` will paste `1B D2` at that selection and discard `E6`.
 
-<figure><img src="../.gitbook/assets/imhex_c19kCFawA2.png" alt=""><figcaption><p>Three selected bytes</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/views/hex_editor_selection_3_bytes.png" alt=""><figcaption><p>Three selected bytes</p></figcaption></figure>
 
 #### Copy as...
 

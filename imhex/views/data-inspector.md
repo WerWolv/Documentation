@@ -4,7 +4,7 @@ description: Quickly decode bytes as various different encodings
 
 # Data Inspector
 
-<div data-full-width="false"><figure><img src="../.gitbook/assets/image.png" alt="" width="563"><figcaption><p>The Data Inspector View</p></figcaption></figure></div>
+<div data-full-width="false"><figure><img src="../.gitbook/assets/views/data_inspector.png" alt="" width="563"><figcaption><p>The Data Inspector View</p></figcaption></figure></div>
 
 The Data Inspector aids identifying of encoded values in binary data without needing to write a full Pattern definition for it. It simply takes one or more bytes (depending on the type it decodes the bytes as) from the current cursor position in the data and decodes it as it.
 
@@ -14,7 +14,7 @@ Not all rows necessarily display a useful value. The Inspector tries to identify
 
 Right click a row to open the context menu
 
-<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption><p>Context Menu</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/views/data_inspector_cx_menu.png" alt=""><figcaption><p>Context Menu</p></figcaption></figure>
 
 * `Jump to address`: Interpret the decoded value as an address and jump to it
 * `Copy Value` : Copies the decoded value
@@ -22,7 +22,7 @@ Right click a row to open the context menu
 
 ### Next/Previous value
 
-<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption><p>Next/Previous buttons</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/views/data_inspector_prev_next_btn.png" alt=""><figcaption><p>Next/Previous buttons</p></figcaption></figure>
 
 It's possible to click on an entry in the data inspector to select it. After that, the "Previous" and "Next" button above the inspector table become active and can be used to move to the previous or next instance of that type. The current selection will be moved according to the size of the selected row.
 
@@ -32,7 +32,7 @@ This is helpful when analyzing formats that contain lists of the same data type 
 
 It's possible to hide individual rows in the data inspector that aren't important for the current file. To do this, simply click on the `Edit` button and click on the Eye icon on the rows that should be hidden. Clicking on the `Edit` button again then, hides all the selected rows.
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Hiding / Unhiding rows</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/views/data_inspector_hide_show_rows.png" alt=""><figcaption><p>Hiding / Unhiding rows</p></figcaption></figure>
 
 ### Modifying values
 
@@ -44,7 +44,7 @@ To do this, simply double click the row you want to edit and a input text field 
 
 At the bottom of the Inspector there are multiple sliders to customize how values are being displayed in the Value column.
 
-<figure><img src="../.gitbook/assets/image (18).png" alt=""><figcaption><p>Settings</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/views/data_inspector_settings.png" alt=""><figcaption><p>Settings</p></figcaption></figure>
 
 * `Endian`: This setting specifies the endianess of read data. Switching it from `Little` to `Big` will invert the order of bytes before trying to decode it
 * `Format`: This setting changes the numeric base the values are displayed in such as Decimal, Hexadecimal or Octal. This only makes sense for numeric values so it only applies to these.
@@ -79,4 +79,4 @@ MyCustomInspector customInspector @ $ [[name("Custom Inspector Name")]];
 
 The next time the cursor position is changed now, the new row will show up and decode the selected bytes.
 
-<figure><img src="../.gitbook/assets/imhex_7WgNns20ZE.png" alt=""><figcaption><p>Custom Data Inspector Row</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/views/data_inspector_custom_inspector_row.png" alt=""><figcaption><p>Custom Data Inspector Row</p></figcaption></figure>
