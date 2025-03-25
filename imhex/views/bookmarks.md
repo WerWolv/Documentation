@@ -4,7 +4,7 @@ description: Manage and keep track of data regions
 
 # Bookmarks
 
-<figure><img src="../.gitbook/assets/image (19).png" alt="" width="563"><figcaption><p>The Bookmarks View</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/views/bookmarks.png" alt="" width="563"><figcaption><p>The Bookmarks View</p></figcaption></figure>
 
 ### Creating a bookmark
 
@@ -18,7 +18,7 @@ In the `Name` row, a new name can be entered that will show up in the header as 
 
 Also the color can be modified by clicking on the color button to the left of it. A popup with a color picker and various template colors will open and can be used to change the color.
 
-<figure><img src="../.gitbook/assets/imhex_ZV6OStMrQd.png" alt=""><figcaption><p>Bookmark color picker</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/views/bookmarks_color_picker.png" alt=""><figcaption><p>Bookmark color picker</p></figcaption></figure>
 
 Bookmarks can also be locked by pressing on the Lock icon in the `Name` column. This will prevent any modifications of this bookmark and disallow deleting it. To unlock the bookmark, simply click on the button again.
 
@@ -26,11 +26,11 @@ Besides the name, a comment can be entered to document additional information th
 
 All information entered here will also show up when hovering over the bookmark in the Hex Editor View and holding down the `SHIFT` key.
 
-<figure><img src="../.gitbook/assets/imhex_IZihhibts8.png" alt=""><figcaption><p>Hover popup</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/views/bookmarks_hover_popup.png" alt=""><figcaption><p>Hover popup</p></figcaption></figure>
 
 ### Bookmark actions
 
-<figure><img src="../.gitbook/assets/image (20).png" alt=""><figcaption><p>Available options</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/views/bookmarks_actions.png" alt=""><figcaption><p>Available options</p></figcaption></figure>
 
 * Jump to Bookmark : Clicking this jumps to the bookmark in the Hex Editor view
 * Open View Provider: Clicking this opens the content of this bookmark in a new tab
