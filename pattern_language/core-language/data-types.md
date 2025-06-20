@@ -25,7 +25,7 @@ Unsigned integer types represent regular binary numbers. They are displayed as a
 
 #### Signed Integers
 
-Signed integer types represent signed binary numbers in Two's Complement representation. They are displayed as a integer value ranging from $$-(2^{8*Size}-1)$$ to $$(2^{8*Size}-1) - 1$$
+Signed integer types represent signed binary numbers in Two's Complement representation. They are displayed as a integer value ranging from $$-(2^{8*{Size}}-1)$$ to $$(2^{8*{Size}}-1) - 1$$
 
 | Name   | Size     |
 | ------ | -------- |
