@@ -83,7 +83,7 @@ A `in` Variable will generate a new line with an input widget that can be used t
 
 <figure><img src="../.gitbook/assets/imhex_cqowB8XMS6.png" alt=""><figcaption><p>Sections tab</p></figcaption></figure>
 
-The Sections tab contains all custom sections that have been created using the `std::mem::create_section(str name)` function. For more info on using sections, see [Sections](../../pattern-language/core-language/sections.md) page.
+The Sections tab contains all custom sections that have been created using the `std::mem::create_section(str name)` function. For more info on using sections, see [Sections](../../pattern_language/core-language/sections.md) page.
 
 The Pattern Language code can write data into this custom section and place patterns into it. This data can then be accessed by pressing on the `View` button in the right most column. A new window will open with a Hex Editor view containing the data of the section as well as a table containing all the patterns that have been placed in this section. They work the same way as their individual view counterparts.
 
