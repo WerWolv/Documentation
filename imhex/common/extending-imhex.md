@@ -36,4 +36,4 @@ To get started with Scripts, download the [C# Template project](https://github.c
 
 After building, simply put all generated `.dll` files in the `<ImHex Folder>/scripts/custom/dotnet/<Plugin Name>` folder. `Main.dll` is the main script file, if it contains a `Main()` function, it will show up in `Extras -> Run Script...` menu where it can be executed.
 
-<figure><img src="../.gitbook/assets/image (17).png" alt=""><figcaption><p>Run Script Menu</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/menu/extras_run_script.png" alt=""><figcaption><p>Run Script Menu</p></figcaption></figure>
