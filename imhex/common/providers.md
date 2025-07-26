@@ -13,11 +13,11 @@ The most simple way to use Providers is by loading any file. Either through \
 
 Besides the FileProvider, there's also more complex ones accessed through `File -> Open Other...` or `Other Providers` on the Welcome Screen.
 
-<figure><img src="../.gitbook/assets/imhex_4n15aaWOJU.png" alt=""><figcaption><p>Other providers</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/common/providers_list.png" alt=""><figcaption><p>Other providers</p></figcaption></figure>
 
 Clicking on any of these buttons creates a new instance of this provider and opens a configuration popup to specify additional parameters. Some providers simply open a file picker here, others display custom windows. Clicking `Open` opens the provider with these settings.
 
-<figure><img src="../.gitbook/assets/imhex_u0Ct6qFF8A.png" alt=""><figcaption><p>Process Memory Provider configuration popup</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/providers_process_memory.png" alt=""><figcaption><p>Process Memory Provider configuration popup</p></figcaption></figure>
 
 ### Implementation
 
