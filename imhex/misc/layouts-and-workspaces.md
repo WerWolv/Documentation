@@ -4,7 +4,7 @@
 
 Workspaces and Layouts are ImHex's way of saving, restoring and managing window layouts. All their functionality can be accessed through the `Workspace` menu.&#x20;
 
-<figure><img src="../.gitbook/assets/image (16).png" alt=""><figcaption><p>Workspace menu</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/menu/workspace_layout.png" alt=""><figcaption><p>Workspace menu</p></figcaption></figure>
 
 ### Layouts
 

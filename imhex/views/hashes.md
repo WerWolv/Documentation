@@ -4,7 +4,7 @@ description: Hash selected regions of data using various different algorithms
 
 # Hashes
 
-<figure><img src="../.gitbook/assets/imhex_NcRQW1rOx5.png" alt=""><figcaption><p>The Hash View</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/views/hashes.png" alt=""><figcaption><p>The Hash View</p></figcaption></figure>
 
 The Hash view allows you to instantiate multiple different hashing algorithms all with their own custom settings and automatically hash selected regions of bytes with them.
 
@@ -22,5 +22,4 @@ In order to hash a specific region of bytes, simply select them in the Hex Edito
 
 &#x20;Hovering over a selected region in the Hex Editor View and holding down the `SHIFT` key will also open a tooltip popup with all the hash results in it.
 
-<figure><img src="../.gitbook/assets/imhex_l878qdnQS0.png" alt=""><figcaption><p>Hash tooltip</p></figcaption></figure>
-
+<figure><img src="../.gitbook/assets/views/hashes_tooltip.png" alt=""><figcaption><p>Hashes tooltip</p></figcaption></figure>

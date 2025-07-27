@@ -12,7 +12,7 @@ All tools can be detacted and used as their own windows by simply closing them f
 
 {% tabs %}
 {% tab title="LLVM Demangler" %}
-<figure><img src="../.gitbook/assets/imhex_6ACrfPXhyO.png" alt=""><figcaption><p>LLVM Demangler</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/views/tools_llvm_demangler.png" alt=""><figcaption><p>LLVM Demangler</p></figcaption></figure>
 
 This view takes a mangled type name from one of the following encoding standards and turns it back into the actual type name used in the respective programming language.
 
@@ -25,13 +25,13 @@ To decmangle a string, simply enter it in the text field at the top and the dema
 {% endtab %}
 
 {% tab title="ASCII Table" %}
-<figure><img src="../.gitbook/assets/imhex_HCUyiTsboW.png" alt=""><figcaption><p>ASCII Table with Octal option turned on</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/views/tools_ascii_table_octal.png" alt=""><figcaption><p>ASCII Table with Octal option turned on</p></figcaption></figure>
 
 The ASCII Table is a simple list of all standard ASCII characters and their corresponding Decimal, Hexadecimal and optionally Octal value. The octal columns can be turned on and off using the checkmark setting at the bottom.
 {% endtab %}
 
 {% tab title="Regex replacer" %}
-<figure><img src="../.gitbook/assets/imhex_aCE9vlWVhS.png" alt=""><figcaption><p>Regex replacing all vowels in the Input text with asterisks</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/views/tools_regex_replacer.png" alt=""><figcaption><p>Regex replacing all vowels in the Input text with asterisks</p></figcaption></figure>
 
 The regex replacer tool takes a input regex pattern and applies a regex replace operation on it.
 
@@ -49,19 +49,19 @@ The following replace pattern syntax is permitted:
 {% endtab %}
 
 {% tab title="Color picker" %}
-<figure><img src="../.gitbook/assets/imhex_cWnI6WRIuo.png" alt=""><figcaption><p>Color picker tool</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/views/tools_color_picker.png" alt=""><figcaption><p>Color picker tool</p></figcaption></figure>
 
 This tool contains a simple color picker to quickly turn hexadecimal values into colors or vice versa or convert between different color format standards such as RGB or HSV.
 
 Right clicking the color picker allows switching from a color plane to a color wheel.
 
-<figure><img src="../.gitbook/assets/imhex_wYrNPSPasu.png" alt=""><figcaption><p>Color plane to<br>color wheel popup</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/views/tools_color_picker_switching_popup.png" alt=""><figcaption><p>Color plane to<br>color wheel popup</p></figcaption></figure>
 {% endtab %}
 {% endtabs %}
 
 {% tabs %}
 {% tab title="Calculator" %}
-<figure><img src="../.gitbook/assets/imhex_DFeOT0VJh0.png" alt=""><figcaption><p>Calculator tool</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/views/tools_calculator.png" alt=""><figcaption><p>Calculator tool</p></figcaption></figure>
 
 The Calculator is a complete, stack-based postfix expression calculator. It works the same as many scientific calculators used in higher education.
 
@@ -96,19 +96,19 @@ The following display modes are available:
 {% endtab %}
 
 {% tab title="Base converter" %}
-<figure><img src="../.gitbook/assets/imhex_A8jUOMkUj6.png" alt=""><figcaption><p>Base converter converting the number 69 to different bases</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/views/tools_base_converter.png" alt=""><figcaption><p>Base converter converting the number 69 to different bases</p></figcaption></figure>
 
 The base converter simply takes a number in one base and converts it into all other available bases. These are currently Decimal (DEC), Hexadecimal (HEX), Octal (OCT) and Binary (BIN)
 {% endtab %}
 
 {% tab title="Byte Swapper" %}
-<figure><img src="../.gitbook/assets/imhex_NboWdV294u.png" alt=""><figcaption><p>Hexadecimal value 0xAABBCCDD being byte swapped</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/views/tools_byte_swapper.png" alt=""><figcaption><p>Hexadecimal value 0xAABBCCDD being byte swapped</p></figcaption></figure>
 
 The Byte swapper tool does exactly what it says. It treats the Input value as a hexadecimal number and byte swaps it. If not enough characters have been entered to fill out the next power of two bytes, the input gets padded with zeros.
 {% endtab %}
 
 {% tab title="Permission Calculator" %}
-<figure><img src="../.gitbook/assets/imhex_3pGwSRYkUw.png" alt=""><figcaption><p>Unix permissions calculator</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/views/tools_unix_permissions_calculator.png" alt=""><figcaption><p>Unix permissions calculator</p></figcaption></figure>
 
 This tool generates the absolute octal notation for UNIX permissions based on what permissions bits have been set in the table above. The absolute notation is value used in commands such as `chmod`.
 {% endtab %}
@@ -116,7 +116,7 @@ This tool generates the absolute octal notation for UNIX permissions based on wh
 
 {% tabs %}
 {% tab title="File Uploader" %}
-<figure><img src="../.gitbook/assets/imhex_h38IEUeOyE.png" alt=""><figcaption><p>File uploader with a link to single file</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/views/tools_file_uploader.png" alt=""><figcaption><p>File uploader with a link to single file</p></figcaption></figure>
 
 The file uploader simply lets you choose any file on your system by clicking on the `Upload` button and uploads it to [https://anonfiles.com](https://anonfiles.com) so it can be shared with other people.
 
@@ -128,7 +128,7 @@ All uploaded files are publicly accessible using this link and will only stay on
 {% endtab %}
 
 {% tab title="Wikipedia definitions" %}
-<figure><img src="../.gitbook/assets/imhex_DtScs6DByi.png" alt=""><figcaption><p>Term "WAV" being searched on Wikipedia</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/views/tools_wikipedia_definitions.png" alt=""><figcaption><p>Term "WAV" being searched on Wikipedia</p></figcaption></figure>
 
 The Wikipedia term definitions tool simply asks Wikipedia for a short summary of the provided term.
 
@@ -138,7 +138,7 @@ The language that's being used can be changed in the settings.
 {% tab title="File Tools" %}
 **Shredder**
 
-<figure><img src="../.gitbook/assets/imhex_18MTLOWTwK.png" alt=""><figcaption><p>File shredder sub-tool</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/views/tools_file_shredder.png" alt=""><figcaption><p>File shredder sub-tool</p></figcaption></figure>
 
 The file shredder tool securely destroys a selected file and erases it from the hard drive. It does this by overwriting the data with various different byte patterns so no information of the data should be recoverable anymore, even when directly analysing the disk's hardware.
 
@@ -150,7 +150,7 @@ This will irrecoverably destroy a file. Make sure you're absolutely certain that
 
 **Splitter**
 
-<figure><img src="../.gitbook/assets/imhex_RgiGcfo9YV.png" alt=""><figcaption><p>File splitter sub-tool</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/views/tools_file_splitter.png" alt=""><figcaption><p>File splitter sub-tool</p></figcaption></figure>
 
 The file splitter can split a input file into multiple output files of a given size. This is useful when trying to transport a big file using multiple smaller storage medias such as CDs, when copying files bigger than 4GB onto a FAT32 drive or when uploading them to an online service that only supports a certain maximum file size.
 
@@ -158,7 +158,7 @@ Select a file in the `File to split` input field and a destination folder for th
 
 **Combiner**
 
-<figure><img src="../.gitbook/assets/imhex_CoxqMjvjzj.png" alt=""><figcaption><p>File combiner sub-tool</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/views/tools_file_combiner.png" alt=""><figcaption><p>File combiner sub-tool</p></figcaption></figure>
 
 The file combiner tool is the inverse operation of the file splitter. It Can take a list of multiple smaller files and concatinate them into one bigger file. The order they show up in the list above is the order they are concatinated in. Add new files using the `Add...` button, remove a single file again using the `Delete` button or clear the entire list using the `Clear` button. Files in the list can also be moved around by first selecting them and then pressing on the arrow buttons on the right hand side to move them up or down in the list.
 
@@ -168,7 +168,7 @@ To create the file, select a new path for it in the `Output file` field and pres
 
 {% tabs %}
 {% tab title="IEEE 754 Decoder" %}
-<figure><img src="../.gitbook/assets/imhex_MaPlaZ78mo.png" alt=""><figcaption><p>IEEE754 floating point decoder tool</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/views/tools_ieee_754_decoder.png" alt=""><figcaption><p>IEEE754 floating point decoder tool</p></figcaption></figure>
 
 The IEEE754 floating point decoder tool allows decoding of custom IEEE754 floating point numbers and visualizes their internal representation as well as the calculation that are being done.
 
@@ -182,7 +182,7 @@ The table below visualizes the formulas and calculations that are being used to 
 {% endtab %}
 
 {% tab title="Division by invariant Multiplication" %}
-<figure><img src="../.gitbook/assets/imhex_m506pixgMg.png" alt=""><figcaption><p>Division of a value by the constant 1234 being turned into a more efficient multiplication followed by a shift operation</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/views/tools_division_by_invariant_multiplication.png" alt=""><figcaption><p>Division of a value by the constant 1234 being turned into a more efficient multiplication followed by a shift operation</p></figcaption></figure>
 
 Division by invariant Multiplication is a optimization technique used by compilers to turn divisions by a constant number into a much more efficient multiplication followed by a shift.
 

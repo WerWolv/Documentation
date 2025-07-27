@@ -30,6 +30,6 @@ The **Pattern Language** is ImHex's custom data processing language. For more in
 
 ### Screenshots
 
-<figure><img src="https://user-images.githubusercontent.com/10835354/139717326-8044769d-527b-4d88-8adf-2d4ecafdca1f.png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/screenshots/screenshot_0.png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="https://user-images.githubusercontent.com/10835354/139717323-1f8c9d52-f7eb-4f43-9f11-097ac728ed6c.png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/screenshots/screenshot_1.png" alt=""><figcaption></figcaption></figure>

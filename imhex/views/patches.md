@@ -4,7 +4,7 @@ description: Managing changes made to the data
 
 # Patches
 
-<figure><img src="../.gitbook/assets/imhex_8PCsBsQy0Z.png" alt=""><figcaption><p>The Patches View</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/views/patches.png" alt=""><figcaption><p>The Patches View</p></figcaption></figure>
 
 The patches view contains a simple list of all changes that have been made to the data but weren't yet written back. Whenever changes are being made to buffered data, they aren't directly written back but instead end up in the patches list where they can be reviewed and reverted if necessary.
 
