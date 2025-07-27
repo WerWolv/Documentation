@@ -21,7 +21,7 @@ Decompresses the bytes of a pattern into a section using the zlib algorithm
 - `pattern`: The pattern whose bytes should be decompressed
 - `section`: The section to decompress the data into
 - `window_size`: The window size passed to zlib
-- `return`: true if successful, false otherwise
+- `return`: A value representing either the number of bytes decompressed or an error code from zlib
 
 
 ```rust
