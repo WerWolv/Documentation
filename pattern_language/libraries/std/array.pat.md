@@ -2,6 +2,21 @@
 The array library contains a helper type to make it easier to create multi-dimensional arrays
 and pass arrays to functions as parameters.
 
+## Multi-dimensional arrays
+
+The following example shows how to use multi-dimensional arrays with structs.
+
+```rust
+import std.array;
+
+struct File {
+u8 width, height;
+std::Array<std::Array<u8, parent.width>, height> cells;
+};
+
+File file @ 0x00;
+```
+
 
 ## Types
 
