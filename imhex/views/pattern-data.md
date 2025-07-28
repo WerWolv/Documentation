@@ -96,7 +96,7 @@ For example:
 * Vertices array containing 12 elements will represent 4 triangles, array elements with indices 0,1,2 representing the first triangle, indices 3,4,5 representing the second triangle and so on.
 * Vertices array containing 5 elements can also represent 4 triangles by using a 12-element `indices` array - every group of 3 elements in that array representing a triangle, so indices array elements with indices 0,1,2 is the first triangle, indices 3,4,5 are the second triangle and so on.
 
-<figure><img src="../.gitbook/assets/3d_mesh.png" alt="" width="341"><figcaption><p>3D mesh example</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/views/pattern_data_3d_mesh.png" alt="" width="341"><figcaption><p>3D mesh example</p></figcaption></figure>
 
 With the above example of four triangles these two representations are equivalent:
 

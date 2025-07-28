@@ -46,9 +46,9 @@ The Byte distribution graph is a Histogram which displays the number of occurren
 
 The byte types graph displays a stacked relative frequency graph which contains information about how often a certain type of byte occurres within a block of data. The X-Axis of this graph represents the block's address and the Y-Axis the percentage of bytes in this block that are of the relevant type.&#x20;
 
-The byte type is determined using the [`<cctype>`](https://en.cppreference.com/w/c/string/byte) functions listed in the legend below. To hide certain types, simply click on their legend entry. There's also a drag bar on the graph that can be moved around to jump to the offset of that block in the Hex Editor View.image
+The byte type is determined using the [`<cctype>`](https://en.cppreference.com/w/c/string/byte) functions listed in the legend below. To hide certain types, simply click on their legend entry. There's also a drag bar on the graph that can be moved around to jump to the offset of that block in the Hex Editor View.
 
-<figure><img src="../.gitbook/assets/msedge_obci52Dx8p.png" alt=""><figcaption><p>Table representing which bytes are captured by which byte type</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/views/data_information_c_bytes_types.png" alt=""><figcaption><p>Table representing which bytes are captured by which byte type</p></figcaption></figure>
 
 Besides just byte types, the graph also highlights regions that have a lot of bytes of the same value in green and regions that most likely contain English plain text in purple.
 
