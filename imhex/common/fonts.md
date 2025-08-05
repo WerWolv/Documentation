@@ -14,7 +14,7 @@ Any `TTF` or `OTF` font is generally supported. However, things might look off w
 
 To change your font, first open the `Settings` interface through `Help -> Settings` and open the `Fonts` tab. After that, either enter the path to your font in the `Custom Font Path` text field or click on the folder icon next to it to use the file picker.
 
-<figure><img src="../.gitbook/assets/imhex_YOtnf3gA2O.png" alt=""><figcaption><p>A cutom font being selected in the Settings interface</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/common/fonts_settings.png" alt=""><figcaption><p>A cutom font being selected in the Settings interface</p></figcaption></figure>
 
 {% hint style="warning" %}
 The Font file is not copied, only the path is stored in ImHex's settings. Don't remove the font file after it has been selected or ImHex will revert back to the default font.

@@ -4,7 +4,7 @@ description: Searching for various kind of sequences
 
 # Find
 
-<figure><img src="../.gitbook/assets/imhex_BnPWV7Tk3I.png" alt=""><figcaption><p>The Find View</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/views/find.png" alt=""><figcaption><p>The Find View</p></figcaption></figure>
 
 The Find View allows you to search the entire data or just parts of it for sequences of bytes that match certain constraints.
 
@@ -18,7 +18,7 @@ Depending on the kind of data you're looking for, a different strategy needs to 
 
 **Strings**
 
-<figure><img src="../.gitbook/assets/imhex_vlFdee9FWt.png" alt=""><figcaption><p>Strings search options</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/views/find_strings.png" alt=""><figcaption><p>Strings search options</p></figcaption></figure>
 
 The Strings search strategy can extract ASCII, UTF-16LE and UTF-16BE strings or a combination of ASCII and UTF-16 strings. The string types that will be looked for can be chosen through the `Type` combo box.
 
@@ -31,13 +31,13 @@ In the advanced match settings, additional requirements for the strings can be s
 
 **Sequences**
 
-<figure><img src="../.gitbook/assets/imhex_nq5cyOmJEM.png" alt=""><figcaption><p>Sequences search options</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/views/find_sequences.png" alt=""><figcaption><p>Sequences search options</p></figcaption></figure>
 
 The Sequences search strategy simply searches all occurrences of a specific string. For example searching for the value `Test` will list all occurrences of this sequence of four characters in the data.
 
 **Regex**
 
-<figure><img src="../.gitbook/assets/imhex_V51XAlOakD.png" alt=""><figcaption><p>Regex search options</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/views/find_regex.png" alt=""><figcaption><p>Regex search options</p></figcaption></figure>
 
 The Regex search strategy works the same as the Strings strategy. It first extracts all strings of a given size and type from the data and then filters them using the Regex Pattern that was specified in the `Regex` field.
 
@@ -45,13 +45,13 @@ If the `Require full match` option is enabled, a string is only included if the 
 
 **Binary Pattern**
 
-<figure><img src="../.gitbook/assets/imhex_60o600A079.png" alt=""><figcaption><p>Binary Pattern search options</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/views/find_binary_pattern.png" alt=""><figcaption><p>Binary Pattern search options</p></figcaption></figure>
 
 The Binary Pattern search strategy lists all byte occurrences in the data that match a given Binary Pattern. More information about the format can be found on the relevant documentation page.
 
 **Numeric Value**
 
-<figure><img src="../.gitbook/assets/imhex_KLWhyKoqWh.png" alt=""><figcaption><p>Numeric Value search options</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/views/find_numeric_value.png" alt=""><figcaption><p>Numeric Value search options</p></figcaption></figure>
 
 The Numeric Value search strategy searches the data for occurrences of numeric values whose values are within a certain range. It will interpret the bytes at every address in the data as the specified Type and compare it to the range of allowed values.
 
