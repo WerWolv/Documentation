@@ -101,7 +101,7 @@ Gets the base address of the data
 
 
 ```rust
-fn base_address();
+fn base_address(u64 section);
 ```
 
 ### `std::mem::size`
@@ -111,7 +111,7 @@ Gets the size of the data
 
 
 ```rust
-fn size();
+fn size(u64 section);
 ```
 
 ### `std::mem::find_sequence`
@@ -176,7 +176,7 @@ Reads a unsigned value from the memory
 
 
 ```rust
-fn read_unsigned(u128 address, u8 size, std::mem::Endian endian);
+fn read_unsigned(u128 address, u8 size, std::mem::Endian endian, std::mem::Section section);
 ```
 
 ### `std::mem::read_signed`
@@ -189,7 +189,7 @@ Reads a signed value from the memory
 
 
 ```rust
-fn read_signed(u128 address, u8 size, std::mem::Endian endian);
+fn read_signed(u128 address, u8 size, std::mem::Endian endian, std::mem::Section section);
 ```
 
 ### `std::mem::read_string`
@@ -201,7 +201,7 @@ Reads a string value from the memory
 
 
 ```rust
-fn read_string(u128 address, u128 size);
+fn read_string(u128 address, u128 size, std::mem::Section section);
 ```
 
 ### `std::mem::read_bits`
