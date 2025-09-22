@@ -79,6 +79,23 @@ Below the simplest operations are shown, however they may be concatenated and ex
 | `parent.var`    | Accessing a variable inside the parent struct or union of the current struct or union |
 | `this`          | Referring to the current pattern. Can only be used inside of a struct or union        |
 
+The `parent` operation refers to the caller struct or union, not the "parent struct" in the Inheritance section. It can also be used in a function:
+
+```rust
+struct Field {
+    u8 x;
+};
+fn rename_field() {
+    std::core::set_display_name(parent.fields[0], "version");
+};
+struct Struct {
+    Field fields[3];
+    rename_field();
+};
+Struct s @ 0;  // Pattern Data shows s > fields > version
+```
+
+
 ### `$` Dollar Operator
 
 The Dollar Operator is a special operator which expands to the current offset within the current pattern.
