@@ -19,6 +19,7 @@ To take an array parameter, specify its type as `ref auto`.
 
 ```rust
 fn print_array(ref auto arr) {
+    std::print("{}", arr);
     for (auto i = 0, i < std::core::member_count(arr), i += 1) {
         std::print("{}: {}", i, arr[i]);
     }
