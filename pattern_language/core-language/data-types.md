@@ -152,7 +152,7 @@ For more complex conditions, combine an array to `eof` with a struct containing 
 ```rust
 struct Command {
     u8 opcode;
-    if (opcode != 0x01 || opcode != 0x02) { break; }
+    if (opcode != 0x01 && opcode != 0x02) { break; }
     if (opcode == 0x01) { continue; }
     if (opcode == 0x02) {
         u8 src;
