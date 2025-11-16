@@ -35,10 +35,11 @@
 
 Type Operators are operators that work on types. They can only be used on a variable, not on a mathematical expression.
 
-| Operator       | Description         |
-| -------------- | ------------------- |
-| `addressof(a)` | Address of variable |
-| `sizeof(a)`    | Size of variable    |
+| Operator        | Description                                  |
+| --------------- | -------------------------------------------- |
+| `addressof(a)`  | Address of variable                          |
+| `sizeof(a)`     | Size of variable                             |
+| `typenameof(a)` | String representation of the variable's type |
 
 `a` can be a variable, either by naming it directly or finding it through member access
 
