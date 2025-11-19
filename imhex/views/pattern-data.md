@@ -76,7 +76,7 @@ This visualizer expects any pattern that contains raw RGBA8 values in the form o
 
 `[[hex::visualize("bitmap", pattern, width, height, clutData)]]`
 
-Image visualizer can also display [indexed images](https://en.wikipedia.org/wiki/Indexed_color). The fifth argument for this visualiser is the color lookup table (CLUT). The CLUT always has to be in 32-bit RGBA color format. If your lookup table uses diferent color format, use the [transform attribute](../../pattern_language/core-language/attributes.md#transform_entriestransformer_function_name) to remap your color to 32-bit RGBA. See the example below.
+Image visualizer can also display [indexed images](https://en.wikipedia.org/wiki/Indexed_color). The fifth argument for this visualiser is the color lookup table (CLUT). The CLUT always has to be in 32-bit RGBA color format. If your lookup table uses diferent color format, use the [transform attribute](../../pattern_language/core-language/attributes.md#transform_entriestransformer_function_name) to remap your color to 32-bit RGBA. See the examples below.
 
 ```rust
 import type.color;
@@ -85,11 +85,42 @@ import type.color;
 #define HEIGHT 128
 
 struct Data {
-  u8 imageData[WIDTH * HEIGHT];
-  type::RGBA8 clutData[256];
+    u8 imageData[WIDTH * HEIGHT];
+    type::RGBA8 clutData[256];
 } [[hex::visualize("bitmap", imageData, WIDTH, HEIGHT, clutData)]];
 
 Data data @ 0;
+```
+
+The following example illustrates how to transform the CLUT table from `RGBA5551` format to `RGBA8` using the transform attribute.
+
+```rust
+#define WIDTH 128
+#define HEIGHT 128
+
+bitfield RGBA5551 {
+    r : 5;
+    g : 5;
+    b : 5;
+    a : 1;
+} [[sealed, transform("to_u32"), format("as_u32")]];
+
+fn uq(auto v) { // unquantize
+    return u32(float(v) * 255f / 31f);
+};
+
+fn to_u32(auto v) {
+    return uq(v.r) + (uq(v.g) << 8) + (uq(v.b) << 16) + 0xFF000000;
+};
+
+fn as_u32(auto v) {
+    return std::format("{:#x}", v);
+};
+
+struct Image{
+    u8 imageData[WIDTH * HEIGHT];
+    RGBA5551 colors[256];
+}[[hex::visualize("bitmap", imageData, WIDTH, HEIGHT, colors)]];
 ```
 
 The visualizer supports indices of 4 (16 colors), 8 (256 colors) and 16 (65536 colors) bits. The indices array can be provided as an array of any integral type. The only requirement is that the array is of the correct amount of bytes. 
@@ -101,11 +132,11 @@ import type.color;
 #define HEIGHT 32
 
 struct Data {
-  // In this example we read 4-bit indices in an array of u8.
-  // The length of the u8 array is actually half the size of
-  //  the underlying number of nibbles representing indices.
-  u8 imageData[16 * 16];
-  type::RGBA8 clutData[16];
+    // In this example we read 4-bit indices in an array of u8.
+    // The length of the u8 array is actually half the size of
+    // the underlying number of nibbles representing indices.
+    u8 imageData[16 * 16];
+    type::RGBA8 clutData[16];
 } [[hex::visualize("bitmap", imageData, WIDTH, HEIGHT, clutData)]]
 ```
 
