@@ -172,7 +172,7 @@ If the pattern where `continue` is being used in is nested inside of another pat
 The Searcher Pattern is a useful design pattern for placing a struct pattern at a dynamically determined (searched for) offset. It combines an array spanning the area under search (the haystack), and a wrapper struct which places the wanted pattern upon finding the needle.
 
 ```rust
-struct Pattern {
+struct Command {
   u32 data;
 };
 u8 needle = 0xCD;
