@@ -113,3 +113,15 @@ This pragma enables the debug mode in the evaluator. This causes the following t
 * Any creation and assignment of variables will be logged to the console
 * Any function call and their parameters will be logged to the console
 * If an error occurs, the patterns that were already placed in memory will not be deleted
+
+#### `author`
+
+**Possible values:** Any string value **Default:** `Unspecified`
+
+This pragma specifies the pattern author shown in the [Content Store](../../imhex/misc/content-store.md). If you need to specify multiple authors, use only one `#pragma author`.
+
+#### `description`
+
+**Possible values:** Any string value **Default:** `Unspecified`
+
+This pragma specifies the description shown for the pattern in the [Content Store](../../imhex/misc/content-store.md).
