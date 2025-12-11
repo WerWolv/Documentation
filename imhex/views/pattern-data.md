@@ -151,7 +151,7 @@ indices = [
 
 This visualizer expects any pattern whose bytes will be split into chunks of the size specified by the `chunk_size` parameter. It will then display an entropy graph of these bytes
 
-<figure><img src="../.gitbook/assets/views/pattern_data_visualizer_chunk_entropy.png" alt=""><figcaption><p>Enropy Visualizer</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/views/pattern_data_visualizer_chunk_entropy.png" alt=""><figcaption><p>Entropy Visualizer</p></figcaption></figure>
 
 `[[hex::visualize("hex_viewer", pattern)]]`
 
