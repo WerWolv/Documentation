@@ -47,7 +47,7 @@ If the `Require full match` option is enabled, a string is only included if the 
 
 <figure><img src="../.gitbook/assets/views/find_binary_pattern.png" alt=""><figcaption><p>Binary Pattern search options</p></figcaption></figure>
 
-The Binary Pattern search strategy lists all byte occurrences in the data that match a given Binary Pattern. More information about the format can be found on the relevant documentation page.
+The Binary Pattern search strategy lists all byte occurrences in the data that match a given Binary Pattern. More information about the format can be found [here](https://docs.werwolv.net/imhex/common/binary-pattern).
 
 **Numeric Value**
 
