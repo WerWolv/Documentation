@@ -184,11 +184,14 @@ struct PatternSearcher {
   Command command @ $;
   $ += sizeof(Command);
 };
+
 // Search from 0x0000 to 0xFFFF
 PatternSearcher search[while($ < 0xFFFF)] @ 0x00;
+
 // Search the entire file
 PatternSearcher search[while(!std::mem::eof())] @ 0x00;
-// Search from 0x3FFF to the end of file
+
+// Search from 0x3FFF to the end of the file
 PatternSearcher search[while(!std::mem::eof())] @ 0x3FFF;
 ```
 
