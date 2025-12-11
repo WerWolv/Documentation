@@ -27,6 +27,14 @@ The `import` keyword is followed by the path to the file to include with the dot
 import sys.mem;
 ```
 
+The `import` statement can accept a string argument instead. This behaves the same as [`#include`](importing-modules.md#include-directive). This can be used when your module's name or folder contains a keyword, since keywords can't be used as identifiers.
+
+```rust
+// Since match is a keyword, we can't import a module named "match.pat" as described
+// in the previous example. We can pass a string argument to import instead.
+import "tools/match.pat";
+```
+
 ### `import as` statement
 
 Libraries generally tend to place all their content under a specific namespace to prevent name collisions between different libraries. This however makes the code pretty verbose often.
@@ -98,7 +106,7 @@ namespace impl {
 ```cpp
 // Import the std::type namespace from the ctype.pat library file
 // and rename the std::ctype namespace to test
-import std.ctype as test; 
+import std.ctype as test;
 ```
 
 ### Include guards
