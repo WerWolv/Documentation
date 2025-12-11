@@ -179,7 +179,7 @@ struct Command {
 u8 needle = 0xCD;
 
 struct PatternSearcher {
-  u32 test = std::mem::read_unsigned($,1);
+  u32 test = std::mem::read_unsigned($, 1);
   if (test != needle) { $ += 1; continue; }
   Command command @ $;
   $ += sizeof(Command);
