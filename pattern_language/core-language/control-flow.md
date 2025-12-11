@@ -167,6 +167,34 @@ Test tests[1000] @ 0x00;
 
 If the pattern where `continue` is being used in is nested inside of another pattern, only the current pattern is discarded and evaluation continues in the parent struct after the definition of the current pattern.
 
+#### The Searcher Pattern
+
+The Searcher Pattern is a useful design pattern for placing a struct pattern at a dynamically determined (searched for) offset. It combines an array spanning the area under search (the haystack), and a wrapper struct which places the wanted pattern upon finding the needle.
+
+```rust
+struct Command {
+  u32 data;
+};
+
+u8 needle = 0xCD;
+
+struct PatternSearcher {
+  u32 test = std::mem::read_unsigned($, 1);
+  if (test != needle) { $ += 1; continue; }
+  Command command @ $;
+  $ += sizeof(Command);
+};
+
+// Search from 0x0000 to 0xFFFF
+PatternSearcher search[while($ < 0xFFFF)] @ 0x00;
+
+// Search the entire file
+PatternSearcher search[while(!std::mem::eof())] @ 0x00;
+
+// Search from 0x3FFF to the end of the file
+PatternSearcher search[while(!std::mem::eof())] @ 0x3FFF;
+```
+
 ### Return statements
 
 Return statements outside of functions can be used to prematurely terminate execution of the current program.
