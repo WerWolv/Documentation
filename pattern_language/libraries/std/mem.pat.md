@@ -25,7 +25,7 @@ struct Bytes<auto Size> { ... } [[sealed, format]];
 The endianness of a value
 
 ```rust
-enum Endian : u8 {
+enum Endian :  {
     Big,
     Little,
     Native
@@ -54,7 +54,7 @@ union Reinterpreter<From, To> { ... };
 A Handle for a custom Section
 
 ```rust
-using Section = u128;
+using Section = ;
 ```
 
 
@@ -79,7 +79,7 @@ Function that returns true if the cursor position is at or beyond the given addr
 
 
 ```rust
-fn reached(u128 address);
+fn reached( address);
 ```
 
 ### `std::mem::align_to`
@@ -91,7 +91,7 @@ Aligns the given value to the given alignment
 
 
 ```rust
-fn align_to(u128 alignment, u128 value);
+fn align_to( alignment,  value);
 ```
 
 ### `std::mem::base_address`
@@ -123,7 +123,7 @@ Finds a sequence of bytes in the data
 
 
 ```rust
-fn find_sequence(u128 occurrence_index, auto ... bytes);
+fn find_sequence( occurrence_index, auto ... bytes);
 ```
 
 ### `std::mem::find_sequence_in_range`
@@ -137,7 +137,7 @@ Finds a sequence of bytes in a specific region of the data
 
 
 ```rust
-fn find_sequence_in_range(u128 occurrence_index, u128 offsetFrom, u128 offsetTo, auto ... bytes);
+fn find_sequence_in_range( occurrence_index,  offsetFrom,  offsetTo, auto ... bytes);
 ```
 
 ### `std::mem::find_string`
@@ -149,7 +149,7 @@ Finds a string in the data
 
 
 ```rust
-fn find_string(u128 occurrence_index, str string);
+fn find_string( occurrence_index,  string);
 ```
 
 ### `std::mem::find_string_in_range`
@@ -163,7 +163,7 @@ Finds a string in a specific region of the data
 
 
 ```rust
-fn find_string_in_range(u128 occurrence_index, u128 offsetFrom, u128 offsetTo, str string);
+fn find_string_in_range( occurrence_index,  offsetFrom,  offsetTo,  string);
 ```
 
 ### `std::mem::read_unsigned`
@@ -176,7 +176,7 @@ Reads a unsigned value from the memory
 
 
 ```rust
-fn read_unsigned(u128 address, u8 size, std::mem::Endian endian);
+fn read_unsigned( address,  size, std::mem::Endian endian);
 ```
 
 ### `std::mem::read_signed`
@@ -189,7 +189,7 @@ Reads a signed value from the memory
 
 
 ```rust
-fn read_signed(u128 address, u8 size, std::mem::Endian endian);
+fn read_signed( address,  size, std::mem::Endian endian);
 ```
 
 ### `std::mem::read_string`
@@ -201,7 +201,7 @@ Reads a string value from the memory
 
 
 ```rust
-fn read_string(u128 address, u128 size);
+fn read_string( address,  size);
 ```
 
 ### `std::mem::read_bits`
@@ -214,7 +214,7 @@ Reads a number of bits from the specified bit offset within the specified byte
 
 
 ```rust
-fn read_bits(u128 byteOffset, u128 bitOffset, u64 bitSize);
+fn read_bits( byteOffset,  bitOffset,  bitSize);
 ```
 
 ### `std::mem::create_section`
@@ -225,7 +225,7 @@ Creates a new custom section with the given name
 
 
 ```rust
-fn create_section(str name);
+fn create_section( name);
 ```
 
 ### `std::mem::delete_section`
@@ -257,7 +257,7 @@ Changes the size of a custom section
 
 
 ```rust
-fn set_section_size(std::mem::Section section, u128 size);
+fn set_section_size(std::mem::Section section,  size);
 ```
 
 ### `std::mem::copy_section_to_section`
@@ -271,7 +271,7 @@ Copies a range of bytes from one section into another
 
 
 ```rust
-fn copy_section_to_section(std::mem::Section from_section, u64 from_address, std::mem::Section to_section, u64 to_address, u64 size);
+fn copy_section_to_section(std::mem::Section from_section,  from_address, std::mem::Section to_section,  to_address,  size);
 ```
 
 ### `std::mem::copy_value_to_section`
@@ -283,7 +283,7 @@ Copies a range of bytes from the main section into a custom section
 
 
 ```rust
-fn copy_value_to_section(auto value, std::mem::Section to_section, u64 to_address);
+fn copy_value_to_section( value, std::mem::Section to_section,  to_address);
 ```
 
 ### `std::mem::current_bit_offset`

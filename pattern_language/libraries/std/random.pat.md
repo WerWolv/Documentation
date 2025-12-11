@@ -9,7 +9,7 @@ Library to generate random numbers. Supports various different distribution type
 Represents the type of distribution to use to generate a random number
 
 ```rust
-enum Distribution : u8 {
+enum Distribution :  {
     Bernoulli,
     Binomial,
     Cauchy,
@@ -39,7 +39,7 @@ Sets the seed of the random number generator
 
 
 ```rust
-fn set_seed(u64 seed);
+fn set_seed( seed);
 ```
 
 ### `std::random::generate_using`
@@ -71,7 +71,7 @@ The random number generator used internally is C++'s std::mt19937_64 Mersenne Tw
 
 
 ```rust
-fn generate_using(std::random::Distribution distribution, auto param1, auto param2);
+fn generate_using(std::random::Distribution distribution,  param1,  param2);
 ```
 
 ### `std::random::generate`
@@ -82,6 +82,6 @@ Generates a uniformly distributed random number between `min` and `max`
 
 
 ```rust
-fn generate(u64 min, u64 max);
+fn generate( min,  max);
 ```
 

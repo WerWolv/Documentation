@@ -13,7 +13,7 @@ Checks if the given character `c` is a digit between '0' and '9'
 
 
 ```rust
-fn isdigit(char c);
+fn isdigit( c);
 ```
 
 ### `std::ctype::isxdigit`
@@ -24,7 +24,7 @@ Checks if the given character `c` is a hexadecimal digit between '0' and '9', `A
 
 
 ```rust
-fn isxdigit(char c);
+fn isxdigit( c);
 ```
 
 ### `std::ctype::isupper`
@@ -35,7 +35,7 @@ Checks if the given character `c` is a upper case letter between 'A' and 'Z'
 
 
 ```rust
-fn isupper(char c);
+fn isupper( c);
 ```
 
 ### `std::ctype::islower`
@@ -46,7 +46,7 @@ Checks if the given character `c` is a lower case letter between 'a' and 'z'
 
 
 ```rust
-fn islower(char c);
+fn islower( c);
 ```
 
 ### `std::ctype::isalpha`
@@ -57,7 +57,7 @@ Checks if the given character `c` is either a upper or lower case letter between
 
 
 ```rust
-fn isalpha(char c);
+fn isalpha( c);
 ```
 
 ### `std::ctype::isalnum`
@@ -68,7 +68,7 @@ Checks if the given character `c` is a upper or lower case letter or a number
 
 
 ```rust
-fn isalnum(char c);
+fn isalnum( c);
 ```
 
 ### `std::ctype::isspace`
@@ -79,7 +79,7 @@ Checks if the given character `c` is a space character
 
 
 ```rust
-fn isspace(char c);
+fn isspace( c);
 ```
 
 ### `std::ctype::isblank`
@@ -90,7 +90,7 @@ Checks if the given character `c` is a invisible character
 
 
 ```rust
-fn isblank(char c);
+fn isblank( c);
 ```
 
 ### `std::ctype::isprint`
@@ -101,7 +101,7 @@ Checks if the given character `c` has a printable glyph
 
 
 ```rust
-fn isprint(char c);
+fn isprint( c);
 ```
 
 ### `std::ctype::iscntrl`
@@ -112,7 +112,7 @@ Checks if the given character `c` is a control code
 
 
 ```rust
-fn iscntrl(char c);
+fn iscntrl( c);
 ```
 
 ### `std::ctype::isgraph`
@@ -123,7 +123,7 @@ Checks if the given character `c` has a visible glyph
 
 
 ```rust
-fn isgraph(char c);
+fn isgraph( c);
 ```
 
 ### `std::ctype::ispunct`
@@ -134,6 +134,6 @@ Checks if the given character `c` is a punctuation character
 
 
 ```rust
-fn ispunct(char c);
+fn ispunct( c);
 ```
 

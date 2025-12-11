@@ -24,6 +24,6 @@ Escapes all bytes in a string to only contain printable characters. All non-prin
 
 
 ```rust
-fn escape_bytes(auto value);
+fn escape_bytes( value);
 ```
 

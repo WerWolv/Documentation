@@ -9,7 +9,7 @@ Library containing more advanced mathematical operations.
 Options to use with the `std::math::accumulate` function.
 
 ```rust
-enum AccumulateOperation : u8 {
+enum AccumulateOperation :  {
     Add,
     Max,
     Min,
@@ -30,7 +30,7 @@ Compares the values `a` and `b` with each other and returns the smaller of the t
 
 
 ```rust
-fn min(auto a, auto b);
+fn min( a,  b);
 ```
 
 ### `std::math::max`
@@ -42,7 +42,7 @@ Compares the values `a` and `b` with each other and returns the bigger of the tw
 
 
 ```rust
-fn max(auto a, auto b);
+fn max( a,  b);
 ```
 
 ### `std::math::clamp`
@@ -55,7 +55,7 @@ Clamps the value of `x` between `min` and `max`.
 
 
 ```rust
-fn clamp(auto x, auto min, auto max);
+fn clamp( x,  min,  max);
 ```
 
 ### `std::math::abs`
@@ -66,7 +66,7 @@ Returns the absolute value of `x`.
 
 
 ```rust
-fn abs(auto x);
+fn abs( x);
 ```
 
 ### `std::math::sign`
@@ -77,7 +77,7 @@ Returns the sign of `x`.
 
 
 ```rust
-fn sign(auto x);
+fn sign( x);
 ```
 
 ### `std::math::copy_sign`
@@ -89,7 +89,7 @@ Copies the sign of `y` to `x`.
 
 
 ```rust
-fn copy_sign(auto x, auto y);
+fn copy_sign( x,  y);
 ```
 
 ### `std::math::factorial`
@@ -100,7 +100,7 @@ Calculates the factorial of `x`.
 
 
 ```rust
-fn factorial(u128 x);
+fn factorial( x);
 ```
 
 ### `std::math::comb`
@@ -112,7 +112,7 @@ Calculates the binomial coefficient of `n` and `k`.
 
 
 ```rust
-fn comb(u128 n, u128 k);
+fn comb( n,  k);
 ```
 
 ### `std::math::perm`
@@ -124,7 +124,7 @@ Calculates the permutation of `n` and `k`.
 
 
 ```rust
-fn perm(u128 n, u128 k);
+fn perm( n,  k);
 ```
 
 ### `std::math::floor`
@@ -135,7 +135,7 @@ Floors the value of `value`.
 
 
 ```rust
-fn floor(auto value);
+fn floor( value);
 ```
 
 ### `std::math::ceil`
@@ -146,7 +146,7 @@ Ceils the value of `value`.
 
 
 ```rust
-fn ceil(auto value);
+fn ceil( value);
 ```
 
 ### `std::math::round`
@@ -157,7 +157,7 @@ Rounds the value of `value`.
 
 
 ```rust
-fn round(auto value);
+fn round( value);
 ```
 
 ### `std::math::trunc`
@@ -168,7 +168,7 @@ Truncates the value of `value`.
 
 
 ```rust
-fn trunc(auto value);
+fn trunc( value);
 ```
 
 ### `std::math::log10`
@@ -179,7 +179,7 @@ Calculates the logarithm of `value` with base 10.
 
 
 ```rust
-fn log10(auto value);
+fn log10( value);
 ```
 
 ### `std::math::log2`
@@ -190,7 +190,7 @@ Calculates the logarithm of `value` with base 2.
 
 
 ```rust
-fn log2(auto value);
+fn log2( value);
 ```
 
 ### `std::math::ln`
@@ -201,7 +201,7 @@ Calculates the natural logarithm of `value`.
 
 
 ```rust
-fn ln(auto value);
+fn ln( value);
 ```
 
 ### `std::math::fmod`
@@ -212,7 +212,7 @@ Calculates the floating point modulus of `value`.
 
 
 ```rust
-fn fmod(auto value);
+fn fmod( value);
 ```
 
 ### `std::math::pow`
@@ -224,7 +224,7 @@ Calculates the value of `base` raised to the power of `exp`.
 
 
 ```rust
-fn pow(auto base, auto exp);
+fn pow( base,  exp);
 ```
 
 ### `std::math::exp`
@@ -235,7 +235,7 @@ Calculates the value of the natural number `e`    raised to the power of `value`
 
 
 ```rust
-fn exp(auto value);
+fn exp( value);
 ```
 
 ### `std::math::sqrt`
@@ -246,7 +246,7 @@ Calculates the square root of `value`.
 
 
 ```rust
-fn sqrt(auto value);
+fn sqrt( value);
 ```
 
 ### `std::math::cbrt`
@@ -257,7 +257,7 @@ Calculates the cubic root of `value`.
 
 
 ```rust
-fn cbrt(auto value);
+fn cbrt( value);
 ```
 
 ### `std::math::sin`
@@ -268,7 +268,7 @@ Calculates the sine of `value`.
 
 
 ```rust
-fn sin(auto value);
+fn sin( value);
 ```
 
 ### `std::math::cos`
@@ -279,7 +279,7 @@ Calculates the cosine of `value`.
 
 
 ```rust
-fn cos(auto value);
+fn cos( value);
 ```
 
 ### `std::math::tan`
@@ -290,7 +290,7 @@ Calculates the tangent of `value`.
 
 
 ```rust
-fn tan(auto value);
+fn tan( value);
 ```
 
 ### `std::math::asin`
@@ -301,7 +301,7 @@ Calculates the arc sine of `value`.
 
 
 ```rust
-fn asin(auto value);
+fn asin( value);
 ```
 
 ### `std::math::acos`
@@ -312,7 +312,7 @@ Calculates the arc cosine of `value`.
 
 
 ```rust
-fn acos(auto value);
+fn acos( value);
 ```
 
 ### `std::math::atan`
@@ -323,7 +323,7 @@ Calculates the arc tangent of `value`.
 
 
 ```rust
-fn atan(auto value);
+fn atan( value);
 ```
 
 ### `std::math::atan2`
@@ -335,7 +335,7 @@ Calculates the arc tangent of `value`.
 
 
 ```rust
-fn atan2(auto y, auto x);
+fn atan2( y,  x);
 ```
 
 ### `std::math::sinh`
@@ -346,7 +346,7 @@ Calculates the hyperbolic sine of `value`.
 
 
 ```rust
-fn sinh(auto value);
+fn sinh( value);
 ```
 
 ### `std::math::cosh`
@@ -357,7 +357,7 @@ Calculates the hyperbolic cosine of `value`.
 
 
 ```rust
-fn cosh(auto value);
+fn cosh( value);
 ```
 
 ### `std::math::tanh`
@@ -368,7 +368,7 @@ Calculates the hyperbolic tangent of `value`.
 
 
 ```rust
-fn tanh(auto value);
+fn tanh( value);
 ```
 
 ### `std::math::asinh`
@@ -379,7 +379,7 @@ Calculates the arc hyperbolic sine of `value`.
 
 
 ```rust
-fn asinh(auto value);
+fn asinh( value);
 ```
 
 ### `std::math::acosh`
@@ -390,7 +390,7 @@ Calculates the arc hyperbolic cosine of `value`.
 
 
 ```rust
-fn acosh(auto value);
+fn acosh( value);
 ```
 
 ### `std::math::atanh`
@@ -401,7 +401,7 @@ Calculates the arc hyperbolic tangent of `value`.
 
 
 ```rust
-fn atanh(auto value);
+fn atanh( value);
 ```
 
 ### `std::math::accumulate`
@@ -417,6 +417,6 @@ Calculates the sum of all values in the specified memory range.
 
 
 ```rust
-fn accumulate(u128 start, u128 end, u128 valueSize, std::mem::Section section, std::math::AccumulateOperation operation, std::mem::Endian endian);
+fn accumulate( start,  end,  valueSize, std::mem::Section section, std::math::AccumulateOperation operation, std::mem::Endian endian);
 ```
 

@@ -34,6 +34,6 @@ Queries information from the currently loaded provider. The kind of information 
 
 
 ```rust
-fn get_information(str category, str argument);
+fn get_information( category,  argument);
 ```
 

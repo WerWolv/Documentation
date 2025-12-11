@@ -23,7 +23,7 @@ bitfield DOSTime { ... } [[sealed]];
 A type to represent a time in seconds since the epoch.
 
 ```rust
-using EpochTime = u32;
+using EpochTime = ;
 ```
 ### `std::time::Time`
 
@@ -44,7 +44,7 @@ union TimeConverter { ... };
 A type to represent a time zone.
 
 ```rust
-enum TimeZone : u8 {
+enum TimeZone :  {
     Local,
     UTC
 };
@@ -104,7 +104,7 @@ Converts a value to a DOS date.
 
 
 ```rust
-fn to_dos_date(u16 value);
+fn to_dos_date( value);
 ```
 
 ### `std::time::to_dos_time`
@@ -115,7 +115,7 @@ Converts a value to a DOS time.
 
 
 ```rust
-fn to_dos_time(u16 value);
+fn to_dos_time( value);
 ```
 
 ### `std::time::filetime_to_unix`
@@ -126,7 +126,7 @@ Converts a FILETIME to unix time.
 
 
 ```rust
-fn filetime_to_unix(u64 value);
+fn filetime_to_unix( value);
 ```
 
 ### `std::time::format`
@@ -138,7 +138,7 @@ Formats a time according to the specified format string.
 
 
 ```rust
-fn format(std::time::Time time, str format_string);
+fn format(std::time::Time time,  format_string);
 ```
 
 ### `std::time::format_dos_date`
@@ -150,7 +150,7 @@ Formats a DOS date according to the specified format string.
 
 
 ```rust
-fn format_dos_date(std::time::DOSDate date, str format_string);
+fn format_dos_date(std::time::DOSDate date,  format_string);
 ```
 
 ### `std::time::format_dos_time`
@@ -162,6 +162,6 @@ Formats a DOS time according to the specified format string.
 
 
 ```rust
-fn format_dos_time(std::time::DOSTime time, str format_string);
+fn format_dos_time(std::time::DOSTime time,  format_string);
 ```
 

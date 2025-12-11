@@ -9,7 +9,7 @@ get extra help from the runtime to fulfill their purpose.
 
 
 ```rust
-enum BitfieldOrder : u8 {
+enum BitfieldOrder :  {
     LeastToMostSignificant,
     LeftToRight,
     MostToLeastSignificant,
@@ -28,7 +28,7 @@ Checks if a pattern has a specific attribute assigned to it
 
 
 ```rust
-fn has_attribute(auto pattern, str attribute);
+fn has_attribute( pattern,  attribute);
 ```
 
 ### `std::core::get_attribute_argument`
@@ -40,7 +40,7 @@ Returns the nth parameter of the attribute of a pattern if it has one
 
 
 ```rust
-fn get_attribute_argument(auto pattern, str attribute, u32 index);
+fn get_attribute_argument( pattern,  attribute,  index);
 ```
 
 ### `std::core::get_attribute_value`
@@ -48,7 +48,7 @@ fn get_attribute_argument(auto pattern, str attribute, u32 index);
 
 
 ```rust
-fn get_attribute_value(auto pattern, str attribute);
+fn get_attribute_value( pattern,  attribute);
 ```
 
 ### `std::core::set_endian`
@@ -108,7 +108,7 @@ Queries the number of members of a struct, union or bitfield or the number of en
 
 
 ```rust
-fn member_count(auto pattern);
+fn member_count( pattern);
 ```
 
 ### `std::core::has_member`
@@ -120,7 +120,7 @@ Checks whether or not a given pattern has a member with a given name
 
 
 ```rust
-fn has_member(auto pattern, str name);
+fn has_member( pattern,  name);
 ```
 
 ### `std::core::formatted_value`
@@ -132,7 +132,7 @@ the `[[format]]` or `[[format_read]]` attribute
 
 
 ```rust
-fn formatted_value(auto pattern);
+fn formatted_value( pattern);
 ```
 
 ### `std::core::is_valid_enum`
@@ -143,7 +143,7 @@ Checks if the given enum value corresponds has a corresponding constant
 
 
 ```rust
-fn is_valid_enum(auto pattern);
+fn is_valid_enum( pattern);
 ```
 
 ### `std::core::set_pattern_color`
@@ -154,7 +154,7 @@ Changes the color of the given pattern to a new color
 
 
 ```rust
-fn set_pattern_color(auto pattern, u32 color);
+fn set_pattern_color( pattern,  color);
 ```
 
 ### `std::core::set_display_name`
@@ -165,7 +165,7 @@ Changes the display name of a given pattern
 
 
 ```rust
-fn set_display_name(auto pattern, str name);
+fn set_display_name( pattern,  name);
 ```
 
 ### `std::core::set_pattern_comment`
@@ -176,7 +176,7 @@ Changes the comment attached to a pattern
 
 
 ```rust
-fn set_pattern_comment(auto pattern, str comment);
+fn set_pattern_comment( pattern,  comment);
 ```
 
 ### `std::core::execute_function`
@@ -187,7 +187,7 @@ Executes the function with the given name, passing in all given arguments
 
 
 ```rust
-fn execute_function(str function_name, auto ... args);
+fn execute_function( function_name, auto ... args);
 ```
 
 ### `std::core::set_pattern_palette_colors`

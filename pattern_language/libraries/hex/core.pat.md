@@ -33,6 +33,6 @@ Add a file to the Virtual Filesystem
 
 
 ```rust
-fn add_virtual_file(str path, auto pattern);
+fn add_virtual_file( path,  pattern);
 ```
 

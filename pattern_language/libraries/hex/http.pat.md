@@ -12,6 +12,6 @@ Performs a HTTP GET request to the given URL and returns the response body
 
 
 ```rust
-fn get(str url);
+fn get( url);
 ```
 

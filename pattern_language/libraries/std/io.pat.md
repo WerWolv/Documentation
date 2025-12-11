@@ -13,7 +13,7 @@ This function uses the C++20 `std::format` or libfmt's `fmt::format` syntax.
 
 
 ```rust
-fn print(auto fmt, auto ... args);
+fn print( fmt, auto ... args);
 ```
 
 ### `std::format`
@@ -26,7 +26,7 @@ This function uses the C++20 `std::format` or libfmt's `fmt::format` syntax.
 
 
 ```rust
-fn format(auto fmt, auto ... args);
+fn format( fmt, auto ... args);
 ```
 
 ### `std::error`
@@ -36,7 +36,7 @@ Aborts evaluation of the code immediately and prints a error message to the cons
 
 
 ```rust
-fn error(str message);
+fn error( message);
 ```
 
 ### `std::warning`
@@ -46,6 +46,6 @@ Prints a warning message to the console
 
 
 ```rust
-fn warning(str message);
+fn warning( message);
 ```
 

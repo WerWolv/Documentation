@@ -12,7 +12,7 @@ Asserts that a given value is true. If it's not, abort evaluation and print the 
 
 
 ```rust
-fn assert(bool condition, str message);
+fn assert( condition,  message);
 ```
 
 ### `std::assert_warn`
@@ -23,7 +23,7 @@ Asserts that a given value is true. If it's not, print the given message to the 
 
 
 ```rust
-fn assert_warn(bool condition, str message);
+fn assert_warn( condition,  message);
 ```
 
 ### `std::env`
@@ -34,7 +34,7 @@ Queries the value of a set environment variable given it's name
 
 
 ```rust
-fn env(str name);
+fn env( name);
 ```
 
 ### `std::sizeof_pack`

@@ -12,52 +12,52 @@ using ATOM = WORD;
 ### `BOOL`
 
 ```rust
-using BOOL = bool;
+using BOOL = ;
 ```
 ### `BOOLEAN`
 
 ```rust
-using BOOLEAN = bool;
+using BOOLEAN = ;
 ```
 ### `BYTE`
 
 ```rust
-using BYTE = u8;
+using BYTE = ;
 ```
 ### `CCHAR`
 
 ```rust
-using CCHAR = char;
+using CCHAR = ;
 ```
 ### `CHAR`
 
 ```rust
-using CHAR = char;
+using CHAR = ;
 ```
 ### `DWORD`
 
 ```rust
-using DWORD = u32;
+using DWORD = ;
 ```
 ### `DWORD32`
 
 ```rust
-using DWORD32 = u32;
+using DWORD32 = ;
 ```
 ### `DWORD64`
 
 ```rust
-using DWORD64 = u64;
+using DWORD64 = ;
 ```
 ### `DWORDLONG`
 
 ```rust
-using DWORDLONG = u64;
+using DWORDLONG = ;
 ```
 ### `FLOAT`
 
 ```rust
-using FLOAT = float;
+using FLOAT = ;
 ```
 ### `HANDLE`
 
@@ -77,47 +77,47 @@ using HRESULT = LONG;
 ### `INT`
 
 ```rust
-using INT = s32;
+using INT = ;
 ```
 ### `INT16`
 
 ```rust
-using INT16 = s16;
+using INT16 = ;
 ```
 ### `INT32`
 
 ```rust
-using INT32 = s32;
+using INT32 = ;
 ```
 ### `INT64`
 
 ```rust
-using INT64 = s64;
+using INT64 = ;
 ```
 ### `INT8`
 
 ```rust
-using INT8 = s8;
+using INT8 = ;
 ```
 ### `LONG`
 
 ```rust
-using LONG = s32;
+using LONG = ;
 ```
 ### `LONG32`
 
 ```rust
-using LONG32 = s32;
+using LONG32 = ;
 ```
 ### `LONG64`
 
 ```rust
-using LONG64 = s64;
+using LONG64 = ;
 ```
 ### `LONGLONG`
 
 ```rust
-using LONGLONG = s64;
+using LONGLONG = ;
 ```
 ### `PVOID`
 
@@ -127,80 +127,80 @@ using PVOID = SIZE_T;
 ### `QWORD`
 
 ```rust
-using QWORD = u64;
+using QWORD = ;
 ```
 ### `SHORT`
 
 ```rust
-using SHORT = s16;
+using SHORT = ;
 ```
 ### `SIZE_T`
 
 ```rust
-using SIZE_T = u64;
+using SIZE_T = ;
 ```
 ### `SSIZE_T`
 
 ```rust
-using SSIZE_T = s64;
+using SSIZE_T = ;
 ```
 ### `UCHAR`
 
 ```rust
-using UCHAR = u8;
+using UCHAR = ;
 ```
 ### `UINT`
 
 ```rust
-using UINT = u32;
+using UINT = ;
 ```
 ### `UINT16`
 
 ```rust
-using UINT16 = u16;
+using UINT16 = ;
 ```
 ### `UINT32`
 
 ```rust
-using UINT32 = u32;
+using UINT32 = ;
 ```
 ### `UINT64`
 
 ```rust
-using UINT64 = u64;
+using UINT64 = ;
 ```
 ### `UINT8`
 
 ```rust
-using UINT8 = u8;
+using UINT8 = ;
 ```
 ### `ULONG`
 
 ```rust
-using ULONG = u32;
+using ULONG = ;
 ```
 ### `ULONG32`
 
 ```rust
-using ULONG32 = u32;
+using ULONG32 = ;
 ```
 ### `ULONG64`
 
 ```rust
-using ULONG64 = u64;
+using ULONG64 = ;
 ```
 ### `ULONGLONG`
 
 ```rust
-using ULONGLONG = u64;
+using ULONGLONG = ;
 ```
 ### `USHORT`
 
 ```rust
-using USHORT = u16;
+using USHORT = ;
 ```
 ### `WORD`
 
 ```rust
-using WORD = u16;
+using WORD = ;
 ```

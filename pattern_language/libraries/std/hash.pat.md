@@ -17,7 +17,7 @@ Calculates the CRC8 hash of the bytes inside of a given pattern
 
 
 ```rust
-fn crc8(auto pattern, u8 init, u8 poly, u8 xorout, bool reflect_in, bool reflect_out);
+fn crc8( pattern,  init,  poly,  xorout,  reflect_in,  reflect_out);
 ```
 
 ### `std::hash::crc16`
@@ -33,7 +33,7 @@ Calculates the CRC16 hash of the bytes inside of a given pattern
 
 
 ```rust
-fn crc16(auto pattern, u16 init, u16 poly, u16 xorout, bool reflect_in, bool reflect_out);
+fn crc16( pattern,  init,  poly,  xorout,  reflect_in,  reflect_out);
 ```
 
 ### `std::hash::crc32`
@@ -49,7 +49,7 @@ Calculates the CRC32 hash of the bytes inside of a given pattern
 
 
 ```rust
-fn crc32(auto pattern, u32 init, u32 poly, u32 xorout, bool reflect_in, bool reflect_out);
+fn crc32( pattern,  init,  poly,  xorout,  reflect_in,  reflect_out);
 ```
 
 ### `std::hash::crc64`
@@ -65,6 +65,6 @@ Calculates the CRC64 hash of the bytes inside of a given pattern
 
 
 ```rust
-fn crc64(auto pattern, u64 init, u64 poly, u64 xorout, bool reflect_in, bool reflect_out);
+fn crc64( pattern,  init,  poly,  xorout,  reflect_in,  reflect_out);
 ```
 

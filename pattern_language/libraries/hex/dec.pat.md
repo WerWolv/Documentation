@@ -12,7 +12,7 @@ Demangles a mangled name into a human readable name
 
 
 ```rust
-fn demangle(str mangled_name);
+fn demangle( mangled_name);
 ```
 
 ### `hex::dec::zlib_decompress`
@@ -25,7 +25,7 @@ Decompresses the bytes of a pattern into a section using the zlib algorithm
 
 
 ```rust
-fn zlib_decompress(auto pattern, std::mem::Section section, u64 window_size);
+fn zlib_decompress( pattern, std::mem::Section section,  window_size);
 ```
 
 ### `hex::dec::bzip_decompress`
@@ -37,7 +37,7 @@ Decompresses the bytes of a pattern into a section using the bzip algorithm
 
 
 ```rust
-fn bzip_decompress(auto pattern, std::mem::Section section);
+fn bzip_decompress( pattern, std::mem::Section section);
 ```
 
 ### `hex::dec::lzma_decompress`
@@ -49,7 +49,7 @@ Decompresses the bytes of a pattern into a section using the LZMA algorithm
 
 
 ```rust
-fn lzma_decompress(auto pattern, std::mem::Section section);
+fn lzma_decompress( pattern, std::mem::Section section);
 ```
 
 ### `hex::dec::zstd_decompress`
@@ -61,7 +61,7 @@ Decompresses the bytes of a pattern into a section using the zstd algorithm
 
 
 ```rust
-fn zstd_decompress(auto pattern, std::mem::Section section);
+fn zstd_decompress( pattern, std::mem::Section section);
 ```
 
 ### `hex::dec::lz4_decompress`
@@ -74,6 +74,6 @@ Decompresses the bytes of a pattern into a section using the lz4 algorithm
 
 
 ```rust
-fn lz4_decompress(auto pattern, std::mem::Section section, bool frame);
+fn lz4_decompress( pattern, std::mem::Section section,  frame);
 ```
 

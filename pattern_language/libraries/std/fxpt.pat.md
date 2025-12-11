@@ -9,7 +9,7 @@ Library for doing arithmetic with fixed point numbers and converting them from/t
 A fixed point value
 
 ```rust
-using fixed = s128;
+using fixed = ;
 ```
 
 
@@ -24,7 +24,7 @@ Converts a fixed point value into a floating point value
 
 
 ```rust
-fn to_float(std::fxpt::fixed fxt, u32 precision);
+fn to_float(std::fxpt::fixed fxt,  precision);
 ```
 
 ### `std::fxpt::to_fixed`
@@ -36,7 +36,7 @@ Converts a floating point value into a fixed point value
 
 
 ```rust
-fn to_fixed(double flt, u32 precision);
+fn to_fixed( flt,  precision);
 ```
 
 ### `std::fxpt::change_precision`
@@ -49,7 +49,7 @@ Changes the number of bits used to represent the decimal part of the given fixed
 
 
 ```rust
-fn change_precision(std::fxpt::fixed value, u32 start_precision, u32 end_precision);
+fn change_precision(std::fxpt::fixed value,  start_precision,  end_precision);
 ```
 
 ### `std::fxpt::add`
@@ -62,7 +62,7 @@ Adds two fixed point numbers with a given precision together
 
 
 ```rust
-fn add(std::fxpt::fixed a, std::fxpt::fixed b, u32 precision);
+fn add(std::fxpt::fixed a, std::fxpt::fixed b,  precision);
 ```
 
 ### `std::fxpt::subtract`
@@ -75,7 +75,7 @@ Subtracts two fixed point numbers with a given precision together
 
 
 ```rust
-fn subtract(std::fxpt::fixed a, std::fxpt::fixed b, u32 precision);
+fn subtract(std::fxpt::fixed a, std::fxpt::fixed b,  precision);
 ```
 
 ### `std::fxpt::multiply`
@@ -88,7 +88,7 @@ Multiplies two fixed point numbers with a given precision together
 
 
 ```rust
-fn multiply(std::fxpt::fixed a, std::fxpt::fixed b, u32 precision);
+fn multiply(std::fxpt::fixed a, std::fxpt::fixed b,  precision);
 ```
 
 ### `std::fxpt::divide`
@@ -101,6 +101,6 @@ Divides two fixed point numbers with a given precision together
 
 
 ```rust
-fn divide(std::fxpt::fixed a, std::fxpt::fixed b, u32 precision);
+fn divide(std::fxpt::fixed a, std::fxpt::fixed b,  precision);
 ```
 

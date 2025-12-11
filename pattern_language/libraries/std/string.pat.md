@@ -24,7 +24,7 @@ Base type for null-terminated strings. Represents a string with its size determi
 - `<DataType>`: The type of the characters.
 
 ```rust
-struct NullStringBase<> { ... } [[sealed, format, transform]];
+struct NullStringBase<DataType> { ... } [[sealed, format, transform]];
 ```
 ### `std::string::SizedString`
 
@@ -49,7 +49,7 @@ Base type for sized strings. Represents a string with its size preceding it.
 - `<DataType>`: The type of the characters.
 
 ```rust
-struct SizedStringBase<, > { ... } [[sealed, format, transform]];
+struct SizedStringBase<SizeType, DataType> { ... } [[sealed, format, transform]];
 ```
 
 
@@ -63,7 +63,7 @@ Gets the length of a string.
 
 
 ```rust
-fn length(str string);
+fn length( string);
 ```
 
 ### `std::string::at`
@@ -75,7 +75,7 @@ Gets the character at a given index.
 
 
 ```rust
-fn at(str string, u32 index);
+fn at( string,  index);
 ```
 
 ### `std::string::substr`
@@ -88,7 +88,7 @@ Gets a substring of a string.
 
 
 ```rust
-fn substr(str string, u32 pos, u32 count);
+fn substr( string,  pos,  count);
 ```
 
 ### `std::string::parse_int`
@@ -100,7 +100,7 @@ Converts a string to an integer.
 
 
 ```rust
-fn parse_int(str string, u8 base);
+fn parse_int( string,  base);
 ```
 
 ### `std::string::parse_float`
@@ -111,7 +111,7 @@ Converts a string to a float.
 
 
 ```rust
-fn parse_float(str string);
+fn parse_float( string);
 ```
 
 ### `std::string::to_string`
@@ -122,7 +122,7 @@ Converts any type to a string.
 
 
 ```rust
-fn to_string(auto x);
+fn to_string( x);
 ```
 
 ### `std::string::starts_with`
@@ -134,7 +134,7 @@ Checks if a string starts with a given substring.
 
 
 ```rust
-fn starts_with(str string, str part);
+fn starts_with( string,  part);
 ```
 
 ### `std::string::ends_with`
@@ -146,7 +146,7 @@ Checks if a string ends with a given substring.
 
 
 ```rust
-fn ends_with(str string, str part);
+fn ends_with( string,  part);
 ```
 
 ### `std::string::contains`
@@ -158,7 +158,7 @@ Checks if a string contains a given substring.
 
 
 ```rust
-fn contains(str string, str part);
+fn contains( string,  part);
 ```
 
 ### `std::string::reverse`
@@ -169,7 +169,7 @@ Reverses a string.
 
 
 ```rust
-fn reverse(str string);
+fn reverse( string);
 ```
 
 ### `std::string::to_upper`
@@ -180,7 +180,7 @@ Converts a string to upper case.
 
 
 ```rust
-fn to_upper(str string);
+fn to_upper( string);
 ```
 
 ### `std::string::to_lower`
@@ -191,7 +191,7 @@ Converts a string to lower case.
 
 
 ```rust
-fn to_lower(str string);
+fn to_lower( string);
 ```
 
 ### `std::string::replace`
@@ -204,6 +204,6 @@ Replaces all occurrences of a substring with another substring.
 
 
 ```rust
-fn replace(str string, str pattern, str replace);
+fn replace( string,  pattern,  replace);
 ```
 

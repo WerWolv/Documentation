@@ -7,30 +7,30 @@ Various data types used in the Linux Kernel
 ### `be16`
 
 ```rust
-using be16 = be u16;
+using be16 = be ;
 ```
 ### `be32`
 
 ```rust
-using be32 = be u32;
+using be32 = be ;
 ```
 ### `be64`
 
 ```rust
-using be64 = be u64;
+using be64 = be ;
 ```
 ### `le16`
 
 ```rust
-using le16 = le u16;
+using le16 = le ;
 ```
 ### `le32`
 
 ```rust
-using le32 = le u32;
+using le32 = le ;
 ```
 ### `le64`
 
 ```rust
-using le64 = le u64;
+using le64 = le ;
 ```

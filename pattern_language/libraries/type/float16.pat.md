@@ -9,5 +9,5 @@ Type representing a 16 bit half precision floating point number
 Type representing a 16 bit half precision floating point number
 
 ```rust
-using float16 = u16 [[format]];
+using float16 =  [[format]];
 ```

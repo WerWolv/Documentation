@@ -12,7 +12,7 @@ Calculates the number of 1 bits in a given number
 
 
 ```rust
-fn popcount(u128 x);
+fn popcount( x);
 ```
 
 ### `std::bit::has_single_bit`
@@ -23,7 +23,7 @@ Checks if only a single bit is set to 1 in a given number
 
 
 ```rust
-fn has_single_bit(u128 x);
+fn has_single_bit( x);
 ```
 
 ### `std::bit::bit_ceil`
@@ -34,7 +34,7 @@ Rounds the given number up to the next bigger power of two
 
 
 ```rust
-fn bit_ceil(u128 x);
+fn bit_ceil( x);
 ```
 
 ### `std::bit::bit_floor`
@@ -45,6 +45,6 @@ Rounds the given number down to the next bigger power of two
 
 
 ```rust
-fn bit_floor(u128 x);
+fn bit_floor( x);
 ```
 

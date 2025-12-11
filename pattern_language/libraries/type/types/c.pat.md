@@ -7,130 +7,130 @@ Alias definitions for all C stdint and regular data types
 ### `__int128_t`
 
 ```rust
-using __int128_t = s128;
+using __int128_t = ;
 ```
 ### `__int64_t`
 
 ```rust
-using __int64_t = s64;
+using __int64_t = ;
 ```
 ### `__uint128_t`
 
 ```rust
-using __uint128_t = u128;
+using __uint128_t = ;
 ```
 ### `__uint64_t`
 
 ```rust
-using __uint64_t = u64;
+using __uint64_t = ;
 ```
 ### `char16_t`
 
 ```rust
-using char16_t = char16;
+using char16_t = ;
 ```
 ### `char32_t`
 
 ```rust
-using char32_t = u32;
+using char32_t = ;
 ```
 ### `char8_t`
 
 ```rust
-using char8_t = char;
+using char8_t = ;
 ```
 ### `int`
 
 ```rust
-using int = s32;
+using int = ;
 ```
 ### `int128_t`
 
 ```rust
-using int128_t = s128;
+using int128_t = ;
 ```
 ### `int16_t`
 
 ```rust
-using int16_t = s16;
+using int16_t = ;
 ```
 ### `int32_t`
 
 ```rust
-using int32_t = s32;
+using int32_t = ;
 ```
 ### `int64_t`
 
 ```rust
-using int64_t = s64;
+using int64_t = ;
 ```
 ### `int8_t`
 
 ```rust
-using int8_t = s8;
+using int8_t = ;
 ```
 ### `intptr_t`
 
 ```rust
-using intptr_t = s64;
+using intptr_t = ;
 ```
 ### `long`
 
 ```rust
-using long = s32;
+using long = ;
 ```
 ### `ptrdiff_t`
 
 ```rust
-using ptrdiff_t = s64;
+using ptrdiff_t = ;
 ```
 ### `short`
 
 ```rust
-using short = s16;
+using short = ;
 ```
 ### `size_t`
 
 ```rust
-using size_t = u64;
+using size_t = ;
 ```
 ### `ssize_t`
 
 ```rust
-using ssize_t = s64;
+using ssize_t = ;
 ```
 ### `uint128_t`
 
 ```rust
-using uint128_t = u128;
+using uint128_t = ;
 ```
 ### `uint16_t`
 
 ```rust
-using uint16_t = u16;
+using uint16_t = ;
 ```
 ### `uint32_t`
 
 ```rust
-using uint32_t = u32;
+using uint32_t = ;
 ```
 ### `uint64_t`
 
 ```rust
-using uint64_t = u64;
+using uint64_t = ;
 ```
 ### `uint8_t`
 
 ```rust
-using uint8_t = u8;
+using uint8_t = ;
 ```
 ### `uintptr_t`
 
 ```rust
-using uintptr_t = u64;
+using uintptr_t = ;
 ```
 ### `wchar_t`
 
 ```rust
-using wchar_t = char16;
+using wchar_t = ;
 ```

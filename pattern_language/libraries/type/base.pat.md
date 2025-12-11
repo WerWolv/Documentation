@@ -11,7 +11,7 @@ Integer type representing a Binary value. Displays its value in binary format.
 - `<T>`: Integer type to use
 
 ```rust
-using Bin<T> = T [[format]];
+using Bin<T> =  [[format]];
 ```
 ### `type::Dec`
 
@@ -19,7 +19,7 @@ Integer type representing a Decimal value. Displays its value in decimal format.
 - `<T>`: Integer type to use
 
 ```rust
-using Dec<T> = T [[format]];
+using Dec<T> =  [[format]];
 ```
 ### `type::Hex`
 
@@ -27,7 +27,7 @@ Integer type representing a Hexadecimal value. Displays its value in hexadecimal
 - `<T>`: Integer type to use
 
 ```rust
-using Hex<T> = T [[format]];
+using Hex<T> =  [[format]];
 ```
 ### `type::Oct`
 
@@ -35,5 +35,5 @@ Integer type representing a Octal value. Displays its value in octal format.
 - `<T>`: Integer type to use
 
 ```rust
-using Oct<T> = T [[format]];
+using Oct<T> =  [[format]];
 ```

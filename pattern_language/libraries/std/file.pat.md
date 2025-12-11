@@ -12,7 +12,7 @@ a C-like File IO API.
 A handle representing a file that has been opened
 
 ```rust
-using Handle = s32;
+using Handle = ;
 ```
 ### `std::file::Mode`
 
@@ -22,7 +22,7 @@ Write opens the file in read and write mode
 Create creates a new file if it doesn't exist and overwrites an existing file
 
 ```rust
-enum Mode : u8 {
+enum Mode :  {
     Create,
     Read,
     Write
@@ -41,7 +41,7 @@ Opens a file
 
 
 ```rust
-fn open(str path, std::file::Mode mode);
+fn open( path, std::file::Mode mode);
 ```
 
 ### `std::file::close`
@@ -63,7 +63,7 @@ Reads the content of a file into a string
 
 
 ```rust
-fn read(std::file::Handle handle, u64 size);
+fn read(std::file::Handle handle,  size);
 ```
 
 ### `std::file::write`
@@ -74,7 +74,7 @@ Writes the content of a string into a file
 
 
 ```rust
-fn write(std::file::Handle handle, auto data);
+fn write(std::file::Handle handle,  data);
 ```
 
 ### `std::file::seek`
@@ -85,7 +85,7 @@ Sets the current cursor position in the given file handle
 
 
 ```rust
-fn seek(std::file::Handle handle, u64 offset);
+fn seek(std::file::Handle handle,  offset);
 ```
 
 ### `std::file::size`
@@ -106,7 +106,7 @@ Resizes a file
 
 
 ```rust
-fn resize(std::file::Handle handle, u64 size);
+fn resize(std::file::Handle handle,  size);
 ```
 
 ### `std::file::flush`
@@ -136,6 +136,6 @@ Create all directories for the provided path
 
 
 ```rust
-fn create_directories(str path);
+fn create_directories( path);
 ```
 

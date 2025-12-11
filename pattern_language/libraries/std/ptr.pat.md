@@ -38,7 +38,7 @@ Use the offset of the current pointer as start address
 
 
 ```rust
-fn relative_to_pointer(u128 offset);
+fn relative_to_pointer( offset);
 ```
 
 ### `std::ptr::relative_to_parent`
@@ -49,7 +49,7 @@ Use the offset of the pointer's parent as start address
 
 
 ```rust
-fn relative_to_parent(u128 offset);
+fn relative_to_parent( offset);
 ```
 
 ### `std::ptr::relative_to_end`
@@ -60,6 +60,6 @@ Use the end of the file as pointer base address and use its value as offset back
 
 
 ```rust
-fn relative_to_end(u128 offset);
+fn relative_to_end( offset);
 ```
 

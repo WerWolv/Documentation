@@ -7,37 +7,37 @@ Alias definitions for Rust's data types
 ### `f32`
 
 ```rust
-using f32 = float;
+using f32 = ;
 ```
 ### `f64`
 
 ```rust
-using f64 = double;
+using f64 = ;
 ```
 ### `i128`
 
 ```rust
-using i128 = s128;
+using i128 = ;
 ```
 ### `i16`
 
 ```rust
-using i16 = s16;
+using i16 = ;
 ```
 ### `i32`
 
 ```rust
-using i32 = s32;
+using i32 = ;
 ```
 ### `i64`
 
 ```rust
-using i64 = s64;
+using i64 = ;
 ```
 ### `i8`
 
 ```rust
-using i8 = s8;
+using i8 = ;
 ```
 ### `isize`
 
@@ -47,5 +47,5 @@ using isize = i64;
 ### `usize`
 
 ```rust
-using usize = u64;
+using usize = ;
 ```
