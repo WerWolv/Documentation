@@ -10,7 +10,7 @@ Patterns can be split into multiple files to better separate pattern code into l
 
 A [preprocessor directive](preprocessor.md). The preprocessor replaces this directive with all the lexical tokens from the included file _including_ all the preprocessor defines. On inclusion, this system maintains its own list of files marked with [`#pragma once`](importing-modules.md#include-guards).
 
-To use the `#include` directive, specify a path to the file to include followed by the file extension. The path can be enclosed in double quotes (`"path/filename.extension"`) or pointy braces (`<path/filename.extension>`). The extension is optional. The `#include` directive looks for a file with extensions `.pat` and `.hexpat` if none is specified. However, by convention, the extension is specified when including files. Both of the following are valid ways to use the `#include` directive:
+To use the `#include` directive, specify a path to the file to include followed by the file extension. The path can be enclosed in double quotes (`"path/filename.extension"`) or pointy braces (`<path/filename.extension>`). The extension is optional. If the path has no extension the preprocessor looks in the `pattern` folder at provided path, e.g. `path/pattern/filename`. The `#include` directive looks for a file with extensions `.pat` and `.hexpat` if none is specified. However, by convention, the extension is specified when including files. Both of the following are valid ways to use the `#include` directive:
 
 ```rust
 #include "std/io.pat"
