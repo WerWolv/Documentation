@@ -15,6 +15,20 @@ fn min(s32 a, s32 b) {
 std::print(min(100, 200)); // 100
 ```
 
+To take an array parameter, specify its type as `ref auto`.
+
+```rust
+fn print_array(ref auto arr) {
+    std::print("{}", arr);
+    for (auto i = 0, i < std::core::member_count(arr), i += 1) {
+        std::print("{}: {}", i, arr[i]);
+    }
+};
+u8 v[1];
+v[0] = 1;
+print_array(v);  // 0: 1
+```
+
 ### Global Scope
 
 The global scope for the most part, works the same as a function. All statements in the global scope will get executed when the program is executed. The only difference is that new types can be defined in the global scope.
