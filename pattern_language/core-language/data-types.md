@@ -147,11 +147,26 @@ Sometimes arrays need to keep on growing as long as a certain condition is met. 
 u8 string[while(std::mem::read_unsigned($, 1) != 0xFF)] @ 0x00;
 ```
 
+For more complex conditions, combine an array to `eof` with a struct containing `if` statements. Using `continue` would move on to the next array item of the loop; using `break` would stop the loop and the growing of the array. See also the [pattern control flow](control-flow.md#pattern-control-flow).
+
+```rust
+struct Command {
+    u8 opcode;
+    if (opcode != 0x01 && opcode != 0x02) { break; }
+    if (opcode == 0x01) { continue; }
+    if (opcode == 0x02) {
+        u8 src;
+        u8 dst;
+    }
+};
+Command command_list[while(!std::mem::eof())] @ 0x00;
+```
+
 #### Optimized arrays
 
 Big arrays take a long time to compute and take up a lot of memory. Because of this, arrays of built-in types are automatically optimized to only create one instance of the array type and move it around accordingly.
 
-The same optimization can be used for custom types by marking them with the `[[static]]` attribute. However this can only be done if the custom type always has the same size and same memory layout. Otherwise results may be invalid!
+The same optimization can be used for custom types by marking them with the `[[static]]` attribute. However this can only be done if the custom type always has the same size and same memory layout. If applied to a custom type with variable size such as the `Command` type above, the results may be invalid!
 
 #### Strings
 
