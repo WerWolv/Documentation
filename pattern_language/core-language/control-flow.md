@@ -119,6 +119,27 @@ struct Packet {
 Packet packet[3] @ 0xF0;
 ```
 
+The match options can also be multi-line:
+
+```rust
+struct Packet {
+  Type type;
+  u8 size;
+  bool isValid = false;
+
+  match (type, size) {
+    (Type::A, 0x200): {
+        PacketA packet;
+        isValid = true;
+    }
+    (Type::C, 0x100 | 0x200): PacketC packet;
+    (Type::B, 0x100 ... 0x300): PacketB packet;
+  }
+};
+
+Packet packet[3] @ 0xF0;
+```
+
 ### Pattern control flow
 
 The most basic form of conditional parsing are array control flow statements, `break` and `continue`. These allow you to stop the parsing of the array or skip elements based on conditions in the currently parsed item instance.
