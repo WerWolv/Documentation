@@ -149,6 +149,26 @@ while (check()) {
 }
 ```
 
+They are specially useful when combined with [arrays](./data-types.md#loop-sized-array) and [global variables](./variable-placement.md#global-variables):
+
+```rust
+bool is_last_segment = false;
+
+struct Segment {
+    u8 width, height, x, y;
+    u16 endFlag; // 1 if it's the last segment
+
+    if (endFlag == 0x01) {
+        is_last_segment = true;
+    }
+};
+
+struct Sprite {
+    u32 id;
+    Segment segments[while(!is_last_segment)]; // 
+};
+```
+
 #### For-Loops
 
 For loops are another kind of loop similar to the while loop. Its head consists of three blocks (ex. `i < 10`) that are separated by commas.
