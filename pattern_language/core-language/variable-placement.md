@@ -30,6 +30,24 @@ Sometimes it’s necessary to store data globally while the pattern is running. 
 u32 globalVariable;
 ```
 
+Let's see an example:
+
+```rust
+u8 lastValue;
+
+fn setLastValue(u8 value) {
+    lastValue = value;
+};
+
+struct Test {
+    u8 value;
+	
+    setLastValue(value);
+}; 
+
+Test test[10] @ 0x00;
+```
+
 ### Calculated pointers
 
 The same placement syntax may also be used inside of structs to specify where patterns are supposed to be placed in memory. These variables do not contribute to the overall size of the struct they are placed within.
