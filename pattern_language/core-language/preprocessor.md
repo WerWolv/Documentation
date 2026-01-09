@@ -125,3 +125,21 @@ This pragma specifies the pattern author shown in the [Content Store](../../imhe
 **Possible values:** Any string value **Default:** `Unspecified`
 
 This pragma specifies the description shown for the pattern in the [Content Store](../../imhex/misc/content-store.md).
+
+#### `allow_edits`
+
+This pragma allows to modify values that have already been loaded in memory. Replacing the actual binary data.
+
+Example:
+
+```rust
+#pragma allow_edits
+
+Struct Foo {
+    u8 firstByte; // 0x01
+    u8 secondByte; // 0x02
+    secondByte = 0x04; // This will replace 0x02 with the new value of 0x04
+};
+
+Foo f @ 0x0;
+```
