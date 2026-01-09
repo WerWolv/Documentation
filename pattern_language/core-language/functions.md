@@ -139,6 +139,8 @@ if (x > 5) {
 }
 ```
 
+Check the [Conditionals section](./control-flow.md#conditionals) for more info.
+
 #### While-Loops
 
 While loops work similarly to if statements. As long as the condition in the head evaluates to true, the body will continuously be executed.
