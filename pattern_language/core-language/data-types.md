@@ -412,3 +412,12 @@ struct MyType {
     float localVariable = 0.5; // Local variable
 };
 ```
+
+If you want them to show up, you need to use the [export attribute](./attributes.md#export):
+
+```rust
+struct MyType {
+    u32 x, y, z; // Regular members
+    float localVariable = 0.5 [[export]]; // This will appear in the Pattern Data view, similar to the regular members.
+};
+```
