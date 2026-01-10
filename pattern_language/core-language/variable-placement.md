@@ -33,7 +33,7 @@ u32 globalVariable;
 Let's see an example:
 
 ```rust
-u8 lastValue;
+u8 lastValue; // A global variable
 
 fn setLastValue(u8 value) {
     lastValue = value;
