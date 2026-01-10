@@ -45,7 +45,7 @@ struct AnimationBank {
 AnimationBank animationBank @ 0x0;
 ```
 
-Each Animation struct contains an offset, which defines the position of the AnimationEntry data:
+Each Animation struct contains an offset, which defines the position of the AnimationEntry:
 
 ```rust
 struct Animation {
@@ -60,7 +60,7 @@ struct AnimationBank {
 AnimationBank animationBank @ 0x0;
 ```
 
-Each Animation points to a list of AnimationEntries located elsewhere in the file. We want to access these locations through the offset, and then read the AnimationEntry `count` times. This uses the [parent accessor](./core-language/expressions.md#member-access) to get the `count` variable.
+Through this offsets, we can read each AnimationEntry:
 
 ```rust
 struct AnimationEntry {
@@ -68,7 +68,7 @@ struct AnimationEntry {
 
 struct Animation {
     u32 offset;
-    AnimationEntry entries[parent.count] @ offset;
+    AnimationEntry entry @ offset;
 };
 
 struct AnimationBank {
@@ -79,7 +79,7 @@ struct AnimationBank {
 AnimationBank animationBank @ 0x0;
 ```
 
-With the offsets and entry array in place, we can now define the actual contents of an AnimationEntry:
+With the offsets and entry in place, we can now define the actual contents of an AnimationEntry:
 
 ```rust
 struct AnimationEntry {
