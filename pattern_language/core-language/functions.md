@@ -151,24 +151,23 @@ while (check()) {
 }
 ```
 
-They are specially useful when combined with [arrays](./data-types.md#loop-sized-array) and [global variables](./variable-placement.md#global-variables):
+Example: 
 
 ```rust
-bool is_last_segment = false;
+    fn getSum(u32 offset) {
+        u32 sum = 0;
+        while (offset <= 0x7A) {
+            offset +=1;
+            sum += std::mem::read_unsigned(offset, 1);
+        }
+        
+        return sum;
+    };
 
-struct Segment {
-    u8 width, height, x, y;
-    u16 endFlag; // 1 if it's the last segment
-
-    if (endFlag == 0x01) {
-        is_last_segment = true;
-    }
-};
-
-struct Sprite {
-    u32 id;
-    Segment segments[while(!is_last_segment)]; // 
-};
+    struct Loop {
+        u32 offset;
+        u32 sum = getSum(offset) [[export]];
+    };
 ```
 
 #### For-Loops
