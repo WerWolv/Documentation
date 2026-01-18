@@ -121,6 +121,32 @@ The dollar operator can also be used to access single bytes of the main data.
 std::print($[0]); // Prints the value of the byte at address 0x00
 ```
 
+You can store it in a [global variable](./variable-placement.md#global-variables) and access it later:
+
+```rust
+
+u32 readLaterOffset;
+
+struct Header {
+    u32 id;
+    u32 bodyOffset;
+    readLaterOffset = $; 
+};
+
+struct Body {
+    u32 name;
+    u32 type;
+    u32 data[4] @ readLaterOffset;
+};
+
+struct Main {
+    Header header;
+    Body body @ header.bodyOffset;
+};
+
+Main main @ 0x0;
+```
+
 ### Casting Operator
 
 The cast operator changes the type of an expression into another.

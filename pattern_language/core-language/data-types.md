@@ -147,6 +147,24 @@ Sometimes arrays need to keep on growing as long as a certain condition is met. 
 u8 string[while(std::mem::read_unsigned($, 1) != 0xFF)] @ 0x00;
 ```
 
+It's specially useful to combine it with the [break statement](./control-flow.md#break):
+
+```rust
+struct Segment {
+    u8 width, height, x, y;
+    u16 endFlag; // 0x01 if it's the last segment
+
+    if (endFlag == 0x01) {
+        break;
+    }
+};
+
+struct Sprite {
+    u32 id;
+    Segment segments[while(true)];
+};
+```
+
 #### Optimized arrays
 
 Big arrays take a long time to compute and take up a lot of memory. Because of this, arrays of built-in types are automatically optimized to only create one instance of the array type and move it around accordingly.
@@ -410,5 +428,14 @@ It’s possible to declare local variables inside of patterns that don’t show 
 struct MyType {
     u32 x, y, z; // Regular members
     float localVariable = 0.5; // Local variable
+};
+```
+
+If you want them to show up, you need to use the [export attribute](./attributes.md#export):
+
+```rust
+struct MyType {
+    u32 x, y, z; // Regular members
+    float localVariable = 0.5 [[export]]; // This will appear in the Pattern Data view, similar to the regular members.
 };
 ```

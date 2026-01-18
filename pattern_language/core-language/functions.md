@@ -139,6 +139,8 @@ if (x > 5) {
 }
 ```
 
+Check the [Conditionals section](./control-flow.md#conditionals) for more info.
+
 #### While-Loops
 
 While loops work similarly to if statements. As long as the condition in the head evaluates to true, the body will continuously be executed.
@@ -147,6 +149,25 @@ While loops work similarly to if statements. As long as the condition in the hea
 while (check()) {
     // Keeps on executing as long as the check() function returns true
 }
+```
+
+Example: 
+
+```rust
+    fn getSum(u32 offset) {
+        u32 sum = 0;
+        while (offset <= 0x7A) {
+            offset +=1;
+            sum += std::mem::read_unsigned(offset, 1);
+        }
+        
+        return sum;
+    };
+
+    struct Loop {
+        u32 offset;
+        u32 sum = getSum(offset) [[export]];
+    };
 ```
 
 #### For-Loops
