@@ -9,14 +9,14 @@ Library to handle time and date related operations.
 A type to represent a DOS date.
 
 ```rust
-bitfield DOSDate { ... } [[sealed]];
+bitfield DOSDate { ... } [[sealed, bitfield_order]];
 ```
 ### `std::time::DOSTime`
 
 A type to represent a DOS time.
 
 ```rust
-bitfield DOSTime { ... } [[sealed]];
+bitfield DOSTime { ... } [[sealed, bitfield_order]];
 ```
 ### `std::time::EpochTime`
 
