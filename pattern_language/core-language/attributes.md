@@ -116,6 +116,6 @@ This attribute allows exporting of pattern local variables. By default pattern l
 
 Very useful if a value needs to be pre-processed before being output.
 
-**`[[fixed_size(size)]]`**
+#### `[[fixed_size(size)]]`
 
 Can be used to force a struct to be a specific size. When applied to a struct whose size is smaller than `size`, it is padded out to be that exact size. If the struct was larger than the size, an error will be thrown instead.
