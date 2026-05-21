@@ -235,7 +235,7 @@ std::print("{}", read_u32(0x1234)); // Prints the value at address 0x1234 format
 
 ### User-defined Literals
 
-User-defined Literals are ultimately syntactic sugar for function calls which in some cases is easier to read than regular function calls. To create one, simply define a function whose name starts with an underscore and takes a single character.
+User-defined Literals are ultimately syntactic sugar for function calls which in some cases is easier to read than regular function calls. To create one, simply define a function whose name starts with an underscore and takes a single parameter.
 
 ```rust
 fn _literal(u32 value) {
