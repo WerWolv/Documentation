@@ -206,13 +206,14 @@ fn ln( value);
 
 ### `std::math::fmod`
 
-Calculates the floating point modulus of `value`.
-- `value`: Value
-- `return`: Floating point modulus of `value`
+Calculates the floating point modulus (remainder) of the division of `x` by `y`.
+- `x`: Numerator
+- `y`: Denominator
+- `return`: Floating point modulus (remainder) of the division of `x` by `y`
 
 
 ```rust
-fn fmod( value);
+fn fmod( x,  y);
 ```
 
 ### `std::math::pow`
