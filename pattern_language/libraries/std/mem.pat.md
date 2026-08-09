@@ -263,7 +263,7 @@ fn set_section_size(std::mem::Section section,  size);
 ### `std::mem::copy_section_to_section`
 
 Copies a range of bytes from one section into another
-- `from_section`: The section to copy from
+- `from_section`: The section to copy from (`null` represents the main section)
 - `from_address`: The address to copy from
 - `to_section`: The section to copy to
 - `to_address`: The address to copy to
