@@ -82,3 +82,16 @@ Decompresses the bytes of a pattern into a section using the lz4 algorithm
 ```rust
 fn lz4_decompress( pattern, std::mem::Section section,  frame);
 ```
+
+### `hex::dec::lzf_decompress`
+
+Decompresses the bytes of a pattern into a section using the LZF algorithm.
+The original algorithm implementation can be found at http://software.schmorp.de/pkg/liblzf.html (use the Wayback Machine if the link is currently unavailable).
+- `pattern`: The pattern whose bytes should be decompressed
+- `section`: The section to decompress the data into
+- `return`: The number of bytes read from the input if successful, 0 otherwise
+
+
+```rust
+fn lzf_decompress( pattern, std::mem::Section section);
+```
