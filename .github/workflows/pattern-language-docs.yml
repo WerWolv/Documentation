@@ -68,10 +68,10 @@ jobs:
           appimage="$(realpath "${appimage}")"
           echo "path=${appimage}" >> "${GITHUB_OUTPUT}"
 
-      - name: Install FUSE
+      - name: Install dependencies
         run: |
           sudo apt-get update
-          sudo apt-get install --yes libfuse2t64
+          sudo apt-get install --yes libfuse2t64 libopengl0
 
       - name: Generate documentation
         run: |
