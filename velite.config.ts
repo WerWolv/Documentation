@@ -7,6 +7,14 @@ import rehypePrettyCode from "rehype-pretty-code";
 import { visit } from "unist-util-visit"
 import { LineElement } from "rehype-pretty-code";
 import rehypeAutolinkHeadings from "rehype-autolink-headings";
+import { BundledHighlighterOptions, BundledLanguage, BundledTheme, createHighlighter, type LanguageRegistration } from "shiki";
+import patternLanguageGrammar from "./src/syntax/pl.tmLanguage.json";
+
+const patternLanguage = {
+  ...patternLanguageGrammar,
+  name: "pl",
+  aliases: ["pattern-language", "pat", "hexpat"],
+} as unknown as LanguageRegistration;
 
 const computedFields = <T extends { slug: string }>(data: T) => ({
   ...data,
@@ -51,6 +59,11 @@ export default defineConfig({
         rehypePrettyCode,
         {
           theme: "houston",
+          getHighlighter: (options: BundledHighlighterOptions<BundledLanguage, BundledTheme>) =>
+            createHighlighter({
+              ...options,
+              langs: [...options.langs, patternLanguage],
+            }), 
           onVisitLine(node: LineElement) {
             // Prevent lines from collapsing in `display: grid` mode, and allow empty
             // lines to be copy/pasted
