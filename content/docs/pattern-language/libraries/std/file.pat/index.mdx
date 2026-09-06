@@ -17,8 +17,8 @@ a C-like File IO API.
 
 A handle representing a file that has been opened
 
-```rust
-using Handle = ;
+```pl
+using Handle = s32;
 ```
 ### `std::file::Mode`
 
@@ -27,8 +27,8 @@ Read opens the file in read-only mode
 Write opens the file in read and write mode
 Create creates a new file if it doesn't exist and overwrites an existing file
 
-```rust
-enum Mode :  {
+```pl
+enum Mode : u8 {
     Create,
     Read,
     Write
@@ -46,8 +46,8 @@ Opens a file
 - `return`: Handle to the newly opened file
 
 
-```rust
-fn open( path, std::file::Mode mode);
+```pl
+fn open(str path, std::file::Mode mode);
 ```
 
 ### `std::file::close`
@@ -56,7 +56,7 @@ Closes a file handle that has been opened previously
 - `handle`: The handle to close
 
 
-```rust
+```pl
 fn close(std::file::Handle handle);
 ```
 
@@ -68,8 +68,8 @@ Reads the content of a file into a string
 - `return`: String containing the read data
 
 
-```rust
-fn read(std::file::Handle handle,  size);
+```pl
+fn read(std::file::Handle handle, u64 size);
 ```
 
 ### `std::file::write`
@@ -79,8 +79,8 @@ Writes the content of a string into a file
 - `data`: String or Pattern to write to the file
 
 
-```rust
-fn write(std::file::Handle handle,  data);
+```pl
+fn write(std::file::Handle handle, auto data);
 ```
 
 ### `std::file::seek`
@@ -90,8 +90,8 @@ Sets the current cursor position in the given file handle
 - `offset`: The offset to move the cursor to
 
 
-```rust
-fn seek(std::file::Handle handle,  offset);
+```pl
+fn seek(std::file::Handle handle, u64 offset);
 ```
 
 ### `std::file::size`
@@ -101,7 +101,7 @@ Queries the size of a file
 - `return`: The file's size
 
 
-```rust
+```pl
 fn size(std::file::Handle handle);
 ```
 
@@ -111,8 +111,8 @@ Resizes a file
 - `handle`: The handle of the file to resize
 
 
-```rust
-fn resize(std::file::Handle handle,  size);
+```pl
+fn resize(std::file::Handle handle, u64 size);
 ```
 
 ### `std::file::flush`
@@ -121,7 +121,7 @@ Flushes changes made to a file to disk
 - `handle`: The handle of the file to flush
 
 
-```rust
+```pl
 fn flush(std::file::Handle handle);
 ```
 
@@ -131,7 +131,7 @@ Deletes a file from disk. This will also automatically close this file
 - `handle`: The handle of the file to delete
 
 
-```rust
+```pl
 fn remove(std::file::Handle handle);
 ```
 
@@ -141,6 +141,6 @@ Create all directories for the provided path
 - `path`: The path for which all directories should be created
 
 
-```rust
-fn create_directories( path);
+```pl
+fn create_directories(str path);
 ```

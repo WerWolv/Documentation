@@ -24,15 +24,15 @@ struct MyType : std::attr::Hidden {
 Attribute that adds a comment to the variable created from a type.
 - `<Comment>`: The comment to add
 
-```rust
-struct Commented<auto Comment> { ... } [[comment]];
+```pl
+struct Commented<auto Comment> { ... } [[comment(...)]];
 ```
 ### `std::attr::Hidden`
 
 Attribute that marks a type as hidden.
 This means variables of this type are not displayed in the UI.
 
-```rust
+```pl
 struct Hidden { ... } [[hidden]];
 ```
 ### `std::attr::HighlightHidden`
@@ -40,7 +40,7 @@ struct Hidden { ... } [[hidden]];
 Attribute that marks a type as hidden and also hides it from the highlighter.
 This means variables of this type are don't display any highlighting in the UI but are still visible.
 
-```rust
+```pl
 struct HighlightHidden { ... } [[highlight_hidden]];
 ```
 ### `std::attr::Inlined`
@@ -48,7 +48,7 @@ struct HighlightHidden { ... } [[highlight_hidden]];
 Attribute that marks a type as inline.
 Creating a variable of this type will not create a new layer but instead dump the contents of the type directly into the current layer.
 
-```rust
+```pl
 struct Inlined { ... } [[inline]];
 ```
 ### `std::attr::Literal`
@@ -58,22 +58,22 @@ This means the type behaves like a built-in type in the sense that it doesn't sh
 It can also be transformed into a different built-in literal when used in an expression.
 - `<FormatFunction>`: The format function to use. The return value of this function is used to display the value of the literal and also determines the value returned when the literal is used in an expression.
 
-```rust
-struct Literal<auto FormatFunction> { ... } [[sealed, format_read, transform]];
+```pl
+struct Literal<auto FormatFunction> { ... } [[sealed, format_read(...), transform(...)]];
 ```
 ### `std::attr::Named`
 
 Attribute that changes the name of the variable created from a type.
 - `<Name>`: The name of the variable created
 
-```rust
-struct Named<auto Name> { ... } [[name]];
+```pl
+struct Named<auto Name> { ... } [[name(...)]];
 ```
 ### `std::attr::Sealed`
 
 Attribute that marks a type as sealed.
 Sealed types don't display their internal state in the UI.
 
-```rust
+```pl
 struct Sealed { ... } [[sealed]];
 ```

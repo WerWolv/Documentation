@@ -32,8 +32,8 @@ Simple one dimensional array wrapper
 - `<T>`: The array types
 - `<Size>`: Number of entries in the array
 
-```rust
-struct Array<T, auto Size> { ... } [[format]];
+```pl
+struct Array<T, auto Size> { ... } [[format(...)]];
 ```
 ### `std::ByteSizedArray`
 
@@ -41,8 +41,8 @@ Simple array wrapper for an array with a size in bytes
 - `<T>`: The array types
 - `<NumBytes>`: Number of bytes the array contains
 
-```rust
-struct ByteSizedArray<T, auto NumBytes> { ... } [[format]];
+```pl
+struct ByteSizedArray<T, auto NumBytes> { ... } [[format(...)]];
 ```
 ### `std::IIndexed`
 
@@ -50,6 +50,6 @@ An interface type for getting the index of the currently processed element in an
 
 To use it, inherit from it and use the `this.index` field to get the index of the current element
 
-```rust
+```pl
 struct IIndexed { ... };
 ```

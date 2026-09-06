@@ -99,8 +99,8 @@ Possible Values for DisassemblerSetting:
 - 1.6.1
 - 1.6.2
 
-```rust
-struct Instruction<auto DisassemblerSetting, auto SyntaxType, auto ImageBaseAddress, auto ImageLoadAddress> { ... } [[sealed, format]];
+```pl
+struct Instruction<auto DisassemblerSetting, auto SyntaxType, auto ImageBaseAddress, auto ImageLoadAddress> { ... } [[sealed, format(...)]];
 ```
 ### `hex::type::InstructionATNT`
 
@@ -109,7 +109,7 @@ A machine code instruction which will get disassembled using AT&T syntax
 - `<ImageBaseAddress>`: Start address of the instruction region in the data
 - `<ImageLoadAddress>`: Address where the instructions will be loaded into memory
 
-```rust
+```pl
 using InstructionATNT<auto DisassemblerSetting, auto ImageBaseAddress, auto ImageLoadAddress> = hex::type::Instruction;
 ```
 ### `hex::type::InstructionIntel`
@@ -119,7 +119,7 @@ A machine code instruction which will get disassembled using Intel syntax
 - `<ImageBaseAddress>`: Start address of the instruction region in the data
 - `<ImageLoadAddress>`: Address where the instructions will be loaded into memory
 
-```rust
+```pl
 using InstructionIntel<auto DisassemblerSetting, auto ImageBaseAddress, auto ImageLoadAddress> = hex::type::Instruction;
 ```
 ### `hex::type::InstructionMASM`
@@ -129,7 +129,7 @@ A machine code instruction which will get disassembled using MASM syntax
 - `<ImageBaseAddress>`: Start address of the instruction region in the data
 - `<ImageLoadAddress>`: Address where the instructions will be loaded into memory
 
-```rust
+```pl
 using InstructionMASM<auto DisassemblerSetting, auto ImageBaseAddress, auto ImageLoadAddress> = hex::type::Instruction;
 ```
 ### `hex::type::InstructionMotorola`
@@ -139,6 +139,6 @@ A machine code instruction which will get disassembled using Motorola syntax
 - `<ImageBaseAddress>`: Start address of the instruction region in the data
 - `<ImageLoadAddress>`: Address where the instructions will be loaded into memory
 
-```rust
+```pl
 using InstructionMotorola<auto DisassemblerSetting, auto ImageBaseAddress, auto ImageLoadAddress> = hex::type::Instruction;
 ```

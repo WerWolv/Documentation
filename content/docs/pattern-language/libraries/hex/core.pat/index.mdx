@@ -14,7 +14,7 @@ Core intrinsic functions to interact with the ImHex Hex Editor
 
 A type representing a selection in the hex editor
 
-```rust
+```pl
 struct Selection { ... };
 ```
 
@@ -27,7 +27,7 @@ Returns the current selection in the hex editor
 - `return`: The current selection
 
 
-```rust
+```pl
 fn get_selection();
 ```
 
@@ -38,6 +38,6 @@ Add a file to the Virtual Filesystem
 - `pattern`: The pattern associated with the file
 
 
-```rust
-fn add_virtual_file( path,  pattern);
+```pl
+fn add_virtual_file(str path, auto pattern);
 ```

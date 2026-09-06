@@ -29,7 +29,7 @@ std::ptr::NullablePtr<MyInfoTy, u64> p_myInfo;
 }
 ```
 
-```rust
+```pl
 struct NullablePtr<PointeeTy, PointerTy> { ... };
 ```
 
@@ -43,8 +43,8 @@ Use the offset of the current pointer as start address
 - `return`: The new pointer base
 
 
-```rust
-fn relative_to_pointer( offset);
+```pl
+fn relative_to_pointer(u128 offset);
 ```
 
 ### `std::ptr::relative_to_parent`
@@ -54,8 +54,8 @@ Use the offset of the pointer's parent as start address
 - `return`: The new pointer base
 
 
-```rust
-fn relative_to_parent( offset);
+```pl
+fn relative_to_parent(u128 offset);
 ```
 
 ### `std::ptr::relative_to_end`
@@ -65,6 +65,6 @@ Use the end of the file as pointer base address and use its value as offset back
 - `return`: The new pointer base
 
 
-```rust
-fn relative_to_end( offset);
+```pl
+fn relative_to_end(u128 offset);
 ```

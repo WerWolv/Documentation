@@ -15,7 +15,7 @@ Library for doing raw memory accesses and other low-level operations.
 Aligns the cursor to the given alignment
 - `<alignment>`: The alignment to align to
 
-```rust
+```pl
 struct AlignTo<auto Alignment> { ... } [[hidden, sealed]];
 ```
 ### `std::mem::Bytes`
@@ -23,15 +23,15 @@ struct AlignTo<auto Alignment> { ... } [[hidden, sealed]];
 A type representing a sequence of bytes without any specific meaning
 - `<Size>`: The size of the sequence
 
-```rust
-struct Bytes<auto Size> { ... } [[sealed, format]];
+```pl
+struct Bytes<auto Size> { ... } [[sealed, format(...)]];
 ```
 ### `std::mem::Endian`
 
 The endianness of a value
 
-```rust
-enum Endian :  {
+```pl
+enum Endian : u8 {
     Big,
     Little,
     Native
@@ -43,7 +43,7 @@ Searches for a sequence of bytes and places the given type at that address
 - `<Magic>`: The magic sequence to search for
 - `<T>`: The type to place at the address
 
-```rust
+```pl
 struct MagicSearch<auto Magic, T> { ... };
 ```
 ### `std::mem::Reinterpreter`
@@ -52,15 +52,15 @@ Reinterprets a value as a different one
 - `<From>`: The type to reinterpret from
 - `<To>`: The type to reinterpret to
 
-```rust
+```pl
 union Reinterpreter<From, To> { ... };
 ```
 ### `std::mem::Section`
 
 A Handle for a custom Section
 
-```rust
-using Section = ;
+```pl
+using Section = u128;
 ```
 
 
@@ -73,7 +73,7 @@ This is usually used in while-sized arrays in the form of `u8 array[while(!std::
 - `return`: True if the cursor is at the end of the memory
 
 
-```rust
+```pl
 fn eof();
 ```
 
@@ -84,8 +84,8 @@ Function that returns true if the cursor position is at or beyond the given addr
 - `return`: True if the cursor is at or beyond the given address
 
 
-```rust
-fn reached( address);
+```pl
+fn reached(u128 address);
 ```
 
 ### `std::mem::align_to`
@@ -96,8 +96,8 @@ Aligns the given value to the given alignment
 - `return`: The aligned value
 
 
-```rust
-fn align_to( alignment,  value);
+```pl
+fn align_to(u128 alignment, u128 value);
 ```
 
 ### `std::mem::base_address`
@@ -106,7 +106,7 @@ Gets the base address of the data
 - `return`: The base address of the memory
 
 
-```rust
+```pl
 fn base_address();
 ```
 
@@ -116,7 +116,7 @@ Gets the size of the data
 - `return`: The size of the memory
 
 
-```rust
+```pl
 fn size();
 ```
 
@@ -128,8 +128,8 @@ Finds a sequence of bytes in the data
 - `return`: The address of the sequence
 
 
-```rust
-fn find_sequence( occurrence_index, auto ... bytes);
+```pl
+fn find_sequence(u128 occurrence_index, auto ... bytes);
 ```
 
 ### `std::mem::find_sequence_in_range`
@@ -142,8 +142,8 @@ Finds a sequence of bytes in a specific region of the data
 - `return`: The address of the sequence
 
 
-```rust
-fn find_sequence_in_range( occurrence_index,  offsetFrom,  offsetTo, auto ... bytes);
+```pl
+fn find_sequence_in_range(u128 occurrence_index, u128 offsetFrom, u128 offsetTo, auto ... bytes);
 ```
 
 ### `std::mem::find_string`
@@ -154,8 +154,8 @@ Finds a string in the data
 - `return`: The address of the sequence
 
 
-```rust
-fn find_string( occurrence_index,  string);
+```pl
+fn find_string(u128 occurrence_index, str string);
 ```
 
 ### `std::mem::find_string_in_range`
@@ -168,8 +168,8 @@ Finds a string in a specific region of the data
 - `return`: The address of the sequence
 
 
-```rust
-fn find_string_in_range( occurrence_index,  offsetFrom,  offsetTo,  string);
+```pl
+fn find_string_in_range(u128 occurrence_index, u128 offsetFrom, u128 offsetTo, str string);
 ```
 
 ### `std::mem::read_unsigned`
@@ -181,8 +181,8 @@ Reads a unsigned value from the memory
 - `return`: The value read
 
 
-```rust
-fn read_unsigned( address,  size, std::mem::Endian endian);
+```pl
+fn read_unsigned(u128 address, u8 size, std::mem::Endian endian);
 ```
 
 ### `std::mem::read_signed`
@@ -194,8 +194,8 @@ Reads a signed value from the memory
 - `return`: The value read
 
 
-```rust
-fn read_signed( address,  size, std::mem::Endian endian);
+```pl
+fn read_signed(u128 address, u8 size, std::mem::Endian endian);
 ```
 
 ### `std::mem::read_string`
@@ -206,8 +206,8 @@ Reads a string value from the memory
 - `return`: The value read
 
 
-```rust
-fn read_string( address,  size);
+```pl
+fn read_string(u128 address, u128 size);
 ```
 
 ### `std::mem::read_bits`
@@ -219,8 +219,8 @@ Reads a number of bits from the specified bit offset within the specified byte
 - `return`: A u128 containing the value read
 
 
-```rust
-fn read_bits( byteOffset,  bitOffset,  bitSize);
+```pl
+fn read_bits(u128 byteOffset, u128 bitOffset, u64 bitSize);
 ```
 
 ### `std::mem::create_section`
@@ -230,8 +230,8 @@ Creates a new custom section with the given name
 - `return`: The handle to the section
 
 
-```rust
-fn create_section( name);
+```pl
+fn create_section(str name);
 ```
 
 ### `std::mem::delete_section`
@@ -240,7 +240,7 @@ Deletes a custom section
 - `section`: The handle to the section
 
 
-```rust
+```pl
 fn delete_section(std::mem::Section section);
 ```
 
@@ -251,7 +251,7 @@ Gets the size of a custom section
 - `return`: The size of the section
 
 
-```rust
+```pl
 fn get_section_size(std::mem::Section section);
 ```
 
@@ -262,8 +262,8 @@ Changes the size of a custom section
 - `size`: The new size of the section
 
 
-```rust
-fn set_section_size(std::mem::Section section,  size);
+```pl
+fn set_section_size(std::mem::Section section, u128 size);
 ```
 
 ### `std::mem::copy_section_to_section`
@@ -276,8 +276,8 @@ Copies a range of bytes from one section into another
 - `size`: The size of the range to copy
 
 
-```rust
-fn copy_section_to_section(std::mem::Section from_section,  from_address, std::mem::Section to_section,  to_address,  size);
+```pl
+fn copy_section_to_section(std::mem::Section from_section, u64 from_address, std::mem::Section to_section, u64 to_address, u64 size);
 ```
 
 ### `std::mem::copy_value_to_section`
@@ -288,8 +288,8 @@ Copies a range of bytes from the main section into a custom section
 - `to_address`: The address to copy to
 
 
-```rust
-fn copy_value_to_section( value, std::mem::Section to_section,  to_address);
+```pl
+fn copy_value_to_section(auto value, std::mem::Section to_section, u64 to_address);
 ```
 
 ### `std::mem::current_bit_offset`
@@ -298,6 +298,6 @@ Returns the current bit offset when inside of a bitfield.
 - `return`: The current bit offset between 0 and 7
 
 
-```rust
+```pl
 fn current_bit_offset();
 ```

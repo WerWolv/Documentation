@@ -17,8 +17,8 @@ Demangles a mangled name into a human readable name
 - `return`: The demangled name
 
 
-```rust
-fn demangle( mangled_name);
+```pl
+fn demangle(str mangled_name);
 ```
 
 ### `hex::dec::zlib_decompress`
@@ -30,8 +30,8 @@ Decompresses the bytes of a pattern into a section using the zlib algorithm
 - `return`: A value representing either the number of bytes decompressed or an error code from zlib
 
 
-```rust
-fn zlib_decompress( pattern, std::mem::Section section,  window_size);
+```pl
+fn zlib_decompress(auto pattern, std::mem::Section section, u64 window_size);
 ```
 
 ### `hex::dec::bzip_decompress`
@@ -42,8 +42,8 @@ Decompresses the bytes of a pattern into a section using the bzip algorithm
 - `return`: true if successful, false otherwise
 
 
-```rust
-fn bzip_decompress( pattern, std::mem::Section section);
+```pl
+fn bzip_decompress(auto pattern, std::mem::Section section);
 ```
 
 ### `hex::dec::lzma_decompress`
@@ -54,8 +54,8 @@ Decompresses the bytes of a pattern into a section using the LZMA algorithm
 - `return`: true if successful, false otherwise
 
 
-```rust
-fn lzma_decompress( pattern, std::mem::Section section);
+```pl
+fn lzma_decompress(auto pattern, std::mem::Section section);
 ```
 
 ### `hex::dec::zstd_decompress`
@@ -66,8 +66,8 @@ Decompresses the bytes of a pattern into a section using the zstd algorithm
 - `return`: true if successful, false otherwise
 
 
-```rust
-fn zstd_decompress( pattern, std::mem::Section section);
+```pl
+fn zstd_decompress(auto pattern, std::mem::Section section);
 ```
 
 ### `hex::dec::lz4_decompress`
@@ -79,8 +79,8 @@ Decompresses the bytes of a pattern into a section using the lz4 algorithm
 - `return`: true if successful, false otherwise
 
 
-```rust
-fn lz4_decompress( pattern, std::mem::Section section,  frame);
+```pl
+fn lz4_decompress(auto pattern, std::mem::Section section, bool frame);
 ```
 
 ### `hex::dec::lzf_decompress`
@@ -92,6 +92,6 @@ The original algorithm implementation can be found at http://software.schmorp.de
 - `return`: The number of bytes read from the input if successful, 0 otherwise
 
 
-```rust
-fn lzf_decompress( pattern, std::mem::Section section);
+```pl
+fn lzf_decompress(auto pattern, std::mem::Section section);
 ```

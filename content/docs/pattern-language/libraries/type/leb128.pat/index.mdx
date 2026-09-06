@@ -14,27 +14,27 @@ Types used to decode Little Endian Base 128 numbers used to store large numbers 
 
 Legacy alias for uLEB128
 
-```rust
+```pl
 using LEB128 = type::uLEB128;
 ```
 ### `type::LEB128Base`
 
 Base LEB128 type. Use `uLEB128` and `sLEB128` instead.
 
-```rust
+```pl
 struct LEB128Base { ... } [[sealed]];
 ```
 ### `type::sLEB128`
 
 A signed variant of a LEB128 number
 
-```rust
-using sLEB128 = type::LEB128Base [[format, transform]];
+```pl
+using sLEB128 = type::LEB128Base [[format(...), transform(...)]];
 ```
 ### `type::uLEB128`
 
 A unsigned variant of a LEB128 number
 
-```rust
-using uLEB128 = type::LEB128Base [[format, transform]];
+```pl
+using uLEB128 = type::LEB128Base [[format(...), transform(...)]];
 ```

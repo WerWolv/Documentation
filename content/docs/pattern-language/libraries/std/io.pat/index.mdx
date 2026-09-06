@@ -18,8 +18,8 @@ This function uses the C++20 `std::format` or libfmt's `fmt::format` syntax.
 - `args`: Values to use in the formatting
 
 
-```rust
-fn print( fmt, auto ... args);
+```pl
+fn print(auto fmt, auto ... args);
 ```
 
 ### `std::format`
@@ -31,8 +31,8 @@ This function uses the C++20 `std::format` or libfmt's `fmt::format` syntax.
 - `return`: The formatted string
 
 
-```rust
-fn format( fmt, auto ... args);
+```pl
+fn format(auto fmt, auto ... args);
 ```
 
 ### `std::error`
@@ -41,8 +41,8 @@ Aborts evaluation of the code immediately and prints a error message to the cons
 - `message`: The message to print
 
 
-```rust
-fn error( message);
+```pl
+fn error(str message);
 ```
 
 ### `std::warning`
@@ -51,6 +51,6 @@ Prints a warning message to the console
 - `message`: The message to print
 
 
-```rust
-fn warning( message);
+```pl
+fn warning(str message);
 ```

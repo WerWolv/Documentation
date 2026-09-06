@@ -14,14 +14,14 @@ Library to interact with strings.
 
 A null-terminated ASCII string.
 
-```rust
+```pl
 using NullString = std::string::NullStringBase;
 ```
 ### `std::string::NullString16`
 
 A null-terminated UTF-16 string.
 
-```rust
+```pl
 using NullString16 = std::string::NullStringBase;
 ```
 ### `std::string::NullStringBase`
@@ -29,15 +29,15 @@ using NullString16 = std::string::NullStringBase;
 Base type for null-terminated strings. Represents a string with its size determined by the first 0x00 byte found.
 - `<DataType>`: The type of the characters.
 
-```rust
-struct NullStringBase<DataType> { ... } [[sealed, format, transform]];
+```pl
+struct NullStringBase<DataType> { ... } [[sealed, format(...), transform(...)]];
 ```
 ### `std::string::SizedString`
 
 A ASCII string with a prefixed size.
 - `<SizeType>`: The type of the size field.
 
-```rust
+```pl
 using SizedString<SizeType> = std::string::SizedStringBase;
 ```
 ### `std::string::SizedString16`
@@ -45,7 +45,7 @@ using SizedString<SizeType> = std::string::SizedStringBase;
 A UTF-16 string with a prefixed size.
 - `<SizeType>`: The type of the size field.
 
-```rust
+```pl
 using SizedString16<SizeType> = std::string::SizedStringBase;
 ```
 ### `std::string::SizedStringBase`
@@ -54,8 +54,8 @@ Base type for sized strings. Represents a string with its size preceding it.
 - `<SizeType>`: The type of the size field.
 - `<DataType>`: The type of the characters.
 
-```rust
-struct SizedStringBase<SizeType, DataType> { ... } [[sealed, format, transform]];
+```pl
+struct SizedStringBase<SizeType, DataType> { ... } [[sealed, format(...), transform(...)]];
 ```
 
 
@@ -68,8 +68,8 @@ Gets the length of a string.
 - `return`: The length of the string.
 
 
-```rust
-fn length( string);
+```pl
+fn length(str string);
 ```
 
 ### `std::string::at`
@@ -80,8 +80,8 @@ Gets the character at a given index.
 - `return`: The character at the given index.
 
 
-```rust
-fn at( string,  index);
+```pl
+fn at(str string, u32 index);
 ```
 
 ### `std::string::substr`
@@ -93,8 +93,8 @@ Gets a substring of a string.
 - `return`: The substring.
 
 
-```rust
-fn substr( string,  pos,  count);
+```pl
+fn substr(str string, u32 pos, u32 count);
 ```
 
 ### `std::string::parse_int`
@@ -105,8 +105,8 @@ Converts a string to an integer.
 - `return`: The integer.
 
 
-```rust
-fn parse_int( string,  base);
+```pl
+fn parse_int(str string, u8 base);
 ```
 
 ### `std::string::parse_float`
@@ -116,8 +116,8 @@ Converts a string to a float.
 - `return`: The float.
 
 
-```rust
-fn parse_float( string);
+```pl
+fn parse_float(str string);
 ```
 
 ### `std::string::to_string`
@@ -127,8 +127,8 @@ Converts any type to a string.
 - `return`: The string.
 
 
-```rust
-fn to_string( x);
+```pl
+fn to_string(auto x);
 ```
 
 ### `std::string::starts_with`
@@ -139,8 +139,8 @@ Checks if a string starts with a given substring.
 - `return`: True if the string starts with the substring, false otherwise.
 
 
-```rust
-fn starts_with( string,  part);
+```pl
+fn starts_with(str string, str part);
 ```
 
 ### `std::string::ends_with`
@@ -151,8 +151,8 @@ Checks if a string ends with a given substring.
 - `return`: True if the string ends with the substring, false otherwise.
 
 
-```rust
-fn ends_with( string,  part);
+```pl
+fn ends_with(str string, str part);
 ```
 
 ### `std::string::contains`
@@ -163,8 +163,8 @@ Checks if a string contains a given substring.
 - `return`: True if the string contains the substring, false otherwise.
 
 
-```rust
-fn contains( string,  part);
+```pl
+fn contains(str string, str part);
 ```
 
 ### `std::string::reverse`
@@ -174,8 +174,8 @@ Reverses a string.
 - `return`: The reversed string.
 
 
-```rust
-fn reverse( string);
+```pl
+fn reverse(str string);
 ```
 
 ### `std::string::to_upper`
@@ -185,8 +185,8 @@ Converts a string to upper case.
 - `return`: The converted string.
 
 
-```rust
-fn to_upper( string);
+```pl
+fn to_upper(str string);
 ```
 
 ### `std::string::to_lower`
@@ -196,8 +196,8 @@ Converts a string to lower case.
 - `return`: The converted string.
 
 
-```rust
-fn to_lower( string);
+```pl
+fn to_lower(str string);
 ```
 
 ### `std::string::replace`
@@ -209,6 +209,6 @@ Replaces all occurrences of a substring with another substring.
 - `return`: The string with the replacements.
 
 
-```rust
-fn replace( string,  pattern,  replace);
+```pl
+fn replace(str string, str pattern, str replace);
 ```

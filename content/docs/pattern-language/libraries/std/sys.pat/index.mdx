@@ -17,8 +17,8 @@ Asserts that a given value is true. If it's not, abort evaluation and print the 
 - `message`: The message to print in case the assertion doesn't hold
 
 
-```rust
-fn assert( condition,  message);
+```pl
+fn assert(bool condition, str message);
 ```
 
 ### `std::assert_warn`
@@ -28,8 +28,8 @@ Asserts that a given value is true. If it's not, print the given message to the 
 - `message`: The message to print in case the assertion doesn't hold
 
 
-```rust
-fn assert_warn( condition,  message);
+```pl
+fn assert_warn(bool condition, str message);
 ```
 
 ### `std::env`
@@ -39,8 +39,8 @@ Queries the value of a set environment variable given it's name
 - `return`: The value of that variable
 
 
-```rust
-fn env( name);
+```pl
+fn env(str name);
 ```
 
 ### `std::sizeof_pack`
@@ -50,7 +50,7 @@ Returns the number of parameters in a parameter pack.
 - `return`: Number of parameters in `pack`
 
 
-```rust
+```pl
 fn sizeof_pack(auto ... pack, );
 ```
 
@@ -59,6 +59,6 @@ fn sizeof_pack(auto ... pack, );
 Throws an error notifying the developer that the current code path is not implemented currently.
 
 
-```rust
+```pl
 fn unimplemented();
 ```
