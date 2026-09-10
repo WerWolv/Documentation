@@ -38,13 +38,13 @@ If this section is missing, make sure you installed the relevant Magic database 
 
 <figure><img src="../.gitbook/assets/views/data_information_byte_distribution.png" alt=""><figcaption><p>Byte Distribution graph</p></figcaption></figure>
 
-The Byte distribution graph is a Histogram which displays the number of occurrences of each byte using a logarithmic scale. In the graph above you can see that most bytes are equally likely to occurr but bytes close to `0x00` and around `100` (the ASCII range) are more abundant.&#x20;
+The Byte distribution graph is a Histogram which displays the number of occurrences of each byte using a logarithmic scale. In the graph above you can see that most bytes are equally likely to occur but bytes close to `0x00` and around `100` (the ASCII range) are more abundant.
 
 #### Byte Types
 
 <figure><img src="../.gitbook/assets/views/data_information_bytes_types.png" alt=""><figcaption><p>Byte types graph</p></figcaption></figure>
 
-The byte types graph displays a stacked relative frequency graph which contains information about how often a certain type of byte occurres within a block of data. The X-Axis of this graph represents the block's address and the Y-Axis the percentage of bytes in this block that are of the relevant type.&#x20;
+The byte types graph displays a stacked relative frequency graph which contains information about how often a certain type of byte occurs within a block of data. The X-Axis of this graph represents the block's address and the Y-Axis the percentage of bytes in this block that are of the relevant type.
 
 The byte type is determined using the [`<cctype>`](https://en.cppreference.com/w/c/string/byte) functions listed in the legend below. To hide certain types, simply click on their legend entry. There's also a drag bar on the graph that can be moved around to jump to the offset of that block in the Hex Editor View.
 

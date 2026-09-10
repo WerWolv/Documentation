@@ -18,7 +18,7 @@ Nodes are the rectangular boxes that are placed through the context menu. Each n
 
 Each Node has a name which is being displayed at the top in the header.
 
-Below that, there's an area where each node can display its own widgets either for confguring various settings or to simply visualize the data it received.
+Below that, there's an area where each node can display its own widgets either for configuring various settings or to simply visualize the data it received.
 
 #### Attributes
 
@@ -26,9 +26,9 @@ Attributes are the Connections on the side of each Node. Attributes on the left 
 
 There are different types of Attributes, denoted using different symbols.&#x20;
 
-* ![](../.gitbook/assets/imhex/views/data\_processor\_attribute\_integer.png) Circular Attributes are Integer Attributes
-* ![](../.gitbook/assets/imhex/views/data\_processor\_attribute\_float.png) Triangular Attributes are Float Attributes
-* ![](../.gitbook/assets/imhex/views/data\_processor\_attribute\_buffer.png) Rectangular Attributes are Buffer Attributes
+* ![](../.gitbook/assets/views/data\_processor\_attribute\_integer.png) Circular Attributes are Integer Attributes
+* ![](../.gitbook/assets/views/data\_processor\_attribute\_float.png) Triangular Attributes are Float Attributes
+* ![](../.gitbook/assets/views/data\_processor\_attribute\_buffer.png) Rectangular Attributes are Buffer Attributes
 
 If an Attribute is on the left side of a Node and not filled, it's an Input. If it's on the right side of a Node and filled out, it's a Output.
 
@@ -40,7 +40,7 @@ Integer and Float input Attributes can also be initialized directly by writing t
 
 <figure><img src="../.gitbook/assets/views/data_processor_link.png" alt=""><figcaption><p>Link between two Nodes</p></figcaption></figure>
 
-Links are the connection that is made between two Attributes. It represents the flow of information from one Ouput Attribute to another Input Attribute.&#x20;
+Links are the connection that is made between two Attributes. It represents the flow of information from one Output Attribute to another Input Attribute.&#x20;
 
 Links can only ever be made between two Attributes of the same type. So it's not possible to connect a Buffer Attribute to an Integer Attribute or an Integer Attribute to a Float Attribute.
 
@@ -88,7 +88,7 @@ To do this, select `Custom -> New Node` in the right click menu. A new, empty No
 
 <div>
 
-<figure><img src="../.gitbook/assets/views/data_processor_custom_node.png" alt=""><figcaption><p>Custom node regulary</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/views/data_processor_custom_node.png" alt=""><figcaption><p>Custom node regular</p></figcaption></figure>
 
  
 
@@ -104,7 +104,7 @@ Let's use these Input and Output Nodes to create a custom Node that takes in an 
 
 <figure><img src="../.gitbook/assets/views/data_processor_custom_node_add_5.png" alt=""><figcaption><p>Simple Add 5 Custom Node</p></figcaption></figure>
 
-Exiting the Custom Node again now through the `X` button reveales that the Custom Node has changed. It now has a `Value` input and a `Result` output. Feeding a number into the node now correctly adds the number `5` to it and returns the result back to us.
+Exiting the Custom Node again now through the `X` button reveals that the Custom Node has changed. It now has a `Value` input and a `Result` output. Feeding a number into the node now correctly adds the number `5` to it and returns the result back to us.
 
 <figure><img src="../.gitbook/assets/views/data_processor_custom_node_add_5_demo.png" alt=""><figcaption><p>Add 5 Node in action</p></figcaption></figure>
 

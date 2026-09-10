@@ -7,7 +7,7 @@ description: Useful tools that didn't really fit anywhere else
 The Tools View simply contains various different tools and niche helpers that didn't fit anywhere else in the Editor.
 
 {% hint style="info" %}
-All tools can be detacted and used as their own windows by simply closing them first and then dragging its header off of the tools window. The tool will automatically return to the tools window when it's being closed.
+All tools can be detached and used as their own windows by simply closing them first and then dragging its header off of the tools window. The tool will automatically return to the tools window when it's being closed.
 {% endhint %}
 
 {% tabs %}
@@ -21,7 +21,7 @@ This view takes a mangled type name from one of the following encoding standards
 * Rust
 * D-Lang
 
-To decmangle a string, simply enter it in the text field at the top and the demangled version of it will be displayed in the text field below.
+To demangle a string, simply enter it in the text field at the top and the demangled version of it will be displayed in the text field below.
 {% endtab %}
 
 {% tab title="ASCII Table" %}
@@ -160,7 +160,7 @@ Select a file in the `File to split` input field and a destination folder for th
 
 <figure><img src="../.gitbook/assets/views/tools_file_combiner.png" alt=""><figcaption><p>File combiner sub-tool</p></figcaption></figure>
 
-The file combiner tool is the inverse operation of the file splitter. It Can take a list of multiple smaller files and concatinate them into one bigger file. The order they show up in the list above is the order they are concatinated in. Add new files using the `Add...` button, remove a single file again using the `Delete` button or clear the entire list using the `Clear` button. Files in the list can also be moved around by first selecting them and then pressing on the arrow buttons on the right hand side to move them up or down in the list.
+The file combiner tool is the inverse operation of the file splitter. It Can take a list of multiple smaller files and concatenate them into one bigger file. The order they show up in the list above is the order they are concatenated in. Add new files using the `Add...` button, remove a single file again using the `Delete` button or clear the entire list using the `Clear` button. Files in the list can also be moved around by first selecting them and then pressing on the arrow buttons on the right hand side to move them up or down in the list.
 
 To create the file, select a new path for it in the `Output file` field and press `Combine`. This operation might take a long time depending on how big the files are and how many of them there are.
 {% endtab %}

@@ -81,7 +81,7 @@ A `in` Variable will generate a new line with an input widget that can be used t
 
 #### Sections
 
-<figure><img src="../.gitbook/assets/pattern_editor_sections_tab.png" alt=""><figcaption><p>Sections tab</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/views/pattern_editor_sections_tab.png" alt=""><figcaption><p>Sections tab</p></figcaption></figure>
 
 The Sections tab contains all custom sections that have been created using the `std::mem::create_section(str name)` function. For more info on using sections, see [Sections](../../pattern_language/core-language/sections.md) page.
 

@@ -48,13 +48,13 @@ Enabling this option shows or hides the Mini Map next to the scroll bar.
 
 The Mini Map shows information about hex editor lines in the current vicinity. Each colored line represents one row in the hex editor. By default the color corresponds to to the entropy of that line, the bluer the color, the higher the entropy. Other options can be specified through by right clicking the Mini Map icon and choosing a different visualizer in the popup.
 
-<figure><img src="../.gitbook/assets/hex_editor_mini_map_settings.png" alt=""><figcaption><p>Mini Map settings popup</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/views/hex_editor_mini_map_settings.png" alt=""><figcaption><p>Mini Map settings popup</p></figcaption></figure>
 
 #### Data visualizers
 
 Another option to customize the look of the Hex Editor is through cell visualizers. By default a 8 bit hex visualizer is used but many different ones are available such as decimals, floats or colors.
 
-<figure><img src="../.gitbook/assets/views/hex_editor_vizualizer_settings.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/views/hex_editor_visualizer_settings.png" alt=""><figcaption></figcaption></figure>
 
 The first dropdown selects the visualizer to be used and the slider below determines if the (potentially multi-byte value) should be interpreted in big or little endian format.
 
