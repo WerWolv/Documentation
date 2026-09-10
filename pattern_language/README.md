@@ -9,9 +9,9 @@ The Pattern Language is a C++ and Rust inspired DSL that was developed for the\
 
 # Getting Started
 
-Before diving into the documentation, let's start with a simple example.
+Before diving into the documentation, let's start with a [simple example](simple-example.bin).
 
-We have a file that follows this specification:
+Let's start by assuming this file has the following specification:
 
 | Offset | Type                  | Description          |
 | ------ | --------------------- | -------------------- |
