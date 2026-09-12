@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import {
   Sheet,
   SheetContent,
@@ -11,6 +11,7 @@ import {
 import {
   GithubIcon,
   HamburgerIcon,
+  ChevronRight,
 } from "lucide-react";
 import { marketingConfig } from "@/config/marketing.config";
 import { siteConfig } from "@/config/site.config";
@@ -21,6 +22,25 @@ import { Separator } from "@/components/ui/separator";
 import { usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
 import { docsConfig, type DocsNavItem } from "@/config/docs.config";
+import {
+  Collapsible,
+  CollapsibleContent,
+  CollapsibleTrigger,
+} from "@/components/ui/collapsible";
+
+function isCurrentPath(href: string | undefined, pathname: string) {
+  if (!href) return false;
+
+  const normalizedHref = href.replace(/\/$/, "") || "/";
+  const normalizedPathname = pathname.replace(/\/$/, "") || "/";
+  return normalizedHref === normalizedPathname;
+}
+
+function containsCurrentPath(item: DocsNavItem, pathname: string): boolean {
+  return isCurrentPath(item.href, pathname)
+    || item.items?.some((child) => containsCurrentPath(child, pathname))
+    || false;
+}
 
 export default function MobileNav() {
   const [open, setOpen] = useState(false);
@@ -55,18 +75,13 @@ export default function MobileNav() {
         </div>
         <Separator className="my-2" />
         {sections.map((section) => (
-          <div className="flex flex-col" key={section.title}>
-            <p className="mt-3 text-xs font-semibold uppercase text-muted-foreground">
-              {section.title}
-            </p>
-            {section.items.map((item) => (
-              <MobileDocsItem
-                key={item.href ?? item.segment}
-                item={item}
-                setOpen={setOpen}
-              />
-            ))}
-          </div>
+          <MobileDocsSection
+            key={section.title}
+            title={section.title}
+            items={section.items}
+            pathname={pathname}
+            setOpen={setOpen}
+          />
         ))}
         {sections.length > 0 && <Separator className="my-2" />}
         <div className="flex items-center gap-2">
@@ -82,52 +97,124 @@ export default function MobileNav() {
   );
 }
 
+const MobileDocsSection = ({
+  title,
+  items,
+  pathname,
+  setOpen,
+}: {
+  title: string;
+  items: DocsNavItem[];
+  pathname: string;
+  setOpen: (open: boolean) => void;
+}) => {
+  return (
+    <div className="flex flex-col">
+      <p className="mt-3 py-1 text-xs font-semibold uppercase text-muted-foreground">
+        {title}
+      </p>
+      {items.map((item) => (
+        <MobileDocsItem
+          key={item.href ?? item.segment}
+          item={item}
+          pathname={pathname}
+          setOpen={setOpen}
+        />
+      ))}
+    </div>
+  );
+};
+
 const MobileDocsItem = ({
   item,
+  pathname,
   setOpen,
   depth = 0,
 }: {
   item: DocsNavItem;
+  pathname: string;
   setOpen: (open: boolean) => void;
   depth?: number;
-}) => (
-  <div>
-    {item.href ? (
+}) => {
+  const hasChildren = Boolean(item.items?.length);
+  const isActiveBranch = hasChildren && containsCurrentPath(item, pathname);
+  const [expanded, setExpanded] = useState(isActiveBranch);
+
+  useEffect(() => {
+    if (isActiveBranch) {
+      setExpanded(true);
+    }
+  }, [isActiveBranch]);
+
+  const row = item.href ? (
+    <div className="relative">
       <NavItemComponent
         title={item.title}
         href={item.href}
         setOpen={setOpen}
         depth={depth}
+        className={hasChildren ? "pr-8" : undefined}
       />
-    ) : (
-      <p
-        className="py-1 text-sm font-semibold text-muted-foreground"
-        style={{ paddingLeft: `${depth * 0.75}rem` }}
-      >
-        {item.title}
-      </p>
-    )}
-    {item.items?.map((child) => (
-      <MobileDocsItem
-        key={child.href ?? `${item.segment}/${child.segment}`}
-        item={child}
-        setOpen={setOpen}
-        depth={depth + 1}
-      />
-    ))}
-  </div>
-);
+      {hasChildren && (
+        <CollapsibleTrigger
+          className="absolute top-0 right-0 flex size-7 items-center justify-center rounded-md hover:bg-accent [&[data-state=open]>svg]:rotate-90"
+          aria-label={`${expanded ? "Collapse" : "Expand"} ${item.title}`}
+        >
+          <ChevronRight className="size-4 transition-transform" />
+        </CollapsibleTrigger>
+      )}
+    </div>
+  ) : hasChildren ? (
+    <CollapsibleTrigger
+      className="flex w-full items-center gap-1 py-1 text-sm font-semibold text-muted-foreground hover:text-foreground [&[data-state=open]>svg]:rotate-90"
+      style={{ paddingLeft: `${depth * 0.75}rem` }}
+    >
+      <ChevronRight className="size-4 shrink-0 transition-transform" />
+      <span className="truncate">{item.title}</span>
+    </CollapsibleTrigger>
+  ) : (
+    <p
+      className="py-1 text-sm font-semibold text-muted-foreground"
+      style={{ paddingLeft: `${depth * 0.75}rem` }}
+    >
+      {item.title}
+    </p>
+  );
+
+  if (!hasChildren) {
+    return row;
+  }
+
+  return (
+    <Collapsible open={expanded} onOpenChange={setExpanded}>
+      {row}
+      <CollapsibleContent className="flex flex-col">
+        {item.items?.map((child) => (
+          <MobileDocsItem
+            key={child.href ?? `${item.segment}/${child.segment}`}
+            item={child}
+            pathname={pathname}
+            setOpen={setOpen}
+            depth={depth + 1}
+          />
+        ))}
+      </CollapsibleContent>
+    </Collapsible>
+  );
+};
 
 const NavItemComponent = ({
   title,
   href,
   setOpen,
   depth = 0,
+  className,
 }: {
   title: string;
   href: string;
   setOpen: (open: boolean) => void;
   depth?: number;
+  className?: string;
 }) => {
   const pathname = usePathname();
   const active =
@@ -137,11 +224,13 @@ const NavItemComponent = ({
     <Link
       href={href}
       className={cn(
-        "relative py-1 cursor-pointer",
-        "transition-all duration-200 ease-out"
+        "relative flex min-w-0 py-1 cursor-pointer",
+        "transition-all duration-200 ease-out",
+        className
       )}
       onClick={() => setOpen(false)}
       style={{ paddingLeft: `${depth * 0.75}rem` }}
+      aria-current={isCurrentPath(href, pathname) ? "page" : undefined}
     >
       <span
         className={cn(

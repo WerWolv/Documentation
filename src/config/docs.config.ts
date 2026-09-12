@@ -15,7 +15,7 @@ const rootOrder = ["imhex", "pattern-language"];
 
 const sectionOrder: Record<string, string[]> = {
   imhex: ["common", "views", "misc"],
-  "pattern-language": ["core-language", "libraries/hex", "libraries/std", "libraries/type"],
+  "pattern-language": ["core-language", "libraries"],
 };
 
 const pageOrder: Record<string, string[]> = {
@@ -50,6 +50,7 @@ const pageOrder: Record<string, string[]> = {
     "comments",
     "sections",
   ],
+  "pattern-language/libraries": ["hex", "std", "type"],
   "pattern-language/libraries/hex": [
     "hex",
     "provider.pat",
@@ -117,9 +118,7 @@ const sectionTitles: Record<string, string> = {
   common: "Common",
   views: "Views",
   misc: "Miscellaneous",
-  "libraries/hex": "hex Library",
-  "libraries/std": "std Library",
-  "libraries/type": "type Library",
+  libraries: "Libraries",
   _pages: "Pages",
 };
 
@@ -172,8 +171,8 @@ const getSection = (segments: string[]) => {
   }
   if (segments[1] === "libraries" && segments[2]) {
     return {
-      key: `libraries/${segments[2]}`,
-      itemSegments: segments.length === 3 ? [segments[2]] : segments.slice(3),
+      key: "libraries",
+      itemSegments: segments.slice(2),
     };
   }
   return { key: segments[1], itemSegments: segments.slice(2) };
