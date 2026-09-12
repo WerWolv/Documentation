@@ -42,6 +42,8 @@ export async function generateMetadata({
     return {};
   }
 
+  const ogImage = absoluteUrl(`/og/${doc.slugAsParams}.png`);
+
   return {
     title: `${doc.title} - ${siteConfig.name}`,
     description: doc.description,
@@ -52,13 +54,19 @@ export async function generateMetadata({
       url: absoluteUrl(`/${doc.slugAsParams}`),
       images: [
         {
-          url: siteConfig.og,
-          width: 2880,
-          height: 1800,
-          alt: siteConfig.name,
+          url: ogImage,
+          width: 1200,
+          height: 630,
+          alt: `${doc.title} - ${siteConfig.name}`,
         },
       ],
-    }
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: doc.title,
+      description: doc.description,
+      images: [ogImage],
+    },
   };
 }
 

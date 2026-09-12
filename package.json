@@ -3,8 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "velite && node scripts/dev.mjs",
-    "build": "velite && NEXT_DIST_DIR=.next-build next build",
+    "dev": "velite && npm run generate:og && node scripts/dev.mjs",
+    "build": "velite && npm run generate:og && NEXT_DIST_DIR=.next-build next build",
+    "generate:og": "node scripts/generate-og-images.mjs",
     "start": "NEXT_DIST_DIR=.next-build next start",
     "lint": "next lint"
   },
