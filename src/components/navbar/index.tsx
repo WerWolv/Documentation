@@ -59,7 +59,7 @@ const NavItemComponent = ({
     <Link
       href={href}
       className={cn(
-        "px-3 py-2 text-sm transition-colors",
+        "shrink-0 whitespace-nowrap px-3 py-2 text-sm transition-colors",
         active
           ? "text-foreground font-semibold"
           : "text-muted-foreground hover:text-foreground"
