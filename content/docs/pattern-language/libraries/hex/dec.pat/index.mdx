@@ -95,3 +95,30 @@ The original algorithm implementation can be found at http://software.schmorp.de
 ```pl
 fn lzf_decompress(auto pattern, std::mem::Section section);
 ```
+
+### `hex::dec::decode`
+
+Decodes a byte sequence into a string using a custom Thingy encoding definition
+- `bytes`: The bytes to decode
+- `encoding`: A string containing a Thingy encoding definition, e.g. as loaded through std::file
+- `return`: The decoded string
+
+
+```pl
+fn decode(auto bytes, str encoding);
+```
+
+### `hex::dec::encode`
+
+Encodes a string into a byte sequence using a custom Thingy encoding definition.
+Throws an error if the encoding is ambiguous (multiple byte sequences decoding to the
+same value, or one decoded value being a prefix of another one), or if the string
+contains a character sequence that has no representation in the given encoding.
+- `string`: The string to encode
+- `encoding`: A string containing a Thingy encoding definition, e.g. as loaded through std::file
+- `return`: A string containing the raw encoded bytes (not necessarily valid text)
+
+
+```pl
+fn encode(str string, str encoding);
+```
