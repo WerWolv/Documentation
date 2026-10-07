@@ -215,6 +215,8 @@ bitfield Permission {
 };
 ```
 
+Bitfields' endianness is specified using [the `bitfield_order` attribute](/pattern-language/core-language/attributes/index.mdx#bitfield_orderordering-size), going from LSB to MSB by default.
+
 Each entry inside of a bitfield consists of a field name followed by a colon and the size of the field in bits. A single field cannot occupy more than 64 bits.
 
 <DocumentedImage src="/assets/pattern-language/core-language/data-types/bitfields-data.png" alt="Screenshot" />
